@@ -22,3 +22,12 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+webpack.config.js
+yarn.lock
+src/tst.js
+src/assets/logo.png
+src/components/shopsTable/shopsFiltered.json
+src/components/shopsTable/shopsFinal.json
+README.md
+index.html
+src/tst.vue

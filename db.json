@@ -16,7 +16,10 @@
     "mleko": 2.61,
     "smietana": 4.57,
     "mineralna": 0.96,
-    "total": "105.99"
+    "total": "105.99",
+    "google": "<a href='https://www.google.com'>Google</a>",
+    "jakd": "<a href='http://jakdojade.pl/?fn=dworzec&tn=Wawel&tc=50.05434:19.93931&cid=5000'>JakD</a>",
+    "gmaps": "<a href='https://www.google.com/maps/dir/52.2264633,21.1591854/Dolna+5,+Warszawa'>Gmaps</a>"
   },
   {
     "shopName": "Biedronka",
