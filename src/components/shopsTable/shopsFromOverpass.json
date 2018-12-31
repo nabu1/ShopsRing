@@ -1,0 +1,1690 @@
+[
+{
+  "type": "node",
+  "id": 286604414,
+  "lat": 52.2472828,
+  "lon": 21.0568093,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "338/340",
+    "addr:street": "Grochowska",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "mapa.um.warszawa.pl",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 302722319,
+  "lat": 52.2272167,
+  "lon": 20.9976602,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "56c",
+    "addr:postcode": "00-803",
+    "addr:street": "Aleje Jerozolimskie",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 309749930,
+  "lat": 52.2499770,
+  "lon": 21.0423173,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:country": "PL",
+    "addr:housenumber": "24",
+    "addr:street": "Targowa",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Th 07:00-22:00; Fr,Sa 07:00-23:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 411513480,
+  "lat": 52.2220553,
+  "lon": 20.9342712,
+  "tags": {
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 461166142,
+  "lat": 52.2392354,
+  "lon": 21.0633017,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:country": "PL",
+    "addr:housenumber": "68",
+    "addr:postcode": "03-922",
+    "addr:street": "Międzynarodowa",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 461166153,
+  "lat": 52.2325974,
+  "lon": 21.0633777,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "40",
+    "addr:postcode": "03-938",
+    "addr:street": "Zwycięzców",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 7:00-22:00; Su 8:00-20:00",
+    "shop": "supermarket",
+    "source:note": "1218023",
+    "website": "http://www.biedronka.pl/pl"
+  }
+},
+{
+  "type": "node",
+  "id": 676244907,
+  "lat": 52.2018327,
+  "lon": 20.9815649,
+  "tags": {
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 704798069,
+  "lat": 52.2366415,
+  "lon": 21.0214889,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "40",
+    "addr:street": "Tamka",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Su 09:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 1282482320,
+  "lat": 52.2219567,
+  "lon": 20.9803164,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "26",
+    "addr:street": "Juliana Ursyna Niemcewicza",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "http://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 1490193540,
+  "lat": 52.2722136,
+  "lon": 21.0184053,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:country": "PL",
+    "addr:housenumber": "82",
+    "addr:postcode": "03-301",
+    "addr:street": "Jagiellońska",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "http://www.biedronka.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 1493537025,
+  "lat": 52.2037281,
+  "lon": 20.9646545,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "23",
+    "addr:street": "Władysława Korotyńskiego",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 1550534775,
+  "lat": 52.2373435,
+  "lon": 20.9999255,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "12/14",
+    "addr:street": "Grzybowska",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 1580686741,
+  "lat": 52.2004548,
+  "lon": 20.9663997,
+  "tags": {
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 1673573519,
+  "lat": 52.2484176,
+  "lon": 21.0702500,
+  "tags": {
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 1750765627,
+  "lat": 52.2014035,
+  "lon": 21.0339463,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "3",
+    "addr:postcode": "00-773",
+    "addr:street": "Dolna",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "http://www.biedronka.pl",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1806708737,
+  "lat": 52.2516126,
+  "lon": 21.0028556,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "6",
+    "addr:postcode": "00-213",
+    "addr:street": "Bonifraterska",
+    "name": "Biedronka",
+    "opening_hours": "06:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 2127505528,
+  "lat": 52.2531330,
+  "lon": 20.9883807,
+  "tags": {
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "wheelchair": "yes",
+    "wheelchair:description": "Pełna dostępność"
+  }
+},
+{
+  "type": "node",
+  "id": 2262718672,
+  "lat": 52.2335378,
+  "lon": 20.9877281,
+  "tags": {
+    "addr:postcode": "00-855",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 2346561275,
+  "lat": 52.2506235,
+  "lon": 20.9145784,
+  "tags": {
+    "addr:postcode": "01-485",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 2548265062,
+  "lat": 52.2358716,
+  "lon": 20.9948775,
+  "tags": {
+    "addr:postcode": "00-863",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 2633012362,
+  "lat": 52.2012406,
+  "lon": 20.9374559,
+  "tags": {
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3031428106,
+  "lat": 52.2448957,
+  "lon": 20.9965483,
+  "tags": {
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3048204727,
+  "lat": 52.2247724,
+  "lon": 20.9157514,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "9",
+    "addr:postcode": "01-354",
+    "addr:street": "Powstańców Śląskich",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "http://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 3118068429,
+  "lat": 52.1985874,
+  "lon": 20.9751173,
+  "tags": {
+    "addr:housenumber": "148",
+    "addr:postcode": "02-117",
+    "addr:street": "Racławicka",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3121934165,
+  "lat": 52.2737074,
+  "lon": 21.0684473,
+  "tags": {
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3218845255,
+  "lat": 52.2304799,
+  "lon": 20.9939856,
+  "tags": {
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3373581758,
+  "lat": 52.2309497,
+  "lon": 20.9887142,
+  "tags": {
+    "addr:postcode": "00-837",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3513036059,
+  "lat": 52.2422275,
+  "lon": 21.0733745,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "96",
+    "addr:street": "Aleja Jerzego Waszyngtona",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 9:00-21:00; Su 9:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3526732166,
+  "lat": 52.2445654,
+  "lon": 20.9665057,
+  "tags": {
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3561370585,
+  "lat": 52.2373237,
+  "lon": 20.9817806,
+  "tags": {
+    "name": "Biedronka",
+    "opening_hours": "Mo-Fr 07:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3690576692,
+  "lat": 52.2585686,
+  "lon": 20.9722365,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "19",
+    "addr:postcode": "01-793",
+    "addr:street": "Ludwika Rydygiera",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "http://www.biedronka.pl/pl/shop,id,2531,title,rydygiera-19-warszawa"
+  }
+},
+{
+  "type": "node",
+  "id": 4036101689,
+  "lat": 52.2337458,
+  "lon": 21.0360090,
+  "tags": {
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 4286855910,
+  "lat": 52.2368170,
+  "lon": 21.0181795,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "68",
+    "addr:postcode": "00-357",
+    "addr:street": "Nowy Świat",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-23:00; Su 08:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 4551077991,
+  "lat": 52.2118284,
+  "lon": 21.0488105,
+  "tags": {
+    "addr:street": "Bartycka",
+    "name": "Biedronka",
+    "name:pl": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 4574038921,
+  "lat": 52.2419560,
+  "lon": 20.9944830,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "115",
+    "addr:street": "Aleja \"Solidarności\"",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4854722321,
+  "lat": 52.2659554,
+  "lon": 21.0404366,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "43",
+    "addr:postcode": "03-420",
+    "addr:street": "Szwedzka",
+    "name": "Biedronka",
+    "name:en": "Biedronka",
+    "name:pl": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "http://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 4963137263,
+  "lat": 52.2375305,
+  "lon": 20.9754098,
+  "tags": {
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 5110441529,
+  "lat": 52.2323617,
+  "lon": 21.0117618,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "36",
+    "addr:street": "Chmielna",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-22:00; ph off",
+    "shop": "supermarket",
+    "website": "http://www.biedronka.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 5236208559,
+  "lat": 52.2686271,
+  "lon": 21.0571977,
+  "tags": {
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 5291126139,
+  "lat": 52.2478024,
+  "lon": 20.9166027,
+  "tags": {
+    "name": "Biedronka",
+    "opening_hours": "Mo-Fr 07:00-22:00; Sa 07:00-23:00; Su 08:00-21:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 5420944562,
+  "lat": 52.1918343,
+  "lon": 21.0250194,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "111",
+    "addr:street": "Puławska",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 5440448353,
+  "lat": 52.2264951,
+  "lon": 21.0667236,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:city:simc": "0918123",
+    "addr:housenumber": "6A",
+    "addr:postcode": "03-968",
+    "addr:street": "Saska",
+    "addr:street:sym_ul": "19551",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 5455197921,
+  "lat": 52.2598006,
+  "lon": 21.0286473,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "6",
+    "addr:postcode": "03-464",
+    "addr:street": "Plac generała Józefa Hallera",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 5659018400,
+  "lat": 52.2525346,
+  "lon": 21.0526783,
+  "tags": {
+    "name": "Biedronka",
+    "opening_hours": "Mo-Su 06:30-23:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 5734039560,
+  "lat": 52.2262692,
+  "lon": 20.9488100,
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "12",
+    "addr:postcode": "01-248",
+    "addr:street": "Jana Kazimierza",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 5819256853,
+  "lat": 52.2734773,
+  "lon": 20.9306444,
+  "tags": {
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 5922184787,
+  "lat": 52.2511150,
+  "lon": 20.9937203,
+  "tags": {
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 30957351,
+  "nodes": [
+    344227170,
+    3563683403,
+    344227172,
+    344227171,
+    344227169,
+    344227170
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "1",
+    "addr:postcode": "03-982",
+    "addr:street": "Generała Romana Abrahama",
+    "building": "retail",
+    "building:levels": "2",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "msi"
+  }
+},
+{
+  "type": "way",
+  "id": 34428195,
+  "nodes": [
+    395614154,
+    395614161,
+    395614171,
+    395614167,
+    5013697951,
+    5013697950,
+    395614154
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:city:simc": "0918123",
+    "addr:housenumber": "246",
+    "addr:postcode": "02-219",
+    "addr:street": "Aleja Krakowska",
+    "addr:street:sym_ul": "09795",
+    "building": "supermarket",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "mapa.um.warszawa.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 59421803,
+  "nodes": [
+    736871587,
+    736871589,
+    736871604,
+    4863744032,
+    736871609,
+    736871587
+  ],
+  "tags": {
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 70990513,
+  "nodes": [
+    845911900,
+    845911901,
+    845911902,
+    845911903,
+    845911900
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:city:simc": "0918123",
+    "addr:housenumber": "58A",
+    "addr:postcode": "01-716",
+    "addr:street": "Władysława Broniewskiego",
+    "addr:street:sym_ul": "02125",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "roof:levels": "0",
+    "shop": "supermarket",
+    "source:addr": "mapa.um.warszawa.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 95030898,
+  "nodes": [
+    1102696434,
+    1102696593,
+    1102696310,
+    1102696669,
+    1102696306,
+    1102696417,
+    1102696506,
+    1102696688,
+    1102696431,
+    1102696703,
+    1102696555,
+    1102696524,
+    2500353551,
+    1102696434
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "86A",
+    "addr:postcode": "01-003",
+    "addr:source": "mapa.um.warszawa.pl",
+    "addr:street": "Aleja \"Solidarności\"",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "mapa.um.warszawa.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 113937062,
+  "nodes": [
+    1291371813,
+    1291371841,
+    1291371850,
+    1291371856,
+    1291371830,
+    2280803930,
+    1291371846,
+    1291371813
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "46",
+    "addr:postcode": "01-111",
+    "addr:street": "Jana Olbrachta",
+    "building": "supermarket",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "mapa.um.warszawa.pl",
+    "website": "http://www.biedronka.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 129413942,
+  "nodes": [
+    1427938369,
+    1427938366,
+    1427938331,
+    1427938371,
+    1427938336,
+    1427938360,
+    1427938369
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "12",
+    "addr:postcode": "02-376",
+    "addr:street": "Dobosza",
+    "building": "retail",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 168565689,
+  "nodes": [
+    1798100732,
+    1798100721,
+    1798100737,
+    1798100723,
+    3741786774,
+    1798100732
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:city:simc": "0918123",
+    "addr:housenumber": "22",
+    "addr:postcode": "01-703",
+    "addr:street": "Gąbińska",
+    "addr:street:sym_ul": "05406",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00 Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "mapa.um.warszawa.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 196695069,
+  "nodes": [
+    5329685547,
+    2069925686,
+    3838796645,
+    2069925642,
+    3838797662,
+    5329685546,
+    5329685545,
+    5329685547
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:city:simc": "0918123",
+    "addr:housenumber": "7",
+    "addr:postcode": "01-793",
+    "addr:street": "Ludwika Rydygiera",
+    "addr:street:sym_ul": "19216",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "mapa.um.warszawa.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 207173358,
+  "nodes": [
+    3419739320,
+    3419739307,
+    6098392998,
+    6098392999,
+    3419739361,
+    3419739383,
+    3419739320
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:city:simc": "0918123",
+    "addr:housenumber": "10",
+    "addr:postcode": "02-449",
+    "addr:street": "Plastyczna",
+    "addr:street:sym_ul": "16445",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "07:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "mapa.um.warszawa.pl",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 218854782,
+  "nodes": [
+    2280581836,
+    3400370071,
+    2280581844,
+    3371398735,
+    3371398734,
+    2280581850,
+    3400370061,
+    2280581861,
+    3330554842,
+    3400370079,
+    2280581837,
+    2280581836
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:city:simc": "0918123",
+    "addr:housenumber": "56",
+    "addr:postcode": "01-409",
+    "addr:street": "Deotymy",
+    "addr:street:sym_ul": "03762",
+    "building": "retail",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "mapa.um.warszawa.pl",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 288935501,
+  "nodes": [
+    2924886141,
+    5433295291,
+    2924886129,
+    2924886117,
+    2924886105,
+    2924884280,
+    5433185830,
+    2924884247,
+    2924884243,
+    2924884226,
+    2924884218,
+    2350121345,
+    2924886141
+  ],
+  "tags": {
+    "indoor": "room",
+    "level": "1",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:30-23:00; Su 07:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "ref": "AZ01",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 435269236,
+  "nodes": [
+    1098969705,
+    1098969859,
+    2014595778,
+    1098969582,
+    1098969705
+  ],
+  "tags": {
+    "building": "retail",
+    "landuse": "commercial",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 506220962,
+  "nodes": [
+    2817060660,
+    4959891906,
+    4959891905,
+    4959891904,
+    4959891900,
+    4959891899,
+    4959891898,
+    4959891897,
+    4959891903,
+    2281984218,
+    2281984230,
+    2281984231,
+    2281984224,
+    2281984232,
+    4959891902,
+    4959891901,
+    2817060652,
+    2817060660
+  ],
+  "tags": {
+    "addr:city": "Warszawa",
+    "addr:housenumber": "45/47",
+    "addr:postcode": "01-864",
+    "addr:street": "Jana Kochanowskiego",
+    "building": "retail",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3419739307,
+  "lat": 52.2081726,
+  "lon": 20.9201140
+},
+{
+  "type": "node",
+  "id": 3419739320,
+  "lat": 52.2083259,
+  "lon": 20.9197735
+},
+{
+  "type": "node",
+  "id": 3419739361,
+  "lat": 52.2084658,
+  "lon": 20.9205672
+},
+{
+  "type": "node",
+  "id": 3419739383,
+  "lat": 52.2086488,
+  "lon": 20.9201605
+},
+{
+  "type": "node",
+  "id": 6098392998,
+  "lat": 52.2083479,
+  "lon": 20.9203241
+},
+{
+  "type": "node",
+  "id": 6098392999,
+  "lat": 52.2083182,
+  "lon": 20.9203902
+},
+{
+  "type": "node",
+  "id": 395614161,
+  "lat": 52.1893618,
+  "lon": 20.9583554
+},
+{
+  "type": "node",
+  "id": 395614154,
+  "lat": 52.1895500,
+  "lon": 20.9585250
+},
+{
+  "type": "node",
+  "id": 395614167,
+  "lat": 52.1894822,
+  "lon": 20.9587289
+},
+{
+  "type": "node",
+  "id": 395614171,
+  "lat": 52.1892926,
+  "lon": 20.9585585
+},
+{
+  "type": "node",
+  "id": 5013697950,
+  "lat": 52.1895073,
+  "lon": 20.9586493
+},
+{
+  "type": "node",
+  "id": 5013697951,
+  "lat": 52.1895085,
+  "lon": 20.9586503
+},
+{
+  "type": "node",
+  "id": 1291371813,
+  "lat": 52.2354069,
+  "lon": 20.9372593
+},
+{
+  "type": "node",
+  "id": 1291371841,
+  "lat": 52.2354463,
+  "lon": 20.9375624
+},
+{
+  "type": "node",
+  "id": 1291371850,
+  "lat": 52.2354543,
+  "lon": 20.9376238
+},
+{
+  "type": "node",
+  "id": 1427938331,
+  "lat": 52.2110622,
+  "lon": 20.9662105
+},
+{
+  "type": "node",
+  "id": 1427938336,
+  "lat": 52.2111833,
+  "lon": 20.9662846
+},
+{
+  "type": "node",
+  "id": 1427938360,
+  "lat": 52.2112399,
+  "lon": 20.9662860
+},
+{
+  "type": "node",
+  "id": 1427938366,
+  "lat": 52.2110593,
+  "lon": 20.9665137
+},
+{
+  "type": "node",
+  "id": 1427938369,
+  "lat": 52.2112377,
+  "lon": 20.9665183
+},
+{
+  "type": "node",
+  "id": 1427938371,
+  "lat": 52.2111840,
+  "lon": 20.9662136
+},
+{
+  "type": "node",
+  "id": 736871587,
+  "lat": 52.2514709,
+  "lon": 20.9188917
+},
+{
+  "type": "node",
+  "id": 736871589,
+  "lat": 52.2513175,
+  "lon": 20.9183683
+},
+{
+  "type": "node",
+  "id": 736871604,
+  "lat": 52.2511446,
+  "lon": 20.9185029
+},
+{
+  "type": "node",
+  "id": 736871609,
+  "lat": 52.2512980,
+  "lon": 20.9190263
+},
+{
+  "type": "node",
+  "id": 4863744032,
+  "lat": 52.2512825,
+  "lon": 20.9189734
+},
+{
+  "type": "node",
+  "id": 1291371830,
+  "lat": 52.2356640,
+  "lon": 20.9375511
+},
+{
+  "type": "node",
+  "id": 1291371846,
+  "lat": 52.2356165,
+  "lon": 20.9371866
+},
+{
+  "type": "node",
+  "id": 1291371856,
+  "lat": 52.2354882,
+  "lon": 20.9376120
+},
+{
+  "type": "node",
+  "id": 2280803930,
+  "lat": 52.2356352,
+  "lon": 20.9373299
+},
+{
+  "type": "node",
+  "id": 2280581836,
+  "lat": 52.2454887,
+  "lon": 20.9485994
+},
+{
+  "type": "node",
+  "id": 2280581837,
+  "lat": 52.2454835,
+  "lon": 20.9484886
+},
+{
+  "type": "node",
+  "id": 2280581844,
+  "lat": 52.2453670,
+  "lon": 20.9486147
+},
+{
+  "type": "node",
+  "id": 2280581850,
+  "lat": 52.2453379,
+  "lon": 20.9479774
+},
+{
+  "type": "node",
+  "id": 2280581861,
+  "lat": 52.2454583,
+  "lon": 20.9479633
+},
+{
+  "type": "node",
+  "id": 3330554842,
+  "lat": 52.2454631,
+  "lon": 20.9480556
+},
+{
+  "type": "node",
+  "id": 3371398734,
+  "lat": 52.2453435,
+  "lon": 20.9481296
+},
+{
+  "type": "node",
+  "id": 3371398735,
+  "lat": 52.2453628,
+  "lon": 20.9485120
+},
+{
+  "type": "node",
+  "id": 3400370061,
+  "lat": 52.2453549,
+  "lon": 20.9479754
+},
+{
+  "type": "node",
+  "id": 3400370071,
+  "lat": 52.2454249,
+  "lon": 20.9486075
+},
+{
+  "type": "node",
+  "id": 3400370079,
+  "lat": 52.2454803,
+  "lon": 20.9484215
+},
+{
+  "type": "node",
+  "id": 2281984218,
+  "lat": 52.2702111,
+  "lon": 20.9379722
+},
+{
+  "type": "node",
+  "id": 2281984224,
+  "lat": 52.2700766,
+  "lon": 20.9380452
+},
+{
+  "type": "node",
+  "id": 2281984230,
+  "lat": 52.2701687,
+  "lon": 20.9381385
+},
+{
+  "type": "node",
+  "id": 2281984231,
+  "lat": 52.2700700,
+  "lon": 20.9380712
+},
+{
+  "type": "node",
+  "id": 2281984232,
+  "lat": 52.2699655,
+  "lon": 20.9379695
+},
+{
+  "type": "node",
+  "id": 2817060652,
+  "lat": 52.2700417,
+  "lon": 20.9384015
+},
+{
+  "type": "node",
+  "id": 2817060660,
+  "lat": 52.2701945,
+  "lon": 20.9385017
+},
+{
+  "type": "node",
+  "id": 4959891897,
+  "lat": 52.2702415,
+  "lon": 20.9379393
+},
+{
+  "type": "node",
+  "id": 4959891898,
+  "lat": 52.2702477,
+  "lon": 20.9379208
+},
+{
+  "type": "node",
+  "id": 4959891899,
+  "lat": 52.2702681,
+  "lon": 20.9379107
+},
+{
+  "type": "node",
+  "id": 4959891900,
+  "lat": 52.2703233,
+  "lon": 20.9379511
+},
+{
+  "type": "node",
+  "id": 4959891901,
+  "lat": 52.2700339,
+  "lon": 20.9383409
+},
+{
+  "type": "node",
+  "id": 4959891902,
+  "lat": 52.2699074,
+  "lon": 20.9382459
+},
+{
+  "type": "node",
+  "id": 4959891903,
+  "lat": 52.2702143,
+  "lon": 20.9379226
+},
+{
+  "type": "node",
+  "id": 4959891904,
+  "lat": 52.2703132,
+  "lon": 20.9380724
+},
+{
+  "type": "node",
+  "id": 4959891905,
+  "lat": 52.2702754,
+  "lon": 20.9381579
+},
+{
+  "type": "node",
+  "id": 4959891906,
+  "lat": 52.2702303,
+  "lon": 20.9383267
+},
+{
+  "type": "node",
+  "id": 845911900,
+  "lat": 52.2710928,
+  "lon": 20.9493019
+},
+{
+  "type": "node",
+  "id": 845911901,
+  "lat": 52.2709147,
+  "lon": 20.9491684
+},
+{
+  "type": "node",
+  "id": 845911902,
+  "lat": 52.2708661,
+  "lon": 20.9493416
+},
+{
+  "type": "node",
+  "id": 845911903,
+  "lat": 52.2710442,
+  "lon": 20.9494750
+},
+{
+  "type": "node",
+  "id": 1798100721,
+  "lat": 52.2718924,
+  "lon": 20.9602993
+},
+{
+  "type": "node",
+  "id": 1798100723,
+  "lat": 52.2721151,
+  "lon": 20.9598772
+},
+{
+  "type": "node",
+  "id": 1798100732,
+  "lat": 52.2720641,
+  "lon": 20.9603488
+},
+{
+  "type": "node",
+  "id": 1798100737,
+  "lat": 52.2719433,
+  "lon": 20.9598277
+},
+{
+  "type": "node",
+  "id": 3741786774,
+  "lat": 52.2720699,
+  "lon": 20.9602960
+},
+{
+  "type": "node",
+  "id": 2350121345,
+  "lat": 52.2288622,
+  "lon": 21.0022535
+},
+{
+  "type": "node",
+  "id": 2924884218,
+  "lat": 52.2285601,
+  "lon": 21.0024282
+},
+{
+  "type": "node",
+  "id": 2924884226,
+  "lat": 52.2286135,
+  "lon": 21.0026739
+},
+{
+  "type": "node",
+  "id": 2924884243,
+  "lat": 52.2286687,
+  "lon": 21.0026460
+},
+{
+  "type": "node",
+  "id": 2924884247,
+  "lat": 52.2286744,
+  "lon": 21.0026762
+},
+{
+  "type": "node",
+  "id": 2924884280,
+  "lat": 52.2287559,
+  "lon": 21.0026291
+},
+{
+  "type": "node",
+  "id": 2924886105,
+  "lat": 52.2288102,
+  "lon": 21.0025977
+},
+{
+  "type": "node",
+  "id": 2924886117,
+  "lat": 52.2288234,
+  "lon": 21.0026572
+  },
+  {
+    "type": "node",
+    "id": 2924886129,
+    "lat": 52.2288501,
+    "lon": 21.0027775
+  },
+  {
+    "type": "node",
+    "id": 5433185830,
+    "lat": 52.2287098,
+    "lon": 21.0026557
+  },
+  {
+    "type": "node",
+    "id": 5433295291,
+    "lat": 52.2289220,
+    "lon": 21.0027666
+  },
+  {
+    "type": "node",
+    "id": 2924886141,
+    "lat": 52.2289707,
+    "lon": 21.0027589
+  },
+  {
+    "type": "node",
+    "id": 344227169,
+    "lat": 52.2265674,
+    "lon": 21.0828187
+  },
+  {
+    "type": "node",
+    "id": 344227171,
+    "lat": 52.2268997,
+    "lon": 21.0828231
+  },
+  {
+    "type": "node",
+    "id": 344227170,
+    "lat": 52.2265671,
+    "lon": 21.0833715
+  },
+  {
+    "type": "node",
+    "id": 344227172,
+    "lat": 52.2268998,
+    "lon": 21.0833199
+  },
+  {
+    "type": "node",
+    "id": 3563683403,
+    "lat": 52.2268971,
+    "lon": 21.0833721
+  },
+  {
+    "type": "node",
+    "id": 1102696306,
+    "lat": 52.2408380,
+    "lon": 20.9890820
+  },
+  {
+    "type": "node",
+    "id": 1102696310,
+    "lat": 52.2406875,
+    "lon": 20.9888967
+  },
+  {
+    "type": "node",
+    "id": 1102696417,
+    "lat": 52.2408574,
+    "lon": 20.9890653
+  },
+  {
+    "type": "node",
+    "id": 1102696431,
+    "lat": 52.2409300,
+    "lon": 20.9893668
+  },
+  {
+    "type": "node",
+    "id": 1102696434,
+    "lat": 52.2406159,
+    "lon": 20.9889960
+  },
+  {
+    "type": "node",
+    "id": 1102696506,
+    "lat": 52.2408885,
+    "lon": 20.9891615
+  },
+  {
+    "type": "node",
+    "id": 1102696524,
+    "lat": 52.2407932,
+    "lon": 20.9895447
+  },
+  {
+    "type": "node",
+    "id": 1102696555,
+    "lat": 52.2409105,
+    "lon": 20.9894437
+  },
+  {
+    "type": "node",
+    "id": 1102696593,
+    "lat": 52.2406971,
+    "lon": 20.9889261
+  },
+  {
+    "type": "node",
+    "id": 1102696669,
+    "lat": 52.2407584,
+    "lon": 20.9888356
+  },
+  {
+    "type": "node",
+    "id": 1102696688,
+    "lat": 52.2408691,
+    "lon": 20.9891782
+  },
+  {
+    "type": "node",
+    "id": 1102696703,
+    "lat": 52.2408953,
+    "lon": 20.9893967
+  },
+  {
+    "type": "node",
+    "id": 2500353551,
+    "lat": 52.2407056,
+    "lon": 20.9892735
+  },
+  {
+    "type": "node",
+    "id": 5329685546,
+    "lat": 52.2599979,
+    "lon": 20.9845904
+  },
+  {
+    "type": "node",
+    "id": 1098969582,
+    "lat": 52.2514547,
+    "lon": 20.9940698
+  },
+  {
+    "type": "node",
+    "id": 1098969705,
+    "lat": 52.2515658,
+    "lon": 20.9934652
+  },
+  {
+    "type": "node",
+    "id": 1098969859,
+    "lat": 52.2515351,
+    "lon": 20.9934596
+  },
+  {
+    "type": "node",
+    "id": 2014595778,
+    "lat": 52.2514257,
+    "lon": 20.9940474
+  },
+  {
+    "type": "node",
+    "id": 2069925642,
+    "lat": 52.2601267,
+    "lon": 20.9851063
+  },
+  {
+    "type": "node",
+    "id": 2069925686,
+    "lat": 52.2598427,
+    "lon": 20.9852979
+  },
+  {
+    "type": "node",
+    "id": 3838796645,
+    "lat": 52.2599266,
+    "lon": 20.9852413
+  },
+  {
+    "type": "node",
+    "id": 3838797662,
+    "lat": 52.2600239,
+    "lon": 20.9846966
+  },
+  {
+    "type": "node",
+    "id": 5329685545,
+    "lat": 52.2598832,
+    "lon": 20.9846662
+  },
+  {
+    "type": "node",
+    "id": 5329685547,
+    "lat": 52.2598039,
+    "lon": 20.9847289
+  }
+  ]
+

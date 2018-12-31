@@ -1,0 +1,40 @@
+[
+  {
+    "shopName": "Biedronka",
+    "city": "Warszawa",
+    "address": "Grochowska 338/340",
+    "lat": 52.2472828,
+    "lon": 21.0568093,
+    "chleb": 5.6,
+    "maslo": 5.27,
+    "ser": 34.97,
+    "jajko": 0.9, 
+    "szynka": 38.72,
+    "kielbasa": 14.26,
+    "cukier": 5.07,
+    "mleko": 3.5,
+    "smietana": 5.02,
+    "mineralna": 0.83,
+    "total": "114.14",
+    "id": 0
+  },
+  {
+    "shopName": "Biedronka",
+    "city": "Warszawa",
+    "address": "Aleje Jerozolimskie 56c",
+    "lat": 52.2272167,
+    "lon": 20.9976602,
+    "chleb": 4.64,
+    "maslo": 4.78,
+    "ser": 22.38,
+    "jajko": 0.67,
+    "szynka": 35.64,
+    "kielbasa": 14.48,
+    "cukier": 4.86,
+    "mleko": 2.71,
+    "smietana": 4.28,
+    "mineralna": 0.78,
+    "total": "95.22",
+    "id": 1
+  }
+]
