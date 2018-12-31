@@ -17,12 +17,6 @@
   </div>
 </template>
 
-/*
-"google": "<a href='https://www.google.com'>Google</a>",
-"jakd": "<a href='http://jakdojade.pl/?fn=dworzec&tn=Wawel&tc=50.05434:19.93931&cid=5000'>JakD</a>",
-"gmaps": "<a href='https://www.google.com/maps/dir/52.2264633,21.1591854/Dolna+5,+Warszawa'>Gmaps</a>"
- */
-
 <script>
 import axios from 'axios'
 
@@ -40,10 +34,9 @@ export default {
           sortable: true
         },
         {
-          key: "total",
-          label: "Total",
-          sortable: true,
-          variant: 'warning'
+          key: "address",
+          label: "Address",
+          sortable: true
         },
         {
           key: "google",
@@ -58,9 +51,10 @@ export default {
           label: "Gmaps"
         },
         {
-          key: "address",
-          label: "Address",
-          sortable: true
+          key: "total",
+          label: "Total",
+          sortable: true,
+          variant: 'warning'
         },
         {
           key: "chleb",
@@ -111,6 +105,10 @@ export default {
           key: "mineralna",
           label: "Mineralna",
           sortable: true
+        },
+        {
+          key: "niematego",
+          sortable: true
         }
       ],
       items: []
@@ -118,6 +116,8 @@ export default {
   },
   methods: {
     loadShops() {
+      console.log('fields = ', this.fields)
+
       axios
         .get("http://localhost:3000/biedry")
         .then(res => {

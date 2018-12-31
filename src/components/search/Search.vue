@@ -54,11 +54,14 @@ export default {
   },
   methods: {
     search() {
-      console.log("Tu metoda search()")
-      console.log('selectedCity', this.selectedCity)
-      console.log('street', this.street)
-      console.log('streetNumber', this.streetNumber)
-      console.log('radius', this.radius)
+      const searchData = {
+        selectedCity: this.selectedCity,
+        street: this.street,
+        streetNumber: this.streetNumber,
+        radius: this.radius
+      }
+
+      console.log(searchData)
     }
   }
 };
