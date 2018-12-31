@@ -4,7 +4,7 @@
     <b-container>
       <b-row class='my-4'>
         <b-col>
-          <b-form-select v-model="selected" :options="cities" class="mb-3" />
+          <b-form-select v-model="selectedCity" :options="cities" class="mb-3" />
         </b-col>
 
         <b-col>
@@ -15,14 +15,14 @@
 
         <b-col>
           <b-form-input v-model="streetNumber"
-                        placeholder="street number"
+                        placeholder="Enter street number"
                         type="number">
           </b-form-input>
         </b-col>
 
         <b-col>
           <b-form-input v-model="radius"
-                        placeholder="radius in meters"
+                        placeholder="Enter radius (meters)"
                         type="number"
                         min="100"
                         max="20000"
@@ -40,9 +40,12 @@
 export default {
   data() {
     return {
-      selected: null,
+      selectedCity: null,
+      street:'',
+      streetNumber: '',
+      radius: 0,
       cities: [
-         { text: 'Please select a city', value: null },
+        { text: 'Please select a city', value: null },
          { text: 'Warszawa',  value: 'warszawa'},
          { text: 'Kraków',  value: 'krakow' },
          { text: 'Gdańsk',  value: 'gdansk' }
@@ -51,7 +54,11 @@ export default {
   },
   methods: {
     search() {
-      console.log("Tu metoda search()");
+      console.log("Tu metoda search()")
+      console.log('selectedCity', this.selectedCity)
+      console.log('street', this.street)
+      console.log('streetNumber', this.streetNumber)
+      console.log('radius', this.radius)
     }
   }
 };
