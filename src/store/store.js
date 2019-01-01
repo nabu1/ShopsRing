@@ -24,26 +24,29 @@ export const store = new Vuex.Store({
   },
   mutations: {
     addAllShops(state, payload) {
-      console.log('4. Tu mutations: payload = ', payload)
       state.allShops = payload
     },
     addCityShops(state) {
       state.cityShops
     },
-    addSeletedShops(state) {
-      state.selectedShops
+    findSelectedShops(state, searchData) {
+      console.log('Tu mutations / findSelectedShops')
+      console.log(state.allShops)
+      state.allShops.filter(el => {
+        //console.log(el.address)
+      })
     }
   },
   actions: {
     addAllShops(context, payload) {
-      console.log('3. Tu actions: payload = ', payload)
       context.commit('addAllShops', payload)
     },
     addCityShops(context) {
       context.commit('addCityShops')
     },
-    addSelectedShops(context) {
-      context.commit('addSelectedShops')
+    findSelectedShops(context, searchData) {
+      console.log('Tu actions / findSelectedShops')
+      context.commit('findSelectedShops', searchData)
     }
   }
 })

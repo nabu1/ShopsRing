@@ -62,6 +62,8 @@ export default {
       }
 
       console.log(searchData)
+
+      this.$store.dispatch('findSelectedShops', searchData)
     }
   }
 };
