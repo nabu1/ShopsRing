@@ -21,8 +21,18 @@
 import axios from 'axios'
 
 export default {
-  mounted() {
-    this.loadShops();
+  created() {
+    console.log('0. Tu createdd()')
+
+    axios
+      .get('http://localhost:3000/biedry')
+      .then(res => {
+        console.log('2. Tu actions axios.then')
+        this.$store.dispatch('addAllShops', res.data)
+        this.items = this.$store.getters.getAllShops
+      })
+      .catch(err => console.log(err))
+
   },
   data() {
     return {
@@ -112,19 +122,8 @@ export default {
         }
       ],
       items: []
-    }
-  },
-  methods: {
-    loadShops() {
-      console.log('fields = ', this.fields)
-
-      axios
-        .get("http://localhost:3000/biedry")
-        .then(res => {
-          console.log(res)
-          this.items = res.data
-        })
-        .catch(err => console.log(err));
+      // items: this.$store.getters.getAllShops
+      // items: this.$store.state.allShops
     }
   }
 }

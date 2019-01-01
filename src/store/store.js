@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import axios from 'axios'
 
 Vue.use(Vuex)
 
@@ -22,8 +23,9 @@ export const store = new Vuex.Store({
 
   },
   mutations: {
-    addAllShops(state) {
-      state.allShops
+    addAllShops(state, payload) {
+      console.log('4. Tu mutations: payload = ', payload)
+      state.allShops = payload
     },
     addCityShops(state) {
       state.cityShops
@@ -33,8 +35,9 @@ export const store = new Vuex.Store({
     }
   },
   actions: {
-    addAllShops(context) {
-      context.commit('addAllShops')
+    addAllShops(context, payload) {
+      console.log('3. Tu actions: payload = ', payload)
+      context.commit('addAllShops', payload)
     },
     addCityShops(context) {
       context.commit('addCityShops')
