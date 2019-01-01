@@ -24,6 +24,14 @@ Instrukcja obsługi niniejszego pliku:
 Formatowanie JSONów: ctrl + shift + f
 */
 
+/* TODO:
+   Odfiltorwać po adresie (ulica + numer domu) zdublowane sklepy
+
+  _.uniqBy([{ 'x': 1 }, { 'x': 2 }, { 'x': 1 }], 'x');
+   [{ 'x': 1 }, { 'x': 2 }]
+
+  https://lodash.com/docs/4.17.11#uniq
+*/
 
 const fs = require('fs')
 const _ = require('lodash')
