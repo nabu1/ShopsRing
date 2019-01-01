@@ -58,22 +58,17 @@ export const store = new Vuex.Store({
             return Math.round(R * c * 1000)
       }
 
-      console.log(distance(52.1928623, 21.0238631, 52.5271, 21.1599))   // Dolna - Popowo = 37.270557460577145 km
-      console.log(distance(52.1928623, 21.0238631, 52.1698814, 21.0312037))   // Dolna - Bacha      =  3.41 km
-      console.log('state.allShops', state.allShops);
+      //console.log(distance(52.1928623, 21.0238631, 52.5271, 21.1599))   // Dolna - Popowo = 37.270557460577145 km
+      //console.log(distance(52.1928623, 21.0238631, 52.1698814, 21.0312037))   // Dolna - Bacha      =  3.41 km
+      //console.log('state.allShops', state.allShops);
 
 
-      const shopsInRadius = state.allShops.map(el => {
-        //console.log(el)
-        //console.log(el.lat, el.lon)
-        //console.log(state.homeGPS.lat, state.homeGPS.lon)
-        //console.log('state.homeGPS.radius', state.homeGPS.radius)
-        console.log(el.address + ': ' + distance(el.lat, el.lon, state.homeGPS.lat, state.homeGPS.lon))
-        //return distance(el.lat, el.lon, state.homeGPS.lat, state.homeGPS.lon) < state.homeGPS.radius
+      const shopsInRadius = state.allShops.filter(el => {
+        //console.log(el.address + ': ' + distance(el.lat, el.lon, state.homeGPS.lat, state.homeGPS.lon))
+        return distance(el.lat, el.lon, state.homeGPS.lat, state.homeGPS.lon) < state.homeGPS.radius
       })
 
       console.log('shopsInRadius', shopsInRadius)
-
 
     }
   },
