@@ -37,8 +37,10 @@
 
 <script>
 import axios from 'axios'
+import { filteredShops } from './filteredShops'
 
 export default {
+
   data() {
     return {
       city: null,
@@ -55,32 +57,28 @@ export default {
   },
   methods: {
     search() {
-      /*
-      const homeData = {
-        city: this.city,
-        street: this.street,
-        streetNumber: this.streetNumber,
-        radius: this.radius
-      }
-      */
       const key = '224e8e01cf8f43a0aabb1b68341904a1'
       const encodedAddress = encodeURI(this.street + ' ' + this.streetNumber + ', ' + this.city)
       const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
 
       axios.get(url)
         .then(res => {
-          // console.log('res.data = ', res.data.results[0].formatted)
           const homeGPS = {
             lat: res.data.results[0].geometry.lat,
             lon: res.data.results[0].geometry.lng,
             radius: this.radius
           }
 
-          this.$store.dispatch('findSelectedShops', homeGPS)
+          const shops = this.$store.getters.getAllShops
+          console.log('shops', shops)
+
+          const shopsInRadius = filteredShops(shops, homeGPS)
+          console.log('shopsInRadius', shopsInRadius)
+
+          this.$store.dispatch('findSelectedShops', shopsInRadius)
       })
       .catch(err => console.log('Buont Search.vue / methods: search: ', err))
 
-      // todo: zrób filtrowanie. Patrz store.js / actions
 
     }
   }

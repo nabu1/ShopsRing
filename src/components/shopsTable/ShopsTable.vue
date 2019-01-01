@@ -22,15 +22,7 @@ import axios from 'axios'
 
 export default {
   created() {
-    axios
-      .get('http://localhost:3000/biedry')
-      .then(res => {
-        console.log('created()')
-        console.log(res.data)
-        this.$store.dispatch('addAllShops', res.data)
-        this.items = this.$store.getters.getAllShops
-      })
-      .catch(err => console.log(err))
+    this.$store.dispatch('addAllShops')
   },
   data() {
     return {
@@ -127,7 +119,7 @@ export default {
           sortable: true
         }
       ],
-      items: []
+      items: this.$store.getters.getAllShops
     }
   }
 }
