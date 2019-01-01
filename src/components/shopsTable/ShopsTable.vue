@@ -47,6 +47,14 @@ export default {
           sortable: true
         },
         {
+          key: "lat",
+          label: "lat",
+        },
+        {
+          key: "lon",
+          label: "lon",
+         },
+        {
           key: "google",
           label: "Google"
         },

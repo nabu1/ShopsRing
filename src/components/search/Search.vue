@@ -4,7 +4,7 @@
     <b-container>
       <b-row class='my-4'>
         <b-col>
-          <b-form-select v-model="selectedCity" :options="cities" class="mb-3" />
+          <b-form-select v-model="city" :options="cities" class="mb-3" />
         </b-col>
 
         <b-col>
@@ -15,13 +15,12 @@
 
         <b-col>
           <b-form-input v-model="streetNumber"
-                        placeholder="Enter street number"
-                        type="number">
+                        placeholder="Enter street number">
           </b-form-input>
         </b-col>
 
         <b-col>
-          <b-form-input v-model="radius"
+          <b-form-input v-model.number="radius"
                         placeholder="Enter radius (meters)"
                         type="number"
                         min="100"
@@ -37,10 +36,12 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data() {
     return {
-      selectedCity: null,
+      city: null,
       street:'',
       streetNumber: '',
       radius: 0,
@@ -54,17 +55,34 @@ export default {
   },
   methods: {
     search() {
-      const searchData = {
-        selectedCity: this.selectedCity,
+      /*
+      const homeData = {
+        city: this.city,
         street: this.street,
         streetNumber: this.streetNumber,
         radius: this.radius
       }
+      */
+      const key = '224e8e01cf8f43a0aabb1b68341904a1'
+      const encodedAddress = encodeURI(this.street + ' ' + this.streetNumber + ', ' + this.city)
+      const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
 
-      console.log(searchData)
+      axios.get(url)
+        .then(res => {
+          // console.log('res.data = ', res.data.results[0].formatted)
+          const homeGPS = {
+            lat: res.data.results[0].geometry.lat,
+            lon: res.data.results[0].geometry.lng,
+            radius: this.radius
+          }
 
-      this.$store.dispatch('findSelectedShops', searchData)
+          this.$store.dispatch('findSelectedShops', homeGPS)
+      })
+      .catch(err => console.log('Buont Search.vue / methods: search: ', err))
+
+      // todo: zrób filtrowanie. Patrz store.js / actions
+
     }
   }
-};
+}
 </script>

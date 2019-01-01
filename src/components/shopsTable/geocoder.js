@@ -113,7 +113,7 @@ function getAddress(lat = 52.2472828, lon = 21.0568093) {
       fs.appendFileSync (fileShopsFinal, JSON.stringify(fullObj) + ',')
     })
     .catch(err => console.log('Buont getGPS: ', err))
-}
+  }
 
 // Obiekt jest okrajany do zawartości: lat, lon, street, housenumber
 function filteredShops() {

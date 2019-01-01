@@ -15,7 +15,9 @@
     components: {
       'shops-table': shopsTable,
       search,
-      tst
+      //tst
     }
   }
 </script>
+
+

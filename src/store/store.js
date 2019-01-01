@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
+import createPersistedState from 'vuex-persistedstate'
+// import { getHomeGPS, getDistanceFromHome } from '../components/search/filterShops'
 
 Vue.use(Vuex)
 
@@ -8,8 +10,10 @@ export const store = new Vuex.Store({
   state: {
     allShops: [],
     cityShops: [],
-    selectedShops: []
+    selectedShops: [],
+    homeGPS: {}
   },
+  plugins: [createPersistedState()],
   getters: {
     getAllShops(state) {
       return state.allShops
@@ -20,7 +24,9 @@ export const store = new Vuex.Store({
     getSelectedShops(state) {
       return state.selectedShops
     },
-
+    getHomeGPS(state) {
+      return state.homeGPS
+    }
   },
   mutations: {
     addAllShops(state, payload) {
@@ -29,11 +35,12 @@ export const store = new Vuex.Store({
     addCityShops(state) {
       state.cityShops
     },
-    findSelectedShops(state, searchData) {
-      console.log('Tu mutations / findSelectedShops')
-      console.log(state.allShops)
+    findSelectedShops(state, homeGPS) {
+      console.log('Tu mutations / findSelectedShops = ', homeGPS)
+      state.homeGPS = homeGPS
+
       state.allShops.filter(el => {
-        //console.log(el.address)
+        console.log(el.address, el.lat, el.lon)
       })
     }
   },
@@ -44,9 +51,9 @@ export const store = new Vuex.Store({
     addCityShops(context) {
       context.commit('addCityShops')
     },
-    findSelectedShops(context, searchData) {
-      console.log('Tu actions / findSelectedShops')
-      context.commit('findSelectedShops', searchData)
+    findSelectedShops(context, homeGPS) {
+      // console.log('Tu actions / findSelectedShops')
+      context.commit('findSelectedShops', homeGPS)
     }
   }
 })
