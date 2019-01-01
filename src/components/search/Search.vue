@@ -57,29 +57,18 @@ export default {
   },
   methods: {
     search() {
-      const key = '224e8e01cf8f43a0aabb1b68341904a1'
-      const encodedAddress = encodeURI(this.street + ' ' + this.streetNumber + ', ' + this.city)
-      const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
+       const homeData = {
+         city: this.city,
+         street: this.street,
+         streetNumber: this.streetNumber,
+         radius: this.radius,
+         shops: this.$store.getters.getAllShops
+       }
 
-      axios.get(url)
-        .then(res => {
-          const homeGPS = {
-            lat: res.data.results[0].geometry.lat,
-            lon: res.data.results[0].geometry.lng,
-            radius: this.radius
-          }
-
-          const shops = this.$store.getters.getAllShops
-          console.log('shops', shops)
-
-          const shopsInRadius = filteredShops(shops, homeGPS)
-          console.log('shopsInRadius', shopsInRadius)
-
-          this.$store.dispatch('findSelectedShops', shopsInRadius)
-      })
-      .catch(err => console.log('Buont Search.vue / methods: search: ', err))
+         console.log('homeData.shops', homeData.shops)
 
 
+       this.$store.dispatch('findSelectedShops', homeData)
     }
   }
 }

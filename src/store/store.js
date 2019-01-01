@@ -55,9 +55,35 @@ export const store = new Vuex.Store({
     addCityShops(context) {
       context.commit('addCityShops')
     },
-    findSelectedShops(context, shopsInRadius) {
+    findSelectedShops(context, homeData) {
       console.log('Tu actions / findSelectedShops')
-      console.log('shopsInRadius', shopsInRadius);
+      console.log('homeData', homeData)
+
+      const key = '224e8e01cf8f43a0aabb1b68341904a1'
+      const encodedAddress = encodeURI(homeData.street + ' ' + homeData.streetNumber + ', ' + homeData.city)
+      const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
+
+      axios.get(url)
+        .then(res => {
+          const homeGPS = {
+            lat: res.data.results[0].geometry.lat,
+            lon: res.data.results[0].geometry.lng,
+            radius: this.radius
+          }
+
+          const shops = homeData.shops
+          console.log('shops', shops)
+
+          const shopsInRadius = filteredShops(shops, homeGPS) // todo: tu się wywala
+          console.log('shopsInRadius', shopsInRadius)
+
+          this.$store.dispatch('findSelectedShops', shopsInRadius)
+      })
+      .catch(err => console.log('Buont Search.vue / methods: search: ', err))
+
+
+
+
       context.commit('findSelectedShops', shopsInRadius)
     }
   }
