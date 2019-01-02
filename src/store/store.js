@@ -10,7 +10,6 @@ export const store = new Vuex.Store({
     allShops: [],
     selectedShops: [],
     homeGPS: {},
-
     fields: [
       'index',
       {
@@ -96,15 +95,13 @@ export const store = new Vuex.Store({
         sortable: true
       }
     ]
-
-
   },
   getters: {
     getAllShops(state) {
       //console.log('Tu getter "addAllShops"')
       return state.allShops
     },
-    
+
     getFields(state) {
       //console.log('Tu getter "addAllShops"')
       return state.fields
