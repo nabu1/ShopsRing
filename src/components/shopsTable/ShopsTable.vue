@@ -5,13 +5,12 @@
       <b-row>
         <b-table striped hover bordered :items="items" :fields="fields">
 
-          <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
-          <template slot="shopName" slot-scope="data">{{ shopName }}</template>
+          <!-- <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
           <template slot="total" slot-scope="data">{{ data.value * 100 }}</template>
 
           <span slot="google" slot-scope="data" v-html="data.value">{{ data.value }}</span>
           <span slot="jakd" slot-scope="data" v-html="data.value">{{ data.value }}</span>
-          <span slot="gmaps" slot-scope="data" v-html="data.value">{{ data.value }}</span>
+          <span slot="gmaps" slot-scope="data" v-html="data.value">{{ data.value }}</span> -->
 
         </b-table>
       </b-row>
@@ -28,11 +27,17 @@ export default {
   },
   computed: {
     items() {
+      console.log('this.$store.getters.getAllShops', this.$store.getters.getAllShops)
       return this.$store.getters.getAllShops
+    },
+    fields() {
+      console.log('this.$store.getters.getFields', this.$store.getters.getFields)
+      return this.$store.getters.getFields
     }
   },
   data() {
     return {
+      /*
       fields: [
         'index',
         {
@@ -42,7 +47,7 @@ export default {
         },
         {
           key: "address",
-          label: "Address",
+          label: "Adres",
           sortable: true
         },
         {
@@ -118,7 +123,8 @@ export default {
           sortable: true
         }
       ],
-      items: items()
+      */
+      items: items() || []
 
     }
   }
