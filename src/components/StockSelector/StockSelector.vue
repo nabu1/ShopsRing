@@ -18,7 +18,15 @@
         </b-form-group>
       </b-row>
 
-        <div>Selected: <strong>{{ selected1.concat(selected2) }}</strong></div>
+      <b-row class='klasa'>
+        Selected: {{ selected1.concat(selected2).toString() }}
+      </b-row>
+
+      <b-row class='klasa'>
+        <button @click='stocksSelected'>OK</button>
+      </b-row>
+
+
     </b-container>
   </div>
 </template>
@@ -34,6 +42,11 @@
         options1: stocks1,
         options2: stocks2
       }
+    },
+    methods: {
+      stocksSelected() {
+        console.log(this.selected1.concat(this.selected2))
+      }
     }
   }
 </script>
@@ -42,7 +55,5 @@
   .klasa {
     font-weight: 600
   }
-  label {
-    font-size: 18em
-  }
+
 </style>
