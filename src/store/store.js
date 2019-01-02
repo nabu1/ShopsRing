@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-//import createPersistedState from 'vuex-persistedstate'
 import { filteredShops } from '../components/search/filteredShops'
 
 Vue.use(Vuex)
@@ -12,10 +11,10 @@ export const store = new Vuex.Store({
     selectedShops: [],
     homeGPS: {}
   },
-  plugins: [createPersistedState()],
   getters: {
     getAllShops(state) {
-      return state.allShops
+      console.log('Tu getter "addAllShops"')
+      return state.allShops || []
     },
     getCityShops(state) {
       return state.cityShops
@@ -25,10 +24,12 @@ export const store = new Vuex.Store({
     }
   },
   mutations: {
-    addAllShops(state, payload) {
+    ADD_ALL_SHOPS(state, payload) {
+      console.log('Tu mutation "ADD_ALL_SHOPS"')
       state.allShops = payload
+      // console.log('state.allShops = ', state.allShops)
     },
-    findSelectedShops(state, shopsInRadius) {
+    FIND_SELECTED_SHOPS(state, shopsInRadius) {
       console.log('Tu mutations: findSelectedShops')
       console.log('shopsInRadius', shopsInRadius)
       state.allShops = shopsInRadius
@@ -37,11 +38,13 @@ export const store = new Vuex.Store({
   actions: {
     addAllShops(context) {
       axios
-      .get('http://localhost:3000/biedry')
-      .then(res => {
-        context.commit('addAllShops', res.data)
-      })
-      .catch(err => console.log(err))
+        .get('http://localhost:3000/biedry')
+        .then(res => {
+          context.commit('ADD_ALL_SHOPS', res.data)
+        })
+        .catch(err => console.log(err))
+
+      console.log('Tu action "addAllShops"')
     },
     findSelectedShops(context, homeData) {
       console.log('Tu: actions / findSelectedShops')
@@ -61,7 +64,7 @@ export const store = new Vuex.Store({
           const shopsInRadius = filteredShops(homeData.shops, homeGPS)
           console.log('shopsInRadius', shopsInRadius)
 
-          context.commit('findSelectedShops', shopsInRadius)
+          context.commit('FIND_SELECTED_SHOPS', shopsInRadius)
       })
       .catch(err => console.log('My error: ', err))
     }

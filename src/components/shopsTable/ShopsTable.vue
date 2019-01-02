@@ -1,10 +1,12 @@
 <template>
   <div>
+    <!-- {{ itemsTest }} -->
     <b-container fluid>
       <b-row>
         <b-table striped hover bordered :items="items" :fields="fields">
 
           <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
+          <template slot="shopName" slot-scope="data">{{ shopName }}</template>
           <template slot="total" slot-scope="data">{{ data.value * 100 }}</template>
 
           <span slot="google" slot-scope="data" v-html="data.value">{{ data.value }}</span>
@@ -23,6 +25,11 @@ import axios from 'axios'
 export default {
   created() {
     this.$store.dispatch('addAllShops')
+  },
+  computed: {
+    items() {
+      return this.$store.getters.getAllShops
+    }
   },
   data() {
     return {
@@ -111,7 +118,8 @@ export default {
           sortable: true
         }
       ],
-      items: this.$store.getters.getAllShops
+      items: items()
+
     }
   }
 }
