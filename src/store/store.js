@@ -72,7 +72,7 @@ export const store = new Vuex.Store({
     },
     getFields(context, stocksSelected) {
       console.log('stocksSelected', stocksSelected)
-      const stocksSelectedFull = ['shopName', 'address', 'google','jakd', 'gmaps', 'total'].concat(stocksSelected)
+      const stocksSelectedFull = ['shopName', 'address', 'google','jakd', 'gmaps'].concat(stocksSelected)
       console.log('stocksSelectedFull', stocksSelectedFull)
 
       const selectedFields = fields.filter(el => {

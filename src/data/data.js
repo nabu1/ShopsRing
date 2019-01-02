@@ -44,8 +44,8 @@ export const fields = [
     sortable: true
   },
   {
-    key: "jajko",
-    label: "Jajko",
+    key: "jajka",
+    label: "Jajka",
     sortable: true
   },
   {
