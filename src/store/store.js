@@ -10,7 +10,9 @@ export const store = new Vuex.Store({
     allShops: [],
     selectedShops: [],
     homeGPS: {},
+    items:[],
     fields: [
+      /*
       'index',
       {
         key: "shopName",
@@ -94,6 +96,7 @@ export const store = new Vuex.Store({
         key: "niematego",
         sortable: true
       }
+      */
     ]
   },
   getters: {
@@ -101,12 +104,13 @@ export const store = new Vuex.Store({
       //console.log('Tu getter "addAllShops"')
       return state.allShops
     },
-
-    getFields(state) {
+    getItems(state) {
       //console.log('Tu getter "addAllShops"')
+      return state.items
+    },
+    getFields(state) {
       return state.fields
     },
-
     getCityShops(state) {
       return state.cityShops
     },
@@ -124,6 +128,9 @@ export const store = new Vuex.Store({
       //console.log('Tu mutations: findSelectedShops')
       //console.log('shopsInRadius', shopsInRadius)
       state.allShops = shopsInRadius
+    },
+    GET_FIELDS(state, fields) {
+      state.fields = fields
     }
   },
   actions: {
@@ -145,19 +152,107 @@ export const store = new Vuex.Store({
       const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
 
       axios.get(url)
-        .then(res => {
-          const homeGPS = {
-            lat: res.data.results[0].geometry.lat,
-            lon: res.data.results[0].geometry.lng,
-            radius: homeData.radius
-          }
+      .then(res => {
+        const homeGPS = {
+          lat: res.data.results[0].geometry.lat,
+          lon: res.data.results[0].geometry.lng,
+          radius: homeData.radius
+        }
 
           const shopsInRadius = filteredShops(homeData.shops, homeGPS)
           console.log('shopsInRadius', shopsInRadius)
 
           context.commit('FIND_SELECTED_SHOPS', shopsInRadius)
-      })
-      .catch(err => console.log('My error: ', err))
-    }
+        })
+        .catch(err => console.log('My error: ', err))
+      },
+      getFields(context, homeData) {
+        const fields = [
+          'index',
+            {
+              key: "shopName",
+              label: "Sklepiszcze",
+              sortable: true
+            },
+            {
+              key: "address",
+              label: "Adres",
+              sortable: true
+            },
+            {
+              key: "google",
+              label: "Google"
+            },
+            {
+              key: "jakd",
+              label: "JakD"
+            },
+            {
+              key: "gmaps",
+              label: "Gmaps"
+            },
+            {
+              key: "total",
+              label: "Total",
+              sortable: true,
+              variant: 'warning'
+            },
+            {
+              key: "chleb",
+              label: "Chleb",
+              sortable: true
+            },
+            {
+              key: "maslo",
+              label: "Masło",
+              sortable: true
+            },
+            {
+              key: "ser",
+              label: "Ser",
+              sortable: true
+            },
+            {
+              key: "jajko",
+              label: "Jajko",
+              sortable: true
+            },
+            {
+              key: "szynka",
+              label: "Szynka",
+              sortable: true
+            },
+            {
+              key: "kielbasa",
+              label: "Kiełbasa",
+              sortable: true
+            },
+            {
+              key: "cukier",
+              label: "Cukier",
+              sortable: true
+            },
+            {
+              key: "mleko",
+              label: "Mleko",
+              sortable: true
+            },
+            {
+              key: "smietana",
+              label: "Śmietana",
+              sortable: true
+            },
+            {
+              key: "mineralna",
+              label: "Mineralna",
+              sortable: true
+            },
+            {
+              key: "niematego",
+              sortable: true
+            }
+          ]
+        context.commit('GET_FIELDS', fields)
+      }
   }
 })
