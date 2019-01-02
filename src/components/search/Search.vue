@@ -4,11 +4,14 @@
     <b-container>
       <b-row class='my-4'>
         <b-col>
-          <b-form-select v-model="city" :options="cities" class="mb-3" />
+          <b-form-select v-model="city"
+                         :options="cities"
+                          class="mb-3" />
         </b-col>
 
         <b-col>
-          <b-form-input v-model="street"
+          <b-form-input id="street"
+                        v-model="street"
                         placeholder="Street">
           </b-form-input>
         </b-col>
@@ -31,6 +34,7 @@
 
         <b-col>
           <b-button @click="search" size="md">Search</b-button>
+          <b-button @click="reset" size="md">Reset</b-button>
         </b-col>
 
       </b-row>
@@ -52,16 +56,16 @@ export default {
       radius: 0,
       cities: [
         { text: 'City', value: null },
-         { text: 'Warszawa',  value: 'warszawa'},
-         { text: 'Kraków',  value: 'krakow' },
-         { text: 'Gdańsk',  value: 'gdansk' }
+        { text: 'Warszawa',  value: 'warszawa'},
+        { text: 'Kraków',  value: 'krakow' },
+        { text: 'Gdańsk',  value: 'gdansk' }
       ]
     }
   },
   methods: {
     search() {
-       const homeData = {
-         city: this.city,
+      const homeData = {
+        city: this.city,
          street: this.street,
          streetNumber: this.streetNumber,
          radius: this.radius,
@@ -69,6 +73,18 @@ export default {
        }
 
        this.$store.dispatch('findSelectedShops', homeData)
+    },
+    reset() {
+      console.log('reset')
+      console.log('this.cities[0]', this.cities[0])
+
+      this.city = this.cities[0].text
+      this.street = ''
+      this.streetNumber = ''
+      this.radius = ''
+
+      this.$store.dispatch('addAllShops')
+      this.$store.dispatch('getFields')
     }
   }
 }
