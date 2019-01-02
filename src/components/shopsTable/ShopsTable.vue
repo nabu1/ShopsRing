@@ -1,21 +1,4 @@
-<template>
-  <div>
-    <b-container fluid>
-      <b-row>
-        <b-table striped hover bordered :items="items" :fields="fields">
-
-          <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
-          <template slot="total" slot-scope="data">{{ data.value * 100 }}</template>
-
-          <span slot="google" slot-scope="data" v-html="data.value">{{ data.value }}</span>
-          <span slot="jakd" slot-scope="data" v-html="data.value">{{ data.value }}</span>
-          <span slot="gmaps" slot-scope="data" v-html="data.value">{{ data.value }}</span>
-
-        </b-table>
-      </b-row>
-    </b-container>
-  </div>
-</template>
+<template src="./ShopsTable.html"></template>
 
 <script>
 import axios from 'axios'

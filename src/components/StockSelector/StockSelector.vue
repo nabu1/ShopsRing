@@ -1,26 +1,4 @@
-<template>
-  <div>
-    <b-container>
-      <b-row class="klasa">
-        <b-form-group label="Pieczywo i nabiał">
-          <b-form-checkbox-group v-model="selected1"
-                                 @change="stockSelected"
-                                 :options="options1">
-          </b-form-checkbox-group>
-        </b-form-group>
-      </b-row>
-
-      <b-row class="klasa">
-        <b-form-group label="Mięcho i wędliny">
-          <b-form-checkbox-group v-model="selected2"
-                                 @change="stockSelected"
-                                 :options="options2">
-          </b-form-checkbox-group>
-        </b-form-group>
-      </b-row>
-    </b-container>
-  </div>
-</template>
+<template src="./StockSelector.html"></template>
 
 <script>
 import { stocks1, stocks2 } from "../../data/data"

@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import { fields } from '../data/data'
 import { ajaxAddAllShops, ajaxFindSelectedShops } from '../services/ajax'
-
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({

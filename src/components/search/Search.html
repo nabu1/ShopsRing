@@ -1,0 +1,41 @@
+<div>
+  <h2>Sklepy koło domu</h2>
+  <b-container>
+    <b-row class='my-4'>
+      <b-col>
+        <b-form-select v-model="city"
+                        :options="cities"
+                        class="mb-3" />
+      </b-col>
+
+      <b-col>
+        <b-form-input id="street"
+                      v-model="street"
+                      placeholder="Ulica">
+        </b-form-input>
+      </b-col>
+
+      <b-col>
+        <b-form-input v-model="streetNumber"
+                      placeholder="Numer domu">
+        </b-form-input>
+      </b-col>
+
+      <b-col>
+        <b-form-input v-model.number="radius"
+                      placeholder="Promień (metry)"
+                      type="number"
+                      min="100"
+                      max="20000"
+                      step="100">
+        </b-form-input>
+      </b-col>
+
+      <b-col>
+        <b-button @click="search" size="md">Search</b-button>
+        <b-button @click="reset" size="md">Reset</b-button>
+      </b-col>
+
+    </b-row>
+  </b-container>
+</div>
