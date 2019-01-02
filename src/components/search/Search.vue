@@ -9,19 +9,19 @@
 
         <b-col>
           <b-form-input v-model="street"
-                        placeholder="Enter street">
+                        placeholder="Street">
           </b-form-input>
         </b-col>
 
         <b-col>
           <b-form-input v-model="streetNumber"
-                        placeholder="Enter street number">
+                        placeholder="Street number">
           </b-form-input>
         </b-col>
 
         <b-col>
           <b-form-input v-model.number="radius"
-                        placeholder="Enter radius (meters)"
+                        placeholder="Radius (meters)"
                         type="number"
                         min="100"
                         max="20000"
@@ -29,7 +29,10 @@
           </b-form-input>
         </b-col>
 
-        <button @click="search">Search</button>
+        <b-col>
+          <b-button @click="search" size="md">Search</b-button>
+        </b-col>
+
       </b-row>
     </b-container>
   </div>
@@ -48,7 +51,7 @@ export default {
       streetNumber: '',
       radius: 0,
       cities: [
-        { text: 'Please select a city', value: null },
+        { text: 'City', value: null },
          { text: 'Warszawa',  value: 'warszawa'},
          { text: 'Kraków',  value: 'krakow' },
          { text: 'Gdańsk',  value: 'gdansk' }
@@ -64,9 +67,6 @@ export default {
          radius: this.radius,
          shops: this.$store.getters.getAllShops
        }
-
-         console.log('homeData.shops', homeData.shops)
-
 
        this.$store.dispatch('findSelectedShops', homeData)
     }

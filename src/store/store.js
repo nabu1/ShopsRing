@@ -1,15 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-import createPersistedState from 'vuex-persistedstate'
-// import { getHomeGPS, getDistanceFromHome } from '../components/search/filterShops'
+//import createPersistedState from 'vuex-persistedstate'
+import { filteredShops } from '../components/search/filteredShops'
 
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
   state: {
     allShops: [],
-    cityShops: [],
     selectedShops: [],
     homeGPS: {}
   },
@@ -21,9 +20,6 @@ export const store = new Vuex.Store({
     getCityShops(state) {
       return state.cityShops
     },
-    getSelectedShops(state) {
-      return state.selectedShops
-    },
     getHomeGPS(state) {
       return state.homeGPS
     }
@@ -32,14 +28,9 @@ export const store = new Vuex.Store({
     addAllShops(state, payload) {
       state.allShops = payload
     },
-    addCityShops(state) {
-      //state.cityShops
-    },
     findSelectedShops(state, shopsInRadius) {
-      console.log('Tu mutations / findSelectedShops')
+      console.log('Tu mutations: findSelectedShops')
       console.log('shopsInRadius', shopsInRadius)
-      //state.selectedShops = shopsInRadius
-      // state.allShops = []
       state.allShops = shopsInRadius
     }
   },
@@ -52,12 +43,8 @@ export const store = new Vuex.Store({
       })
       .catch(err => console.log(err))
     },
-    addCityShops(context) {
-      context.commit('addCityShops')
-    },
     findSelectedShops(context, homeData) {
-      console.log('Tu actions / findSelectedShops')
-      console.log('homeData', homeData)
+      console.log('Tu: actions / findSelectedShops')
 
       const key = '224e8e01cf8f43a0aabb1b68341904a1'
       const encodedAddress = encodeURI(homeData.street + ' ' + homeData.streetNumber + ', ' + homeData.city)
@@ -68,23 +55,15 @@ export const store = new Vuex.Store({
           const homeGPS = {
             lat: res.data.results[0].geometry.lat,
             lon: res.data.results[0].geometry.lng,
-            radius: this.radius
+            radius: homeData.radius
           }
 
-          const shops = homeData.shops
-          console.log('shops', shops)
-
-          const shopsInRadius = filteredShops(shops, homeGPS) // todo: tu się wywala
+          const shopsInRadius = filteredShops(homeData.shops, homeGPS)
           console.log('shopsInRadius', shopsInRadius)
 
-          this.$store.dispatch('findSelectedShops', shopsInRadius)
+          context.commit('findSelectedShops', shopsInRadius)
       })
-      .catch(err => console.log('Buont Search.vue / methods: search: ', err))
-
-
-
-
-      context.commit('findSelectedShops', shopsInRadius)
+      .catch(err => console.log('My error: ', err))
     }
   }
 })
