@@ -83,3 +83,19 @@ export const fields = [
     sortable: true
   }
 ]
+
+export const stocks1 = [
+  {text: 'Chleb', value: 'chleb'},
+  {text: 'Masło', value: 'maslo'},
+  {text: 'Ser', value: 'ser'},
+  {text: 'Śmietana', value: 'smietana'},
+  {text: 'Jajka', value: 'jajka'},
+  {text: 'Mleko', value: 'mleko'},
+]
+
+export const stocks2 = [
+  {text: 'Szynka', value: 'szynka'},
+  {text: 'Kiełbasa', value: 'kielbasa'},
+  {text: 'Cukier', value: 'cukier'},
+  {text: 'Mineralna', value: 'mineralna'}
+]
