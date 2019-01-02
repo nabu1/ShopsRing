@@ -38,8 +38,9 @@ export const store = new Vuex.Store({
     FIND_SELECTED_SHOPS(state, shopsInRadius) {
       state.allShops = shopsInRadius
     },
-    GET_FIELDS(state, fields) {
-      state.fields = fields
+    GET_FIELDS(state, selectedFields) {
+      console.log('GET_FIELDS: selectedFields', selectedFields)
+      state.fields = selectedFields
     }
   },
   actions: {
@@ -68,9 +69,19 @@ export const store = new Vuex.Store({
         context.commit('FIND_SELECTED_SHOPS', shopsInRadius)
         })
         .catch(err => console.log('My error: ', err))
-      },
-      getFields(context, homeData) {
-        context.commit('GET_FIELDS', fields)
-      }
+    },
+    getFields(context, stocksSelected) {
+      console.log('stocksSelected', stocksSelected)
+      const stocksSelectedFull = ['shopName', 'address', 'google','jakd', 'gmaps', 'total'].concat(stocksSelected)
+      console.log('stocksSelectedFull', stocksSelectedFull)
+
+      const selectedFields = fields.filter(el => {
+        return stocksSelectedFull.includes(el.key)
+      })
+
+
+      console.log('selectedFields', selectedFields)
+      context.commit('GET_FIELDS', selectedFields)
+    }
   }
 })
