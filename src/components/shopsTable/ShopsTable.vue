@@ -12,31 +12,22 @@ export default {
   computed: {
     items() {
       const getAllShops = this.$store.getters.getAllShops
-      //const getStock = this.$store.getters.getStock
-      const getStock = this.$store.getters.getStock.concat({ key: 'address', 'gmaps', 'google','jakd', 'shopName'})
-
-      //console.log('getAllShops')
-      //console.table(getAllShops)
+      const getStock = this.$store.getters.getStock
 
       console.log('getStock')
       console.table(getStock)
 
-      const shopPricesTotal = getAllShops.reduce((previous, item) => {
-        return previous + item.chleb
-      }, 0)
+      console.log('getAllShops')
+      console.log(getAllShops)
 
-      console.log('shopPricesTotal', shopPricesTotal);
-
+      /* Pętla .map przez sklepy i reduce cen np sera
+         Otrzymany total dodać za polem adres
+      */
 
       return getAllShops
     },
     fields() {
       return this.$store.getters.getStock
-    }
-  },
-  methods: {
-    calcTotal(allShops) {
-      console.log('allShops', allShops)
     }
   },
   data() {
