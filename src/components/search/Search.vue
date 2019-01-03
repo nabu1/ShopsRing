@@ -29,12 +29,7 @@ export default {
         shops: this.$store.getters.getAllShops
       }
 
-      this.$store.dispatch('addAllShops')
-      this.$store.dispatch('getStock')
-
-       setTimeout(() => {
-         this.$store.dispatch('findSelectedShops', homeData)
-       }, 1000)
+      this.$store.dispatch('findSelectedShops', homeData)
     },
     reset() {
       this.city = this.cities[0].text

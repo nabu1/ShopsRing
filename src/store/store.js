@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
   state: {
     allShops: [],
+    allShopsCopy: [],
     selectedShops: [],
     items:[],
     fields: [],
@@ -28,6 +29,7 @@ export const store = new Vuex.Store({
   mutations: {
     ADD_ALL_SHOPS(state, payload) {
       state.allShops = payload
+      state.allShopsCopy = payload
     },
     FIND_SELECTED_SHOPS(state, shopsInRadius) {
       state.allShops = shopsInRadius
