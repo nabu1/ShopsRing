@@ -18,11 +18,6 @@ export default {
       return this.$store.getters.getStock
     }
   },
-  methods: {
-    klik() {
-      console.log('stockSelected !!!')
-    }
-  },
   data() {
     return {
       items: items()

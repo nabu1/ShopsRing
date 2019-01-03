@@ -10,7 +10,7 @@ export default {
       selected2: [],
       options1: stocks1,
       options2: stocks2
-    };
+    }
   },
   methods: {
     stockSelected() {
@@ -29,22 +29,17 @@ export default {
         shops.map((shop, index) => {
           let suma = 0
 
-          const total = stocks.map(stock => {
-            console.log(`${shop.address}: ${stock} = ${shop[stock]}`)
-            //console.log('stock = ', shop[stock])
+          let pricesTotal = stocks.map(stock => {
+            console.log('shop[stock]', shop[stock])
+            console.log('shop[stock]', typeof shop[stock])
             return suma += shop[stock]
           })
 
-          console.log('total = ', total[total.length-1].toFixed(2))
-          shops[index].total = total[total.length-1].toFixed(2)
-
-
+          pricesTotal = pricesTotal.pop()
+          shops[index].total = pricesTotal
         })
 
-        console.log('___ shops z totalem =', shops)
-
         this.$store.dispatch('addTotal', shops)
-
       }, 0)
     }
   }
