@@ -16,6 +16,9 @@ export const store = new Vuex.Store({
     getAllShops(state) {
       return state.allShops
     },
+    getAllShopsCopy(state) {
+      return state.allShopsCopy
+    },
     getItems(state) {
       return state.items
     },

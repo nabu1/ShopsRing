@@ -26,8 +26,10 @@ export default {
         street: this.street,
         streetNumber: this.streetNumber,
         radius: this.radius,
-        shops: this.$store.getters.getAllShops
+        shops: this.$store.getters.getAllShopsCopy
       }
+
+      console.log('homeData', homeData)
 
       this.$store.dispatch('findSelectedShops', homeData)
     },
@@ -38,7 +40,6 @@ export default {
       this.radius = ''
 
       this.$store.dispatch('addAllShops')
-      this.$store.dispatch('getStock')
     }
   }
 }
