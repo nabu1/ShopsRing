@@ -28,6 +28,7 @@ export const store = new Vuex.Store({
   },
   mutations: {
     ADD_ALL_SHOPS(state, payload) {
+      console.log('payload', payload);
       state.allShops = payload
     },
     FIND_SELECTED_SHOPS(state, shopsInRadius) {
@@ -42,18 +43,19 @@ export const store = new Vuex.Store({
     }
   },
   actions: {
-    addAllShops(context) {
-      ajaxAddAllShops(context)
+    addAllShops(context, payload) {
+      ajaxAddAllShops(context, payload)
     },
     findSelectedShops(context, homeData) {
       ajaxFindSelectedShops(context, homeData)
     },
     getStock(context, stocksSelected) {
-      const columns = { stocksSelected, otherColumns: ['shopName', 'address', 'google','jakd', 'gmaps'] }
+      const columns = { stocksSelected, otherColumns: ['shopName', 'address', 'total', 'google','jakd', 'gmaps'] }
       context.commit('GET_STOCK', columns)
     },
-    addTotal(context, total) {
-      context.commit('ADD_TOTAL', total)
+    addTotal(context, shopsWithTotal) {
+      console.log('shopsWithTotal', shopsWithTotal)
+      context.commit('ADD_ALL_SHOPS', shopsWithTotal)
     }
   }
 })

@@ -26,7 +26,7 @@ export default {
         console.log('shops = ', shops)
         console.log('stocks =', stocks)
 
-        shops.map(shop => {
+        shops.map((shop, index) => {
           let suma = 0
 
           const total = stocks.map(stock => {
@@ -36,10 +36,14 @@ export default {
           })
 
           console.log('total = ', total[total.length-1].toFixed(2))
+          shops[index].total = total[total.length-1].toFixed(2)
+
 
         })
 
+        console.log('___ shops z totalem =', shops)
 
+        this.$store.dispatch('addTotal', shops)
 
       }, 0)
     }

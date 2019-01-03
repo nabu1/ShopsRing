@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { filteredShops } from './filteredShops'
 
-export const ajaxAddAllShops = context => {
+export const ajaxAddAllShops = (context, paylod) => {
   axios
   .get('http://localhost:3000/biedry')
   .then(res => {
