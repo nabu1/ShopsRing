@@ -37,9 +37,6 @@ export default {
        }, 1000)
     },
     reset() {
-      console.log('reset')
-      console.log('this.cities[0]', this.cities[0])
-
       this.city = this.cities[0].text
       this.street = ''
       this.streetNumber = ''

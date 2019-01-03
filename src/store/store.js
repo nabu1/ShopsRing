@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-//import { fields } from '../data/data'
 import { ajaxAddAllShops, ajaxFindSelectedShops } from '../services/ajax'
 Vue.use(Vuex)
 
@@ -28,7 +27,6 @@ export const store = new Vuex.Store({
   },
   mutations: {
     ADD_ALL_SHOPS(state, payload) {
-      console.log('payload', payload);
       state.allShops = payload
     },
     FIND_SELECTED_SHOPS(state, shopsInRadius) {
@@ -54,7 +52,6 @@ export const store = new Vuex.Store({
       context.commit('GET_STOCK', columns)
     },
     addTotal(context, shopsWithTotal) {
-      console.log('shopsWithTotal', shopsWithTotal)
       context.commit('ADD_ALL_SHOPS', shopsWithTotal)
     }
   }

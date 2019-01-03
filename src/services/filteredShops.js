@@ -1,6 +1,4 @@
 export const filteredShops = (shops, homeGPS) => {
-  //console.log('homeGPS = ', homeGPS)
-  //console.log('shops = ', shops)
 
   function distance(lat1, lon1, lat2, lon2) {
     function toRad(x) { return x * Math.PI / 180 }
@@ -23,7 +21,6 @@ export const filteredShops = (shops, homeGPS) => {
     return distance(el.lat, el.lon, homeGPS.lat, homeGPS.lon) < homeGPS.radius
   })
 
-  // console.log('shopsInRadius', shopsInRadius)
   return shopsInRadius
 }
 

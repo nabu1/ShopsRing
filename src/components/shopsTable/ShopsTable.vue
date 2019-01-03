@@ -11,7 +11,6 @@ export default {
   },
   computed: {
     items() {
-      console.log('this.$store.getters.getAllShops', this.$store.getters.getAllShops);
       return this.$store.getters.getAllShops
     },
     fields() {
