@@ -11,23 +11,16 @@ export default {
   },
   computed: {
     items() {
-      const getAllShops = this.$store.getters.getAllShops
-      const stocksSelected = this.$store.getters.getStocksSelected
-
-      console.log('stocksSelected')
-      console.table(stocksSelected)
-
-      console.log('getAllShops')
-      console.log(getAllShops)
-
-      /* Pętla .map przez sklepy i reduce cen np sera
-         Otrzymany total dodać za polem adres
-      */
-
-      return getAllShops
+      console.log('this.$store.getters.getAllShops', this.$store.getters.getAllShops);
+      return this.$store.getters.getAllShops
     },
     fields() {
       return this.$store.getters.getStock
+    }
+  },
+  methods: {
+    klik() {
+      console.log('stockSelected !!!')
     }
   },
   data() {

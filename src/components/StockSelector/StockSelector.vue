@@ -16,11 +16,31 @@ export default {
     stockSelected() {
       setTimeout(() => {
         const stockSelected = this.selected1.concat(this.selected2)
-
-        //console.table('stockSelected');
-        //console.table(stockSelected);
+        console.log('DUPAAAAA !!')
 
         this.$store.dispatch("getStock", stockSelected)
+
+        const shops = this.$store.getters.getAllShops
+        const stocks = this.$store.getters.getStocksSelected
+
+        console.log('shops = ', shops)
+        console.log('stocks =', stocks)
+
+        shops.map(shop => {
+          let suma = 0
+
+          const total = stocks.map(stock => {
+            console.log(`${shop.address}: ${stock} = ${shop[stock]}`)
+            //console.log('stock = ', shop[stock])
+            return suma += shop[stock]
+          })
+
+          console.log('total = ', total[total.length-1].toFixed(2))
+
+        })
+
+
+
       }, 0)
     }
   }
