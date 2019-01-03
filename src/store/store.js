@@ -8,9 +8,9 @@ export const store = new Vuex.Store({
   state: {
     allShops: [],
     selectedShops: [],
-    homeGPS: {},
     items:[],
-    fields: []
+    fields: [],
+    stocksSelected: []
   },
   getters: {
     getAllShops(state) {
@@ -22,8 +22,8 @@ export const store = new Vuex.Store({
     getStock(state) {
       return state.fields
     },
-    getHomeGPS(state) {
-      return state.homeGPS
+    getStocksSelected(state) {
+      return state.stocksSelected
     }
   },
   mutations: {
@@ -35,6 +35,7 @@ export const store = new Vuex.Store({
     },
     GET_STOCK(state, columns) {
       state.fields = columns.otherColumns.concat(columns.stocksSelected)
+      state.stocksSelected = columns.stocksSelected
     }
   },
   actions: {

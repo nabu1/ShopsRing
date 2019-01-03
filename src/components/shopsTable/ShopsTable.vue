@@ -12,10 +12,10 @@ export default {
   computed: {
     items() {
       const getAllShops = this.$store.getters.getAllShops
-      const getStock = this.$store.getters.getStock
+      const stocksSelected = this.$store.getters.getStocksSelected
 
-      console.log('getStock')
-      console.table(getStock)
+      console.log('stocksSelected')
+      console.table(stocksSelected)
 
       console.log('getAllShops')
       console.log(getAllShops)
