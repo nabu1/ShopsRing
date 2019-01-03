@@ -29,13 +29,13 @@ export default {
         shops: this.$store.getters.getAllShops
       }
 
-       console.log('this.$store.getters.getAllShops.length', this.$store.getters.getAllShops.length);
-       console.log('homeData', homeData);
+       //console.log('this.$store.getters.getAllShops.length', this.$store.getters.getAllShops.length);
+       //console.log('homeData', homeData);
 
          this.$store.dispatch('addAllShops')
-         this.$store.dispatch('getFields')
+         this.$store.dispatch('getStock')
 
-         console.log('homeData', homeData)
+         //console.log('homeData', homeData)
 
        setTimeout(() => {
          this.$store.dispatch('findSelectedShops', homeData)
@@ -53,7 +53,7 @@ export default {
       this.radius = ''
 
       this.$store.dispatch('addAllShops')
-      this.$store.dispatch('getFields')
+      this.$store.dispatch('getStock')
     }
   }
 }

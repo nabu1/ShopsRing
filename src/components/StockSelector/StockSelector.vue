@@ -16,7 +16,11 @@ export default {
     stockSelected() {
       setTimeout(() => {
         const stockSelected = this.selected1.concat(this.selected2)
-        this.$store.dispatch("getFields", stockSelected)
+
+        //console.table('stockSelected');
+        //console.table(stockSelected);
+
+        this.$store.dispatch("getStock", stockSelected)
       }, 0)
     }
   }

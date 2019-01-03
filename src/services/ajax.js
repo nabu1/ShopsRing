@@ -16,16 +16,20 @@ export const ajaxFindSelectedShops = (context, homeData) => {
   const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
 
   axios.get(url)
-    .then(res => {
-      const homeGPS = {
-        lat: res.data.results[0].geometry.lat,
-        lon: res.data.results[0].geometry.lng,
-        radius: homeData.radius
-      }
+  .then(res => {
+    const homeGPS = {
+      lat: res.data.results[0].geometry.lat,
+      lon: res.data.results[0].geometry.lng,
+      radius: homeData.radius
+    }
 
     const shopsInRadius = filteredShops(homeData.shops, homeGPS)
     context.commit('FIND_SELECTED_SHOPS', shopsInRadius)
-    })
-    .catch(err => console.log('My error: ', err))
+  })
+  .catch(err => console.log('My error: ', err))
+
+}
+
+export const calcTotal = (context, payload) => {
 
 }
