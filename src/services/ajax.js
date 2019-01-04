@@ -15,15 +15,21 @@ export const ajaxFindSelectedShops = (context, homeData) => {
   const encodedAddress = encodeURI(homeData.street + ' ' + homeData.streetNumber + ', ' + homeData.city)
   const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
 
+  console.log('homeData = ', homeData)
+
+
   axios.get(url)
     .then(res => {
-      const homeGPS = {
+      const homeGPSAndAddress = {
         lat: res.data.results[0].geometry.lat,
         lon: res.data.results[0].geometry.lng,
-        radius: homeData.radius
+        radius: homeData.radius,
+        city: homeData.city,
+        street: homeData.street,
+        streetNumber: homeData.streetNumber
       }
 
-    const shopsInRadius = filteredShops(homeData.shops, homeGPS)
+    const shopsInRadius = filteredShops(homeData.shops, homeGPSAndAddress)
     context.commit('FIND_SELECTED_SHOPS', shopsInRadius)
   })
   .catch(err => console.log('My error: ', err))

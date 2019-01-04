@@ -1,4 +1,4 @@
-export const filteredShops = (shops, homeGPS) => {
+export const filteredShops = (shops, homeGPSAndAddress) => {
 
   function distance(lat1, lon1, lat2, lon2) {
     function toRad(x) { return x * Math.PI / 180 }
@@ -18,7 +18,25 @@ export const filteredShops = (shops, homeGPS) => {
   }
 
   const shopsInRadius = shops.filter(el => {
-    return distance(el.lat, el.lon, homeGPS.lat, homeGPS.lon) < homeGPS.radius
+    // todo: tu robię dorabianie linki do gmapsa i jakDojade
+
+    // "<a href='http://jakdojade.pl/?fn=dworzec&tn=Wawel&tc=50.05434:19.93931&cid=5000'>JakD</a>",
+
+    const to = `${el.address}, ${el.city}`
+    const from = `${homeGPSAndAddress.street} ${homeGPSAndAddress.streetNumber}, ${homeGPSAndAddress.city}`
+
+    console.log('from = ', from)
+    console.log('to =', to)
+
+    "<a href='http://jakdojade.pl/?fn=dworzec&tn=Wawel&tc=50.05434:19.93931&cid=5000'>JakD</a>",
+
+
+    el.jakd = `<a href='http://jakdojade.pl/?fn=${from}&tn=${to}&cid=5000'>jakDojade</a>`
+
+    return distance(el.lat, el.lon, homeGPSAndAddress.lat, homeGPSAndAddress.lon) < homeGPSAndAddress.radius
+
+
+
   })
 
   return shopsInRadius
