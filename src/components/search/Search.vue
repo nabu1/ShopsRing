@@ -42,10 +42,6 @@ export default {
 
       this.$store.dispatch('toggleCheckboxes')
       this.$store.dispatch('addAllShops')
-      //await this.$nextTick()
-      //console.log('Po nextTicku')
-      // this.$forceUpdate();
-      //this.showKey = ''
     }
   }
 }

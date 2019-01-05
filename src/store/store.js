@@ -25,11 +25,9 @@ export const store = new Vuex.Store({
       return state.items
     },
     getStock(state) {
-      console.log('getStock')
       return state.fields
     },
     getStocksSelected(state) {
-      console.log('getStocksSelected')
       return state.stocksSelected
     },
     getShowCheckboxes(state) {
