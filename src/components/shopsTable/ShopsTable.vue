@@ -16,16 +16,19 @@ export default {
     },
     fields() {
       return this.$store.getters.getStock
-    },
-    show() {
-      console.log('show(): this.$store.getters.getShowTable', this.$store.getters.getShowTable)
-      return this.$store.getters.getShowTable
     }
   },
   data() {
     return {
       items: items(),
-      show: show()
+      show: showTable()
+    }
+  },
+  mutations: {
+    showTable() {
+      console.log('showTable(): this.$store.getters.getShowTable', this.$store.getters.getShowTable)
+      return this.$store.getters.getShowTable // todo:
+      //return true
     }
   }
 }
