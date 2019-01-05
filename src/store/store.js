@@ -13,7 +13,8 @@ export const store = new Vuex.Store({
     items:[],
     fields: [],
     stocksSelected: [],
-    showCheckboxes: true
+    showCheckboxes: true,
+    showTable: true
   },
   getters: {
     getAllShops(state) {
@@ -33,6 +34,10 @@ export const store = new Vuex.Store({
     },
     getShowCheckboxes(state) {
       return state.showCheckboxes
+    },
+    getShowTable(state) {
+      console.log('state.getShowTable', state.getShowTable)
+      return state.getShowTable
     }
   },
   mutations: {
@@ -49,6 +54,10 @@ export const store = new Vuex.Store({
     },
     TOGGLE_CHECKBOXES(state) {
       state.showCheckboxes = !state.showCheckboxes
+    },
+    SHOW_TABLE(state, bool) {
+      console.log('bool', bool);
+      state.showTable = bool
     }
   },
   actions: {
@@ -67,6 +76,10 @@ export const store = new Vuex.Store({
     },
     toggleCheckboxes(context) {
       context.commit('TOGGLE_CHECKBOXES')
+    },
+    showTable(context, bool) {
+      console.log('bool', bool)
+      context.commit('SHOW_TABLE', bool)
     }
   }
 })

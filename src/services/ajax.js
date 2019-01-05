@@ -15,9 +15,6 @@ export const ajaxFindSelectedShops = (context, homeData) => {
   const encodedAddress = encodeURI(homeData.street + ' ' + homeData.streetNumber + ', ' + homeData.city)
   const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
 
-  console.log('homeData = ', homeData)
-
-
   axios.get(url)
     .then(res => {
       const homeGPSAndAddress = {

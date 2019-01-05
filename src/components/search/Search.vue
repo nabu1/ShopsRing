@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       city: null,
-      street:'',
+      street: '',
       streetNumber: '',
       radius: 0,
       cities: [
@@ -32,6 +32,7 @@ export default {
       // console.log('homeData', homeData)
 
       this.$store.dispatch('findSelectedShops', homeData)
+      this.$store.dispatch('showTable', true )
     },
     //async reset() {
     reset() {
