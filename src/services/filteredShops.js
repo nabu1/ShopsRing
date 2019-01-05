@@ -19,7 +19,7 @@ export const filteredShops = (shops, homeGPSAndAddress) => {
     return distance(el.lat, el.lon, homeGPSAndAddress.lat, homeGPSAndAddress.lon) < homeGPSAndAddress.radius
   })
 
-  const shopsInRadiusWithLinks = shopsInRadius.map(el => {
+  const shopsInRadiusWithJakD = shopsInRadius.map(el => {
      let link = 'https://jakdojade.pl/warszawa/trasa/?fn='
      link += encodeURI(homeGPSAndAddress.street + ' ' + homeGPSAndAddress.streetNumber) // from
      link += '&tn='
@@ -38,13 +38,23 @@ export const filteredShops = (shops, homeGPSAndAddress) => {
     return el
   })
 
-  console.log('shopsInRadiusWithLinks', shopsInRadiusWithLinks)
+  const shopsInRadiusWithJakDAndGmaps = shopsInRadiusWithJakD.map(el => {
+     let link = 'https://www.google.com/maps/dir/'
+     link += encodeURI(homeGPSAndAddress.street + '+' + homeGPSAndAddress.streetNumber) // from
+     link += '/'
+     link += encodeURI(el.address + ' ' + el.city)   // to
 
-  return shopsInRadius
+    el.gmaps = `<a href=${link} target="_blank">GMaps</a>`
+
+    return el
+  })
+
+
+
+
+  //console.log('shopsInRadiusWithJakD', shopsInRadiusWithJakD)
+
+  // return shopsInRadiusWithJakD
+  return shopsInRadiusWithJakDAndGmaps
 }
-
-
-
-
-
 
