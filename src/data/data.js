@@ -1,4 +1,4 @@
-export const fields = [
+export const bootstrapColumns = [
 'index',
   {
     key: "shopName",
