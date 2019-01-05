@@ -11,7 +11,8 @@ export const store = new Vuex.Store({
     selectedShops: [],
     items:[],
     fields: [],
-    stocksSelected: []
+    stocksSelected: [],
+    showCheckboxes: true
   },
   getters: {
     getAllShops(state) {
@@ -24,10 +25,15 @@ export const store = new Vuex.Store({
       return state.items
     },
     getStock(state) {
+      console.log('getStock')
       return state.fields
     },
     getStocksSelected(state) {
+      console.log('getStocksSelected')
       return state.stocksSelected
+    },
+    getShowCheckboxes(state) {
+      return state.showCheckboxes
     }
   },
   mutations: {
@@ -42,8 +48,8 @@ export const store = new Vuex.Store({
       state.fields = columns.otherColumns.concat(columns.stocksSelected)
       state.stocksSelected = columns.stocksSelected
     },
-    ADD_TOTAL(state, total) {
-
+    TOGGLE_CHECKBOXES(state) {
+      state.showCheckboxes = !state.showCheckboxes
     }
   },
   actions: {
@@ -59,6 +65,9 @@ export const store = new Vuex.Store({
     },
     addTotal(context, shopsWithTotal) {
       context.commit('ADD_ALL_SHOPS', shopsWithTotal)
+    },
+    toggleCheckboxes(context) {
+      context.commit('TOGGLE_CHECKBOXES')
     }
   }
 })

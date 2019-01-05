@@ -33,13 +33,19 @@ export default {
 
       this.$store.dispatch('findSelectedShops', homeData)
     },
+    //async reset() {
     reset() {
       this.city = this.cities[0].text
       this.street = ''
       this.streetNumber = ''
       this.radius = ''
 
+      this.$store.dispatch('toggleCheckboxes')
       this.$store.dispatch('addAllShops')
+      //await this.$nextTick()
+      //console.log('Po nextTicku')
+      // this.$forceUpdate();
+      //this.showKey = ''
     }
   }
 }
