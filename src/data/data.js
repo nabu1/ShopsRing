@@ -1,5 +1,5 @@
 export const bootstrapColumns = [
-'index',
+  'index',
   {
     key: "shopName",
     label: "Sklepiszcze",
@@ -9,10 +9,6 @@ export const bootstrapColumns = [
     key: "address",
     label: "Adres",
     sortable: true
-  },
-  {
-    key: "google",
-    label: "Google"
   },
   {
     key: "jakd",
@@ -45,7 +41,7 @@ export const bootstrapColumns = [
   },
   {
     key: "jajka",
-    label: "Jajka",
+    label: "Jjajo",
     sortable: true
   },
   {
@@ -55,7 +51,7 @@ export const bootstrapColumns = [
   },
   {
     key: "kielbasa",
-    label: "Kiełbasa",
+    label: "Kufasa",
     sortable: true
   },
   {
