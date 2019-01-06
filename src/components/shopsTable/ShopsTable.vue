@@ -21,14 +21,14 @@ export default {
   data() {
     return {
       items: items(),
-      show: showTable()
+      showTable: showTable()
     }
   },
-  mutations: {
+  methods: {
     showTable() {
       console.log('showTable(): this.$store.getters.getShowTable', this.$store.getters.getShowTable)
-      return this.$store.getters.getShowTable // todo:
-      //return true
+      //return this.$store.getters.getShowTable // todo:
+      return false
     }
   }
 }

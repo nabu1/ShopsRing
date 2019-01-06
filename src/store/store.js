@@ -14,7 +14,7 @@ export const store = new Vuex.Store({
     fields: [],
     stocksSelected: [],
     showCheckboxes: true,
-    showTable: true
+    showTable: false
   },
   getters: {
     getAllShops(state) {
