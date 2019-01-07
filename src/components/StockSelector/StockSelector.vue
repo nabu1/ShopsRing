@@ -14,7 +14,6 @@ export default {
       options: stocksToBuy,
       show: true,
       selected: []
-
     }
   },
   methods: {
@@ -28,6 +27,7 @@ export default {
     stockSelected() {
       setTimeout(() => {
         const stockSelected = this.selected
+        console.log('stockSelected = ', stockSelected)
         this.$store.dispatch("getStock", stockSelected)
 
         const shops = this.$store.getters.getAllShops

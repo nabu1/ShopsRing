@@ -21,7 +21,9 @@ export default {
   },
   methods: {
     search() {
-      const homeData = {
+      console.log('Klikłeś w Search !')
+
+      const  homeData = {
         city: this.city,
         street: this.street,
         streetNumber: this.streetNumber,

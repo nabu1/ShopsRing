@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { ajaxAddAllShops, ajaxFindSelectedShops } from '../services/ajax'
-import { bootstrapColumns } from '../data/data'
+import { initialColumns, totalColumn, stockColumns } from '../data/data'
 
 Vue.use(Vuex)
 
@@ -10,7 +10,7 @@ export const store = new Vuex.Store({
     allShops: [],
     allShopsCopy: [],
     selectedShops: [],
-    items:[],
+    items: [],
     fields: [],
     stocksSelected: [],
     showCheckboxes: true,
@@ -45,16 +45,25 @@ export const store = new Vuex.Store({
       state.allShopsCopy = allShops
     },
     FIND_SELECTED_SHOPS(state, shopsInRadius) {
+      console.log('FIND_SELECTED_SHOPS ')
       state.allShops = shopsInRadius
     },
     GET_STOCK(state, columns) {
-      state.fields = columns.otherColumns.concat(columns.stocksSelected)
+      console.log('GET_STOCK')
+      //state.fields = columns.otherColumns.concat(columns.stocksSelected)
+      state.fields =  initialColumns.concat(totalColumn).concat(columns.stocksSelected)
+
+      console.log('columns.stocksSelected = ', columns.stocksSelected)
+      console.log('initialColumns = ', initialColumns)
+
       state.stocksSelected = columns.stocksSelected
     },
     TOGGLE_CHECKBOXES(state) {
       state.showCheckboxes = !state.showCheckboxes
     },
     SHOW_TABLE(state, bool) {
+      //state.fields = ['index', 'shopName', 'address', 'jakd', 'gmaps']
+      state.fields = initialColumns
       state.showTable = bool
     }
   },
@@ -66,7 +75,12 @@ export const store = new Vuex.Store({
       ajaxFindSelectedShops(context, homeData)
     },
     getStock(context, stocksSelected) {
-      const columns = { stocksSelected, otherColumns: bootstrapColumns}
+      //const columns = { stocksSelected, otherColumns: bootstrapColumns }
+      const columns = { initialColumns, stocksSelected }
+
+      console.log('initialColumns = ', initialColumns)
+      console.log('stocksSelected = ', stocksSelected)
+
       context.commit('GET_STOCK', columns)
     },
     addTotal(context, shopsWithTotal) {
@@ -76,6 +90,7 @@ export const store = new Vuex.Store({
       context.commit('TOGGLE_CHECKBOXES')
     },
     showTable(context, bool) {
+      console.log('Action: showTable')
       context.commit('SHOW_TABLE', bool)
     }
   }

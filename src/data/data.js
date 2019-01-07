@@ -1,4 +1,4 @@
-export const bootstrapColumns = [
+export const initialColumns = [
   'index',
   {
     key: "shopName",
@@ -17,13 +17,19 @@ export const bootstrapColumns = [
   {
     key: "gmaps",
     label: "Gmaps"
-  },
+  }
+]
+
+  export const totalColumn = [
   {
     key: "total",
     label: "Total",
     sortable: true,
     variant: 'warning'
-  },
+  }
+]
+
+export const stockColumns = [
   {
     key: "chleb",
     label: "Chleb",
