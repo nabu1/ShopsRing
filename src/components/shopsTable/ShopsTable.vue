@@ -20,16 +20,14 @@ export default {
   },
   data() {
     return {
-      items: items(),
-      showTable: showTable()
+      items: items()
     }
   },
   methods: {
     showTable() {
-      console.log('showTable(): this.$store.getters.getShowTable', this.$store.getters.getShowTable)
-      //return this.$store.getters.getShowTable // todo:
-      return false
+      return this.$store.getters.getShowTable  // tu jest przełączenie wyświetlania tabeli
     }
   }
 }
 </script>
+

@@ -36,8 +36,7 @@ export const store = new Vuex.Store({
       return state.showCheckboxes
     },
     getShowTable(state) {
-      console.log('state.getShowTable', state.getShowTable)
-      return state.getShowTable
+      return state.showTable
     }
   },
   mutations: {
@@ -56,9 +55,7 @@ export const store = new Vuex.Store({
       state.showCheckboxes = !state.showCheckboxes
     },
     SHOW_TABLE(state, bool) {
-      console.log('Mutations: bool', bool)
       state.showTable = bool
-      console.log('state.showTable', state.showTable)
     }
   },
   actions: {
@@ -79,7 +76,6 @@ export const store = new Vuex.Store({
       context.commit('TOGGLE_CHECKBOXES')
     },
     showTable(context, bool) {
-      console.log('Actions: bool', bool)
       context.commit('SHOW_TABLE', bool)
     }
   }

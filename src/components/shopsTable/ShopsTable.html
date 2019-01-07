@@ -1,12 +1,12 @@
-<div >
+<div v-cloak>
   <b-container fluid>
-    <b-row >
+    <b-row v-cloak>
       <b-table striped
                hover
                bordered
                :items="items"
                :fields="fields"
-               v-if="showTable">
+               v-if="showTable()">
 
         <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
 
