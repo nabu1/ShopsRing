@@ -17,8 +17,9 @@ export default {
   },
   methods: {
     resetStock() {
+      this.selected = []
       this.$store.dispatch('toggleCheckboxes')
-      this.$store.dispatch("getStock",[])
+      this.$store.dispatch("getStock", [])
     },
 
     stockSelected() {

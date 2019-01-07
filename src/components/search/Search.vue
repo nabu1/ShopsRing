@@ -33,16 +33,20 @@ export default {
 
       this.$store.dispatch('findSelectedShops', homeData)
       this.$store.dispatch('showTable', true )
+
+      console.log('getStocksSelected = ', this.$store.getters.getStocksSelected)
+      this.$store.dispatch('getStock', this.$store.getters.getStocksSelected)
     },
     //async reset() {
-    reset() {
-      this.city = this.cities[0].text
+      reset() {
+        this.city = this.cities[0].text
       this.street = ''
       this.streetNumber = ''
       this.radius = ''
 
       this.$store.dispatch('toggleCheckboxes')
-      this.$store.dispatch('addAllShops')
+      this.$store.dispatch('showTable', false )
+      //this.$store.dispatch('addAllShops')
     }
   }
 }
