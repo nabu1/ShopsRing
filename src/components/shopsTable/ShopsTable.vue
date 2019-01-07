@@ -12,7 +12,6 @@ export default {
   computed: {
     items() {
       return this.$store.getters.getAllShops
-      console.log('items(): this.$store.getters.getShowTable', this.$store.getters.getShowTable)
     },
     fields() {
       return this.$store.getters.getStock

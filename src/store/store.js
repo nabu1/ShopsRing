@@ -45,16 +45,16 @@ export const store = new Vuex.Store({
       state.allShopsCopy = allShops
     },
     FIND_SELECTED_SHOPS(state, shopsInRadius) {
-      console.log('FIND_SELECTED_SHOPS ')
       state.allShops = shopsInRadius
     },
     GET_STOCK(state, columns) {
       console.log('GET_STOCK')
-      //state.fields = columns.otherColumns.concat(columns.stocksSelected)
-      state.fields =  initialColumns.concat(totalColumn).concat(columns.stocksSelected)
-
-      console.log('columns.stocksSelected = ', columns.stocksSelected)
-      console.log('initialColumns = ', initialColumns)
+      if (columns.stocksSelected.length) {
+        state.fields =  initialColumns.concat(totalColumn).concat(columns.stocksSelected)
+      }
+      else {
+        state.fields =  initialColumns.concat(columns.stocksSelected)
+      }
 
       state.stocksSelected = columns.stocksSelected
     },
@@ -62,7 +62,6 @@ export const store = new Vuex.Store({
       state.showCheckboxes = !state.showCheckboxes
     },
     SHOW_TABLE(state, bool) {
-      //state.fields = ['index', 'shopName', 'address', 'jakd', 'gmaps']
       state.fields = initialColumns
       state.showTable = bool
     }
