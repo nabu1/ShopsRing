@@ -21,8 +21,6 @@ export default {
   },
   methods: {
     search() {
-      console.log('Klikłeś w Search !')
-
       const  homeData = {
         city: this.city,
         street: this.street,
@@ -33,8 +31,6 @@ export default {
 
       this.$store.dispatch('findSelectedShops', homeData)
       this.$store.dispatch('showTable', true )
-
-      console.log('getStocksSelected = ', this.$store.getters.getStocksSelected)
       this.$store.dispatch('getStock', this.$store.getters.getStocksSelected)
     },
     //async reset() {

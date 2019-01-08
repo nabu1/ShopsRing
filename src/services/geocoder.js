@@ -51,16 +51,16 @@ const fileShopsFinalId = './shopsFinalId.json'
 const prices = () => {
   const obj = {}
 
-  obj.chleb = _.random(410, 710) / 100
-  obj.maslo = _.random(310, 610) / 100
-  obj.ser = _.random(2100, 4100) / 100
-  obj.jajko = _.random(50, 100) / 100
-  obj.szynka = _.random(2510, 4010) / 100
-  obj.kielbasa = _.random(1210, 2010) / 100
-  obj.cukier = _.random(310, 610) / 100
-  obj.mleko = _.random(210, 510) / 100
-  obj.smietana = _.random(310, 610) / 100
-  obj.mineralna = _.random(75, 100) / 100
+  obj.chleb = _.random(4, 7)
+  obj.maslo = _.random(4, 8)
+  obj.ser = _.random(16, 32)
+  obj.jajko = _.random(1, 2)
+  obj.szynka = _.random(25, 40)
+  obj.kielbasa = _.random(12, 20)
+  obj.cukier = _.random(3, 6)
+  obj.mleko = _.random(2, 5)
+  obj.smietana = _.random(4, 8)
+  obj.mineralna = _.random(1, 2)
 
   const total = Object.values(obj).reduce((previous, item) => {
     return previous + item
@@ -106,19 +106,19 @@ function getAddress(lat = 52.2472828, lon = 21.0568093) {
     const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAdres + '&key=' + key + '&language=pl&pretty=1'
 
     axios.get(url)
-    .then(res => {
-      let obj = {
-        shopName,
-        city,
-        address,
-        lat: res.data.results[0].geometry.lat,
-        lon: res.data.results[0].geometry.lng,
-      }
+      .then(res => {
+        let obj = {
+          shopName,
+          city,
+          address,
+          lat: res.data.results[0].geometry.lat,
+          lon: res.data.results[0].geometry.lng,
+        }
 
-      let fullObj = Object.assign({}, obj, prices())
-      //console.log('fullObj', fullObj)
+        let fullObj = Object.assign({}, obj, prices())
+        //console.log('fullObj', fullObj)
 
-      fs.appendFileSync (fileShopsFinal, JSON.stringify(fullObj) + ',')
+        fs.appendFileSync (fileShopsFinal, JSON.stringify(fullObj) + ',')
     })
     .catch(err => console.log('Buont getGPS: ', err))
   }
