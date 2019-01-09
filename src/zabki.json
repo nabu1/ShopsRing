@@ -1,0 +1,3984 @@
+{
+  "id": "ID00107",
+  "shopName": "Żabka",
+  "city": "Skierniewice",
+  "address": "ul.Gałeckiego 20",
+  "lat": 51.959452,
+  "lon": 20.143439
+},
+{
+  "id": "ID00112",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "Sikorskiego 5",
+  "lat": 51.936496,
+  "lon": 15.505775
+},
+{
+  "id": "ID00117",
+  "shopName": "Żabka",
+  "city": "Szamotuły",
+  "address": "Wroniecka 35",
+  "lat": 52.614232,
+  "lon": 16.576403
+},
+{
+  "id": "ID00110",
+  "shopName": "Żabka",
+  "city": "Darłowo",
+  "address": "al. Wojska Polskiego 2",
+  "lat": 54.418892,
+  "lon": 16.408948
+},
+{
+  "id": "ID00114",
+  "shopName": "Żabka",
+  "city": "Morąg",
+  "address": "Ogrodowa 15",
+  "lat": 53.913776,
+  "lon": 19.930036
+},
+{
+  "id": "ID00116",
+  "shopName": "Żabka",
+  "city": "Zakopane",
+  "address": "Krzeptówki 81A",
+  "lat": 49.28231,
+  "lon": 19.917978
+},
+{
+  "id": "ID00120",
+  "shopName": "Żabka",
+  "city": "Bielsko-biała",
+  "address": "Broniewskiego 34 lok. nr 2",
+  "lat": 49.818133,
+  "lon": 19.051662
+},
+{
+  "id": "ID00128",
+  "shopName": "Żabka",
+  "city": "Lubsko",
+  "address": "Plac Wolności 21",
+  "lat": 51.788034,
+  "lon": 14.972684
+},
+{
+  "id": "ID00119",
+  "shopName": "Żabka",
+  "city": "Nowa Ruda",
+  "address": "Piastów 24//26",
+  "lat": 50.581824,
+  "lon": 16.501094
+},
+{
+  "id": "ID00130",
+  "shopName": "Żabka",
+  "city": "Gniezno",
+  "address": "Łubieńskiego 8",
+  "lat": 52.535014,
+  "lon": 17.599995
+},
+{
+  "id": "ID00121",
+  "shopName": "Żabka",
+  "city": "Czechowice-dziedzice",
+  "address": "Słowackiego 9",
+  "lat": 49.913339,
+  "lon": 19.006014
+},
+{
+  "id": "ID00115",
+  "shopName": "Żabka",
+  "city": "Chorzów",
+  "address": "11 Listopada 42",
+  "lat": 50.310196,
+  "lon": 18.947388
+},
+{
+  "id": "ID00106",
+  "shopName": "Żabka",
+  "city": "Mińsk Mazowiecki",
+  "address": "Świętokrzyska 46//Małopolska",
+  "lat": 52.189054,
+  "lon": 21.558299
+},
+{
+  "id": "ID00137",
+  "shopName": "Żabka",
+  "city": "Racibórz",
+  "address": "Londzina 19",
+  "lat": 50.095172,
+  "lon": 18.213932
+},
+{
+  "id": "ID00124",
+  "shopName": "Żabka",
+  "city": "Myszków",
+  "address": "Kościuszki 55",
+  "lat": 50.5758,
+  "lon": 19.328238
+},
+{
+  "id": "ID00125",
+  "shopName": "Żabka",
+  "city": "Dąbrowa Górnicza",
+  "address": "Adamieckiego 11a//6",
+  "lat": 50.32184,
+  "lon": 19.196934
+},
+{
+  "id": "ID00140",
+  "shopName": "Żabka",
+  "city": "Białystok",
+  "address": "Modlińska 2//1",
+  "lat": 53.133664,
+  "lon": 23.173376
+},
+{
+  "id": "ID00141",
+  "shopName": "Żabka",
+  "city": "Bielsko-biała",
+  "address": "Stojałowskiego 49",
+  "lat": 49.821916,
+  "lon": 19.054215
+},
+{
+  "id": "ID00153",
+  "shopName": "Żabka",
+  "city": "Kielce",
+  "address": "Piotrkowska 33",
+  "lat": 50.873797,
+  "lon": 20.62809
+},
+{
+  "id": "ID00147",
+  "shopName": "Żabka",
+  "city": "Namysłów",
+  "address": "Rynek 9",
+  "lat": 51.07712,
+  "lon": 17.716633
+},
+{
+  "id": "ID00142",
+  "shopName": "Żabka",
+  "city": "Skarżysko-kamienna",
+  "address": "1 Maja 8",
+  "lat": 51.114314,
+  "lon": 20.881346
+},
+{
+  "id": "ID00150",
+  "shopName": "Żabka",
+  "city": "Karlino",
+  "address": "Koszalińska 8",
+  "lat": 54.033886,
+  "lon": 15.877516
+},
+{
+  "id": "ID00151",
+  "shopName": "Żabka",
+  "city": "Wołomin",
+  "address": "Lipińska 52",
+  "lat": 52.34208,
+  "lon": 21.24481
+},
+{
+  "id": "ID00146",
+  "shopName": "Żabka",
+  "city": "Oława",
+  "address": "Strzelna 1B",
+  "lat": 50.944381,
+  "lon": 17.289239
+},
+{
+  "id": "ID00176",
+  "shopName": "Żabka",
+  "city": "Mikołów",
+  "address": "Krakowska 11",
+  "lat": 50.167865,
+  "lon": 18.906283
+},
+{
+  "id": "ID00159",
+  "shopName": "Żabka",
+  "city": "Cieszyn",
+  "address": "Stawowa 1",
+  "lat": 49.752516,
+  "lon": 18.640698
+},
+{
+  "id": "ID00183",
+  "shopName": "Żabka",
+  "city": "Zgierz",
+  "address": "1 Maja 28b",
+  "lat": 51.855286,
+  "lon": 19.416584
+},
+{
+  "id": "ID00193",
+  "shopName": "Żabka",
+  "city": "Inowrocław",
+  "address": "Szarych Szeregów 23 b//1",
+  "lat": 52.779964,
+  "lon": 18.242226
+},
+{
+  "id": "ID00179",
+  "shopName": "Żabka",
+  "city": "Głubczyce",
+  "address": "ul.Koszarowa 1",
+  "lat": 50.202864,
+  "lon": 17.827482
+},
+{
+  "id": "ID00192",
+  "shopName": "Żabka",
+  "city": "Radomsko",
+  "address": "Pl. 3 Maja 3",
+  "lat": 51.067863,
+  "lon": 19.444149
+},
+{
+  "id": "ID00163",
+  "shopName": "Żabka",
+  "city": "Włodawa",
+  "address": "ul.Rynek 2",
+  "lat": 51.544795,
+  "lon": 23.554797
+},
+{
+  "id": "ID00182",
+  "shopName": "Żabka",
+  "city": "Sanok",
+  "address": "Kochanowskiego 23a",
+  "lat": 49.557631,
+  "lon": 22.208525
+},
+{
+  "id": "ID00167",
+  "shopName": "Żabka",
+  "city": "Ruda Śląska",
+  "address": "Niedurnego 57",
+  "lat": 50.285294,
+  "lon": 18.875763
+},
+{
+  "id": "ID00168",
+  "shopName": "Żabka",
+  "city": "Jastrzębie-zdrój",
+  "address": "Harcerska 2a",
+  "lat": 49.950734,
+  "lon": 18.606531
+},
+{
+  "id": "ID00172",
+  "shopName": "Żabka",
+  "city": "Jastrowie",
+  "address": "Żymierskiego 74 lok. 1A",
+  "lat": 53.42132,
+  "lon": 16.816298
+},
+{
+  "id": "ID00170",
+  "shopName": "Żabka",
+  "city": "Połczyn-zdrój",
+  "address": "Grunwaldzka 9//11",
+  "lat": 53.766023,
+  "lon": 16.094083
+},
+{
+  "id": "ID00178",
+  "shopName": "Żabka",
+  "city": "Włocławek",
+  "address": "POW 13",
+  "lat": 52.653327,
+  "lon": 19.064577
+},
+{
+  "id": "ID00173",
+  "shopName": "Żabka",
+  "city": "Przasnysz",
+  "address": "Rynek 8",
+  "lat": 53.021091,
+  "lon": 20.882244
+},
+{
+  "id": "ID00188",
+  "shopName": "Żabka",
+  "city": "Płońsk",
+  "address": "Płocka 47",
+  "lat": 52.622202,
+  "lon": 20.369095
+},
+{
+  "id": "ID00198",
+  "shopName": "Żabka",
+  "city": "Zielonka",
+  "address": "Paderewskiego 42",
+  "lat": 52.296773,
+  "lon": 21.158485
+},
+{
+  "id": "ID00191",
+  "shopName": "Żabka",
+  "city": "Kutno",
+  "address": "Sienkiewicza 38b",
+  "lat": 52.229133,
+  "lon": 19.353554
+},
+{
+  "id": "ID00185",
+  "shopName": "Żabka",
+  "city": "Kalisz",
+  "address": "Ułańska 9",
+  "lat": 51.755055,
+  "lon": 18.08806
+},
+{
+  "id": "ID00207",
+  "shopName": "Żabka",
+  "city": "Lębork",
+  "address": "Zwycięstwa 3",
+  "lat": 54.539282,
+  "lon": 17.748002
+},
+{
+  "id": "ID00219",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Matejki 56",
+  "lat": 52.40028,
+  "lon": 16.900139
+},
+{
+  "id": "ID00213",
+  "shopName": "Żabka",
+  "city": "Jaworzno",
+  "address": "ul.Jagiellońska 17",
+  "lat": 50.244516,
+  "lon": 19.293881
+},
+{
+  "id": "ID00202",
+  "shopName": "Żabka",
+  "city": "Chojnice",
+  "address": "Kościerska 12a",
+  "lat": 53.701302,
+  "lon": 17.574268
+},
+{
+  "id": "ID00199",
+  "shopName": "Żabka",
+  "city": "Sanok",
+  "address": "Traugutta 9",
+  "lat": 49.566734,
+  "lon": 22.200071
+},
+{
+  "id": "ID00226",
+  "shopName": "Żabka",
+  "city": "Kluczbork",
+  "address": "Piłsudskiego 2",
+  "lat": 50.972881,
+  "lon": 18.2123
+},
+{
+  "id": "ID00231",
+  "shopName": "Żabka",
+  "city": "Otwock",
+  "address": "Andriollego 6",
+  "lat": 52.1078,
+  "lon": 21.262104
+},
+{
+  "id": "ID00209",
+  "shopName": "Żabka",
+  "city": "Zawiercie",
+  "address": "Daszyńskiego 29",
+  "lat": 50.480536,
+  "lon": 19.433494
+},
+{
+  "id": "ID00200",
+  "shopName": "Żabka",
+  "city": "Pruszków",
+  "address": "Kościuszki 58",
+  "lat": 52.167858,
+  "lon": 20.800797
+},
+{
+  "id": "ID00195",
+  "shopName": "Żabka",
+  "city": "Wałbrzych",
+  "address": "Grodzka 75b",
+  "lat": 50.8199,
+  "lon": 16.270634
+},
+{
+  "id": "ID00218",
+  "shopName": "Żabka",
+  "city": "Nowa Sól",
+  "address": "Moniuszki 5",
+  "lat": 51.80199,
+  "lon": 15.719742
+},
+{
+  "id": "ID00225",
+  "shopName": "Żabka",
+  "city": "Wałbrzych",
+  "address": "1-go Maja 19",
+  "lat": 50.764789,
+  "lon": 16.277498
+},
+{
+  "id": "ID00230",
+  "shopName": "Żabka",
+  "city": "Złotów",
+  "address": "Paderewskiego 14",
+  "lat": 53.363438,
+  "lon": 17.035461
+},
+{
+  "id": "ID00228",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Ząbkowska 18 lok. S-6",
+  "lat": 52.253674,
+  "lon": 21.042007
+},
+{
+  "id": "ID00232",
+  "shopName": "Żabka",
+  "city": "Gliwice",
+  "address": "Bankowa 4",
+  "lat": 50.293174,
+  "lon": 18.665007
+},
+{
+  "id": "ID00227",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Niegolewskich 11",
+  "lat": 52.395443,
+  "lon": 16.898628
+},
+{
+  "id": "ID00220",
+  "shopName": "Żabka",
+  "city": "Bełchatów",
+  "address": "Kard. Wyszyńskiego 9A",
+  "lat": 51.350821,
+  "lon": 19.367565
+},
+{
+  "id": "ID00212",
+  "shopName": "Żabka",
+  "city": "Kielce",
+  "address": "Kościuszki 24//Jarońskich 1",
+  "lat": 50.87167,
+  "lon": 20.636893
+},
+{
+  "id": "ID00203",
+  "shopName": "Żabka",
+  "city": "Wołomin",
+  "address": "ul.Piłsudskiego 31",
+  "lat": 52.348822,
+  "lon": 21.232351
+},
+{
+  "id": "ID00233",
+  "shopName": "Żabka",
+  "city": "Jaworzno",
+  "address": "ul.Mickiewicza 2a",
+  "lat": 50.204139,
+  "lon": 19.275089
+},
+{
+  "id": "ID00236",
+  "shopName": "Żabka",
+  "city": "Kościan",
+  "address": "Kilińskiego 2",
+  "lat": 52.086529,
+  "lon": 16.638145
+},
+{
+  "id": "ID00250",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "Agrestowa 5//10 lok. 7",
+  "lat": 51.945207,
+  "lon": 15.472058
+},
+{
+  "id": "ID00244",
+  "shopName": "Żabka",
+  "city": "Kielce",
+  "address": "Żelazna 31//6",
+  "lat": 50.873361,
+  "lon": 20.619003
+},
+{
+  "id": "ID00249",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "Piastowska 8",
+  "lat": 51.929328,
+  "lon": 15.497141
+},
+{
+  "id": "ID00256",
+  "shopName": "Żabka",
+  "city": "Szczawno-zdrój",
+  "address": "Kościuszki 16",
+  "lat": 50.802073,
+  "lon": 16.254173
+},
+{
+  "id": "ID00246",
+  "shopName": "Żabka",
+  "city": "Łęczyca",
+  "address": "Kaliska 10a",
+  "lat": 52.059502,
+  "lon": 19.198061
+},
+{
+  "id": "ID00245",
+  "shopName": "Żabka",
+  "city": "Olsztyn",
+  "address": "Kościuszki 13//15 lok.1",
+  "lat": 53.783657,
+  "lon": 20.496361
+},
+{
+  "id": "ID00260",
+  "shopName": "Żabka",
+  "city": "Dzierżoniów",
+  "address": "Ząbkowicka 34",
+  "lat": 50.727726,
+  "lon": 16.653069
+},
+{
+  "id": "ID00252",
+  "shopName": "Żabka",
+  "city": "Gliwice",
+  "address": "Żurawia 61//I lok. 1",
+  "lat": 50.276402,
+  "lon": 18.658159
+},
+{
+  "id": "ID00251",
+  "shopName": "Żabka",
+  "city": "Elbląg",
+  "address": "Płk. Dąbka 136//6",
+  "lat": 54.182281,
+  "lon": 19.405256
+},
+{
+  "id": "ID00234",
+  "shopName": "Żabka",
+  "city": "Gliwice",
+  "address": "Derkacza 5",
+  "lat": 50.282921,
+  "lon": 18.656225
+},
+{
+  "id": "ID00253",
+  "shopName": "Żabka",
+  "city": "Racibórz",
+  "address": "Klasztorna 12",
+  "lat": 50.089565,
+  "lon": 18.213108
+},
+{
+  "id": "ID00273",
+  "shopName": "Żabka",
+  "city": "Gliwice",
+  "address": "Sobótki 2 lok nr II",
+  "lat": 50.289421,
+  "lon": 18.667721
+},
+{
+  "id": "ID00272",
+  "shopName": "Żabka",
+  "city": "Wągrowiec",
+  "address": "Libelta 1",
+  "lat": 52.814838,
+  "lon": 17.202597
+},
+{
+  "id": "ID00282",
+  "shopName": "Żabka",
+  "city": "Kluczbork",
+  "address": "Morcinka 12",
+  "lat": 50.980389,
+  "lon": 18.213522
+},
+{
+  "id": "ID00298",
+  "shopName": "Żabka",
+  "city": "Sanok",
+  "address": "Kościuszki 37",
+  "lat": 49.560703,
+  "lon": 22.199356
+},
+{
+  "id": "ID00276",
+  "shopName": "Żabka",
+  "city": "Legnica",
+  "address": "Rumiankowa 1",
+  "lat": 51.173583,
+  "lon": 16.166282
+},
+{
+  "id": "ID00290",
+  "shopName": "Żabka",
+  "city": "Czechowice-dziedzice",
+  "address": "H. Kołłątaja 4",
+  "lat": 49.910961,
+  "lon": 19.007371
+},
+{
+  "id": "ID00295",
+  "shopName": "Żabka",
+  "city": "Sieradz",
+  "address": "Krakowskie Przedmieście 15",
+  "lat": 51.59062,
+  "lon": 18.739468
+},
+{
+  "id": "ID00314",
+  "shopName": "Żabka",
+  "city": "Czeladź",
+  "address": "Rynek 32",
+  "lat": 50.318733,
+  "lon": 19.073523
+},
+{
+  "id": "ID00285",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Prusa 2",
+  "lat": 52.41124,
+  "lon": 16.904671
+},
+{
+  "id": "ID00323",
+  "shopName": "Żabka",
+  "city": "Szczecin",
+  "address": "Grzymińska 25b nr U",
+  "lat": 53.456268,
+  "lon": 14.57967
+},
+{
+  "id": "ID00269",
+  "shopName": "Żabka",
+  "city": "Lubin",
+  "address": "Sikorskiego 58",
+  "lat": 51.394913,
+  "lon": 16.201324
+},
+{
+  "id": "ID00292",
+  "shopName": "Żabka",
+  "city": "Mińsk Mazowiecki",
+  "address": "Miodowa 3",
+  "lat": 52.177946,
+  "lon": 21.570429
+},
+{
+  "id": "ID00274",
+  "shopName": "Żabka",
+  "city": "Nowy Dwór Mazowiecki",
+  "address": "Wojska Polskiego 47",
+  "lat": 52.418941,
+  "lon": 20.729757
+},
+{
+  "id": "ID00277",
+  "shopName": "Żabka",
+  "city": "Ciechanów",
+  "address": "Sienkiewicza 12a",
+  "lat": 52.877202,
+  "lon": 20.605376
+},
+{
+  "id": "ID00284",
+  "shopName": "Żabka",
+  "city": "Krotoszyn",
+  "address": "Rynek 33",
+  "lat": 51.695206,
+  "lon": 17.436747
+},
+{
+  "id": "ID00297",
+  "shopName": "Żabka",
+  "city": "Żyrardów",
+  "address": "1-go Maja 37c",
+  "lat": 52.053787,
+  "lon": 20.440218
+},
+{
+  "id": "ID00317",
+  "shopName": "Żabka",
+  "city": "Zabrze",
+  "address": "Bytomska 119",
+  "lat": 50.324108,
+  "lon": 18.829592
+},
+{
+  "id": "ID00299",
+  "shopName": "Żabka",
+  "city": "Żyrardów",
+  "address": "Wittenberga 2d",
+  "lat": 52.054813,
+  "lon": 20.427258
+},
+{
+  "id": "ID00305",
+  "shopName": "Żabka",
+  "city": "Piekary Śląskie",
+  "address": "Ul.Bytomska 171",
+  "lat": 50.38439,
+  "lon": 18.944011
+},
+{
+  "id": "ID00283",
+  "shopName": "Żabka",
+  "city": "Chorzów",
+  "address": "Mielęckiego 47",
+  "lat": 50.29324,
+  "lon": 18.943621
+},
+{
+  "id": "ID00307",
+  "shopName": "Żabka",
+  "city": "Ruda Śląska",
+  "address": "Korfantego 49",
+  "lat": 50.267804,
+  "lon": 18.895962
+},
+{
+  "id": "ID00308",
+  "shopName": "Żabka",
+  "city": "Radzionków",
+  "address": "Św.Wojciecha 19A",
+  "lat": 50.401775,
+  "lon": 18.904709
+},
+{
+  "id": "ID00286",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Próchnika 22",
+  "lat": 51.774098,
+  "lon": 19.449675
+},
+{
+  "id": "ID00306",
+  "shopName": "Żabka",
+  "city": "Czeladź",
+  "address": "Reymonta 36",
+  "lat": 50.312214,
+  "lon": 19.074305
+},
+{
+  "id": "ID00324",
+  "shopName": "Żabka",
+  "city": "Konin",
+  "address": "3 Maja 35",
+  "lat": 52.206703,
+  "lon": 18.254404
+},
+{
+  "id": "ID00312",
+  "shopName": "Żabka",
+  "city": "Chrzanów",
+  "address": "Rynek 9//1",
+  "lat": 50.142387,
+  "lon": 19.405876
+},
+{
+  "id": "ID00313",
+  "shopName": "Żabka",
+  "city": "Rybnik",
+  "address": "Powstańców 18",
+  "lat": 50.097549,
+  "lon": 18.546377
+},
+{
+  "id": "ID00318",
+  "shopName": "Żabka",
+  "city": "Stalowa Wola",
+  "address": "Jana Pawła II 13",
+  "lat": 50.570114,
+  "lon": 22.064273
+},
+{
+  "id": "ID00330",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Bogucicka 2",
+  "lat": 50.258667,
+  "lon": 19.044123
+},
+{
+  "id": "ID00332",
+  "shopName": "Żabka",
+  "city": "Stalowa Wola",
+  "address": "Siedlanowskiego 3",
+  "lat": 50.566864,
+  "lon": 22.048073
+},
+{
+  "id": "ID00344",
+  "shopName": "Żabka",
+  "city": "Czarnków",
+  "address": "Putza 5",
+  "lat": 52.9053,
+  "lon": 16.565239
+},
+{
+  "id": "ID00359",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Wólczyńska 3//1",
+  "lat": 52.277889,
+  "lon": 20.937271
+},
+{
+  "id": "ID00385",
+  "shopName": "Żabka",
+  "city": "Bytom",
+  "address": "Moniuszki 1",
+  "lat": 50.345772,
+  "lon": 18.91526
+},
+{
+  "id": "ID00371",
+  "shopName": "Żabka",
+  "city": "Bydgoszcz",
+  "address": "Sienkiewicza 20",
+  "lat": 53.130791,
+  "lon": 18.001293
+},
+{
+  "id": "ID00341",
+  "shopName": "Żabka",
+  "city": "Opole",
+  "address": "Spychalskiego 4",
+  "lat": 50.668549,
+  "lon": 17.913423
+},
+{
+  "id": "ID00334",
+  "shopName": "Żabka",
+  "city": "Zabrze",
+  "address": "3 Maja 7 A",
+  "lat": 50.303403,
+  "lon": 18.785742
+},
+{
+  "id": "ID00352",
+  "shopName": "Żabka",
+  "city": "Bydgoszcz",
+  "address": "Gajowa 43",
+  "lat": 53.125293,
+  "lon": 18.040383
+},
+{
+  "id": "ID00329",
+  "shopName": "Żabka",
+  "city": "Ostrów Wielkopolski",
+  "address": "Różana 25",
+  "lat": 51.645489,
+  "lon": 17.796713
+},
+{
+  "id": "ID00384",
+  "shopName": "Żabka",
+  "city": "Radomsko",
+  "address": "Warszyca 13",
+  "lat": 51.068996,
+  "lon": 19.436939
+},
+{
+  "id": "ID00377",
+  "shopName": "Żabka",
+  "city": "Inowrocław",
+  "address": "Niepodległości 80a",
+  "lat": 52.77456,
+  "lon": 18.252746
+},
+{
+  "id": "ID00376",
+  "shopName": "Żabka",
+  "city": "Inowrocław",
+  "address": "800-lecia 12B",
+  "lat": 52.773277,
+  "lon": 18.241332
+},
+{
+  "id": "ID00382",
+  "shopName": "Żabka",
+  "city": "Bełchatów",
+  "address": "Os. Dolnośląskie 129 b",
+  "lat": 51.357677,
+  "lon": 19.361416
+},
+{
+  "id": "ID00340",
+  "shopName": "Żabka",
+  "city": "Kutno",
+  "address": "Wolności 1",
+  "lat": 52.231891,
+  "lon": 19.361208
+},
+{
+  "id": "ID00383",
+  "shopName": "Żabka",
+  "city": "Bydgoszcz",
+  "address": "Bocianowo 32//1",
+  "lat": 53.135284,
+  "lon": 17.99963
+},
+{
+  "id": "ID00354",
+  "shopName": "Żabka",
+  "city": "Żywiec",
+  "address": "Dworcowa 21 nr 1B",
+  "lat": 49.683263,
+  "lon": 19.190133
+},
+{
+  "id": "ID00406",
+  "shopName": "Żabka",
+  "city": "Gdańsk",
+  "address": "Burzyńskiego 9",
+  "lat": 54.394772,
+  "lon": 18.608246
+},
+{
+  "id": "ID00407",
+  "shopName": "Żabka",
+  "city": "Radom",
+  "address": "Szklana 56",
+  "lat": 51.409263,
+  "lon": 21.178803
+},
+{
+  "id": "ID00363",
+  "shopName": "Żabka",
+  "city": "Zgorzelec",
+  "address": "Batorego 16",
+  "lat": 51.149933,
+  "lon": 15.01371
+},
+{
+  "id": "ID00410",
+  "shopName": "Żabka",
+  "city": "Ciechanów",
+  "address": "17 Stycznia 56",
+  "lat": 52.883507,
+  "lon": 20.604395
+},
+{
+  "id": "ID00375",
+  "shopName": "Żabka",
+  "city": "Inowrocław",
+  "address": "Sikorskiego 17",
+  "lat": 52.800005,
+  "lon": 18.247624
+},
+{
+  "id": "ID00388",
+  "shopName": "Żabka",
+  "city": "Pasłęk",
+  "address": "Jagiełły 23",
+  "lat": 54.06353,
+  "lon": 19.65926
+},
+{
+  "id": "ID00403",
+  "shopName": "Żabka",
+  "city": "Jarocin",
+  "address": "Rynek 4",
+  "lat": 51.972511,
+  "lon": 17.501921
+},
+{
+  "id": "ID00362",
+  "shopName": "Żabka",
+  "city": "Giżycko",
+  "address": "Olsztyńska 11//1",
+  "lat": 54.036173,
+  "lon": 21.764643
+},
+{
+  "id": "ID00336",
+  "shopName": "Żabka",
+  "city": "Kraków",
+  "address": "Spółdzielców 3",
+  "lat": 50.018715,
+  "lon": 19.98085
+},
+{
+  "id": "ID00337",
+  "shopName": "Żabka",
+  "city": "Racibórz",
+  "address": "Elżbiety4",
+  "lat": 50.098133,
+  "lon": 18.233582
+},
+{
+  "id": "ID00380",
+  "shopName": "Żabka",
+  "city": "Nowy Sącz",
+  "address": "Długosza 8",
+  "lat": 49.620487,
+  "lon": 20.695391
+},
+{
+  "id": "ID00401",
+  "shopName": "Żabka",
+  "city": "Grudziądz",
+  "address": "Pl. Niepodległości 8",
+  "lat": 53.491238,
+  "lon": 18.749823
+},
+{
+  "id": "ID00379",
+  "shopName": "Żabka",
+  "city": "Inowrocław",
+  "address": "Św. Ducha 18",
+  "lat": 52.796018,
+  "lon": 18.263521
+},
+{
+  "id": "ID00386",
+  "shopName": "Żabka",
+  "city": "Białystok",
+  "address": "Bacieczki 4",
+  "lat": 53.155041,
+  "lon": 23.101767
+},
+{
+  "id": "ID00400",
+  "shopName": "Żabka",
+  "city": "Leszno",
+  "address": "Zamenhofa 108",
+  "lat": 51.835503,
+  "lon": 16.597895
+},
+{
+  "id": "ID00355",
+  "shopName": "Żabka",
+  "city": "Lębork",
+  "address": "Gdańska 9//10",
+  "lat": 54.544982,
+  "lon": 17.753757
+},
+{
+  "id": "ID00424",
+  "shopName": "Żabka",
+  "city": "Świdnica",
+  "address": "ul. Waryńskiego 4",
+  "lat": 50.847862,
+  "lon": 16.466751
+},
+{
+  "id": "ID00443",
+  "shopName": "Żabka",
+  "city": "Buk",
+  "address": "ul. Poznańska 6",
+  "lat": 52.357441,
+  "lon": 16.514179
+},
+{
+  "id": "ID00429",
+  "shopName": "Żabka",
+  "city": "Zabrze",
+  "address": "ul. Plac Krakowski 6",
+  "lat": 50.302288,
+  "lon": 18.788868
+},
+{
+  "id": "ID00434",
+  "shopName": "Żabka",
+  "city": "Sosnowiec",
+  "address": "ul. Nowopogońska 55",
+  "lat": 50.290665,
+  "lon": 19.134254
+},
+{
+  "id": "ID00436",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "ul. Płowiecka 5b",
+  "lat": 52.234432,
+  "lon": 21.127033
+},
+{
+  "id": "ID00419",
+  "shopName": "Żabka",
+  "city": "Sosnowiec",
+  "address": "ul. Piłsudskiego 48",
+  "lat": 50.278469,
+  "lon": 19.117123
+},
+{
+  "id": "ID00438",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "ul. Dereniowa 52//54",
+  "lat": 52.150074,
+  "lon": 21.038198
+},
+{
+  "id": "ID00435",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "ul. Umińskiego 12",
+  "lat": 52.388203,
+  "lon": 16.911724
+},
+{
+  "id": "ID00445",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "ul. Anieli Krzywoń 24",
+  "lat": 51.929201,
+  "lon": 15.491075
+},
+{
+  "id": "ID00441",
+  "shopName": "Żabka",
+  "city": "Sulechów",
+  "address": "ul. Sikorskiego 26",
+  "lat": 52.084815,
+  "lon": 15.625153
+},
+{
+  "id": "ID00447",
+  "shopName": "Żabka",
+  "city": "Dzierżoniów",
+  "address": "ul. Pocztowa 2//1",
+  "lat": 50.729168,
+  "lon": 16.648014
+},
+{
+  "id": "ID00418",
+  "shopName": "Żabka",
+  "city": "Koszalin",
+  "address": "Bałtycka 36A",
+  "lat": 54.200775,
+  "lon": 16.182335
+},
+{
+  "id": "ID00450",
+  "shopName": "Żabka",
+  "city": "Błonie",
+  "address": "ul. Poniatowskiego 27",
+  "lat": 52.189034,
+  "lon": 20.622999
+},
+{
+  "id": "ID00451",
+  "shopName": "Żabka",
+  "city": "Nowy Targ",
+  "address": "ul. Szaflarska 114",
+  "lat": 49.472944,
+  "lon": 20.029574
+},
+{
+  "id": "ID00449",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "ul. Walcownicza 43",
+  "lat": 52.164494,
+  "lon": 21.221265
+},
+{
+  "id": "ID00460",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "ul. Paderewskiego 55",
+  "lat": 51.72863,
+  "lon": 19.470348
+},
+{
+  "id": "ID00452",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "ul. Łączna 29//31",
+  "lat": 51.732903,
+  "lon": 19.474794
+},
+{
+  "id": "ID00461",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "ul. Książkowa 9c//6",
+  "lat": 52.331168,
+  "lon": 20.940584
+},
+{
+  "id": "ID00467",
+  "shopName": "Żabka",
+  "city": "Ciechanów",
+  "address": "ul. Pl. Kościuszki 12a",
+  "lat": 52.875938,
+  "lon": 20.616686
+},
+{
+  "id": "ID00466",
+  "shopName": "Żabka",
+  "city": "Kielce",
+  "address": "ul. Zagórska 8",
+  "lat": 50.867249,
+  "lon": 20.638853
+},
+{
+  "id": "ID00464",
+  "shopName": "Żabka",
+  "city": "Chełmno",
+  "address": "ul. Rynek 5",
+  "lat": 53.348772,
+  "lon": 18.423464
+},
+{
+  "id": "ID00469",
+  "shopName": "Żabka",
+  "city": "Radzymin",
+  "address": "Ciemne 109",
+  "lat": 52.38839,
+  "lon": 21.20247
+},
+{
+  "id": "ID00463",
+  "shopName": "Żabka",
+  "city": "Lębork",
+  "address": "ul. Stryjewskiego 19",
+  "lat": 54.545731,
+  "lon": 17.741291
+},
+{
+  "id": "ID00468",
+  "shopName": "Żabka",
+  "city": "Kraków",
+  "address": "ul. Kawiory 2",
+  "lat": 50.067471,
+  "lon": 19.914238
+},
+{
+  "id": "ID00475",
+  "shopName": "Żabka",
+  "city": "Legnica",
+  "address": "ul. Izerska 29",
+  "lat": 51.198288,
+  "lon": 16.202501
+},
+{
+  "id": "ID00474",
+  "shopName": "Żabka",
+  "city": "Bełchatów",
+  "address": "ul. 1 Maja 39b",
+  "lat": 51.365055,
+  "lon": 19.381077
+},
+{
+  "id": "ID00478",
+  "shopName": "Żabka",
+  "city": "Włocławek",
+  "address": "ul. Bojańczyka 25//10",
+  "lat": 52.651646,
+  "lon": 19.068901
+},
+{
+  "id": "ID00486",
+  "shopName": "Żabka",
+  "city": "Przysucha",
+  "address": "ul. Radomska 1",
+  "lat": 51.358578,
+  "lon": 20.629719
+},
+{
+  "id": "ID00497",
+  "shopName": "Żabka",
+  "city": "Świdnica",
+  "address": "ul. Długa 62",
+  "lat": 50.841902,
+  "lon": 16.492713
+},
+{
+  "id": "ID00485",
+  "shopName": "Żabka",
+  "city": "Gliwice",
+  "address": "ul. Jedności 8",
+  "lat": 50.287003,
+  "lon": 18.730415
+},
+{
+  "id": "ID00515",
+  "shopName": "Żabka",
+  "city": "Oleśnica",
+  "address": "ul. 3 Maja 61",
+  "lat": 51.207909,
+  "lon": 17.379704
+},
+{
+  "id": "ID00482",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Pl. Powstańców Wielkopolskich 7",
+  "lat": 51.124714,
+  "lon": 17.0355
+},
+{
+  "id": "ID00507",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "ul. Wąwozowa 32//U8",
+  "lat": 52.131904,
+  "lon": 21.057878
+},
+{
+  "id": "ID00490",
+  "shopName": "Żabka",
+  "city": "Tychy",
+  "address": "ul. Niepodległości 87",
+  "lat": 50.1115,
+  "lon": 19.002626
+},
+{
+  "id": "ID00484",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "ul. Rydygiera 55//57",
+  "lat": 51.121235,
+  "lon": 17.032192
+},
+{
+  "id": "ID00476",
+  "shopName": "Żabka",
+  "city": "Barlinek",
+  "address": "ul. 1 Maja 4",
+  "lat": 52.994709,
+  "lon": 15.219317
+},
+{
+  "id": "ID00502",
+  "shopName": "Żabka",
+  "city": "Nowy Targ",
+  "address": "ul. Kazimierza Wielkiego 8B",
+  "lat": 49.480644,
+  "lon": 20.029926
+},
+{
+  "id": "ID00542",
+  "shopName": "Żabka",
+  "city": "Nowa Sól",
+  "address": "ul. Piłsudskiego 22",
+  "lat": 51.806862,
+  "lon": 15.71549
+},
+{
+  "id": "ID00511",
+  "shopName": "Żabka",
+  "city": "Kamienna Góra",
+  "address": "ul. Broniewskiego 28",
+  "lat": 50.78248,
+  "lon": 16.028143
+},
+{
+  "id": "ID00500",
+  "shopName": "Żabka",
+  "city": "Szczecin",
+  "address": "ul. Rapackiego 2D i 2E",
+  "lat": 53.449768,
+  "lon": 14.548535
+},
+{
+  "id": "ID00489",
+  "shopName": "Żabka",
+  "city": "Konin",
+  "address": "ul. Spółdzielców 83a",
+  "lat": 52.233396,
+  "lon": 18.21392
+},
+{
+  "id": "ID00512",
+  "shopName": "Żabka",
+  "city": "Oświęcim",
+  "address": "ul. Obozowa 13a",
+  "lat": 50.037434,
+  "lon": 19.204706
+},
+{
+  "id": "ID00491",
+  "shopName": "Żabka",
+  "city": "Zabrze",
+  "address": "ul. Tarnopolska 57",
+  "lat": 50.334557,
+  "lon": 18.784319
+},
+{
+  "id": "ID00550",
+  "shopName": "Żabka",
+  "city": "Rybnik",
+  "address": "ul. Kościuszki 11",
+  "lat": 50.09713,
+  "lon": 18.549478
+},
+{
+  "id": "ID00510",
+  "shopName": "Żabka",
+  "city": "Koszalin",
+  "address": "ul. Piłsudskiego 73//1",
+  "lat": 54.196407,
+  "lon": 16.205469
+},
+{
+  "id": "ID00493",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "ul. Bazyliańska 20",
+  "lat": 52.29316,
+  "lon": 21.026334
+},
+{
+  "id": "ID00523",
+  "shopName": "Żabka",
+  "city": "Lubawa",
+  "address": "ul. Rynek 22",
+  "lat": 53.504128,
+  "lon": 19.749218
+},
+{
+  "id": "ID00549",
+  "shopName": "Żabka",
+  "city": "Nowy Dwór Mazowiecki",
+  "address": "ul. Bohateró Modlina 57d",
+  "lat": 52.430886,
+  "lon": 20.721913
+},
+{
+  "id": "ID00517",
+  "shopName": "Żabka",
+  "city": "Łeba",
+  "address": "ul. Kościuszki 27//1",
+  "lat": 54.759132,
+  "lon": 17.556469
+},
+{
+  "id": "ID00520",
+  "shopName": "Żabka",
+  "city": "Chojnice",
+  "address": "ul. Filomatów 1b",
+  "lat": 53.699325,
+  "lon": 17.579459
+},
+{
+  "id": "ID00525",
+  "shopName": "Żabka",
+  "city": "Zawiercie",
+  "address": "ul. Wierzbowa 16",
+  "lat": 50.493664,
+  "lon": 19.430605
+},
+{
+  "id": "ID00503",
+  "shopName": "Żabka",
+  "city": "Lubań",
+  "address": "Plac Okrzei 7a",
+  "lat": 51.119236,
+  "lon": 15.290248
+},
+{
+  "id": "ID00504",
+  "shopName": "Żabka",
+  "city": "Gdynia",
+  "address": "ul. Śląska 31",
+  "lat": 54.514944,
+  "lon": 18.533031
+},
+{
+  "id": "ID00519",
+  "shopName": "Żabka",
+  "city": "Bydgoszcz",
+  "address": "ul. Zbożowy Rynek 10",
+  "lat": 53.119392,
+  "lon": 18.004128
+},
+{
+  "id": "ID00531",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "ul. Celtycka 4",
+  "lat": 51.138573,
+  "lon": 16.979256
+},
+{
+  "id": "ID00514",
+  "shopName": "Żabka",
+  "city": "Brzeg",
+  "address": "ul. Piastowska 23 lok. uż. 3",
+  "lat": 50.856467,
+  "lon": 17.471769
+},
+{
+  "id": "ID00536",
+  "shopName": "Żabka",
+  "city": "Miastko",
+  "address": "ul. Dworcowa 7",
+  "lat": 53.997019,
+  "lon": 16.967819
+},
+{
+  "id": "ID00534",
+  "shopName": "Żabka",
+  "city": "Nowy Sącz",
+  "address": "ul. Lwowska 63",
+  "lat": 49.624752,
+  "lon": 20.704281
+},
+{
+  "id": "ID00562",
+  "shopName": "Żabka",
+  "city": "Białystok",
+  "address": "ul. Pileckiego 6",
+  "lat": 53.152554,
+  "lon": 23.084642
+},
+{
+  "id": "ID00581",
+  "shopName": "Żabka",
+  "city": "Bytów",
+  "address": "ul. Gdańska 49 A//H1",
+  "lat": 54.17712,
+  "lon": 17.489393
+},
+{
+  "id": "ID00574",
+  "shopName": "Żabka",
+  "city": "Żory",
+  "address": "Oś. Powstańców Śląskich Pu8",
+  "lat": 50.039795,
+  "lon": 18.680841
+},
+{
+  "id": "ID00539",
+  "shopName": "Żabka",
+  "city": "Nisko",
+  "address": "ul. Rzeszowska 1",
+  "lat": 50.517365,
+  "lon": 22.146536
+},
+{
+  "id": "ID00547",
+  "shopName": "Żabka",
+  "city": "Wałcz",
+  "address": "ul. Bydgoska 3",
+  "lat": 53.273407,
+  "lon": 16.475574
+},
+{
+  "id": "ID00540",
+  "shopName": "Żabka",
+  "city": "Konin",
+  "address": "ul. Spółdzielców 33//5",
+  "lat": 52.233707,
+  "lon": 18.220163
+},
+{
+  "id": "ID00552",
+  "shopName": "Żabka",
+  "city": "Ciechanów",
+  "address": "ul. 11 Pułku Ułanów Leg.12",
+  "lat": 52.877052,
+  "lon": 20.619183
+},
+{
+  "id": "ID00577",
+  "shopName": "Żabka",
+  "city": "Ruda Śląska",
+  "address": "ul. Wolności 19",
+  "lat": 50.312603,
+  "lon": 18.851524
+},
+{
+  "id": "ID00564",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Dowborczyków 21 (nar. ul.Nawrot)",
+  "lat": 51.763355,
+  "lon": 19.469652
+},
+{
+  "id": "ID00558",
+  "shopName": "Żabka",
+  "city": "Mysłowice",
+  "address": "Os. Brzezińska 23f",
+  "lat": 50.204849,
+  "lon": 19.158587
+},
+{
+  "id": "ID00578",
+  "shopName": "Żabka",
+  "city": "Lubin",
+  "address": "ul. Sowia 3",
+  "lat": 51.380371,
+  "lon": 16.211895
+},
+{
+  "id": "ID00541",
+  "shopName": "Żabka",
+  "city": "Ostrów Wielkopolski",
+  "address": "ul. Wrocławska 31",
+  "lat": 51.646381,
+  "lon": 17.814888
+},
+{
+  "id": "ID00538",
+  "shopName": "Żabka",
+  "city": "Gdańsk",
+  "address": "ul. Jana Pawła II 11 b",
+  "lat": 54.401446,
+  "lon": 18.608338
+},
+{
+  "id": "ID00588",
+  "shopName": "Żabka",
+  "city": "Kwidzyn",
+  "address": "ul. Warszawska 20",
+  "lat": 53.737213,
+  "lon": 18.936153
+},
+{
+  "id": "ID00569",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "ul. Wiatraczna 9",
+  "lat": 52.246639,
+  "lon": 21.083847
+},
+{
+  "id": "ID00594",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "ul. Anioła 1",
+  "lat": 50.265114,
+  "lon": 18.997835
+},
+{
+  "id": "ID00587",
+  "shopName": "Żabka",
+  "city": "Gdynia",
+  "address": "UL. Morska 175",
+  "lat": 54.532065,
+  "lon": 18.492093
+},
+{
+  "id": "ID00596",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "ul. Więckowskiego 61",
+  "lat": 51.770966,
+  "lon": 19.440434
+},
+{
+  "id": "ID00585",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "ul. Bratysławska 10a",
+  "lat": 51.748989,
+  "lon": 19.422953
+},
+{
+  "id": "ID00582",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "ul. Traktorowa 63 lok. 303",
+  "lat": 51.796113,
+  "lon": 19.394706
+},
+{
+  "id": "ID00630",
+  "shopName": "Żabka",
+  "city": "Jaworzno",
+  "address": "ul. Grunwaldzka 204a",
+  "lat": 50.212326,
+  "lon": 19.259653
+},
+{
+  "id": "ID00607",
+  "shopName": "Żabka",
+  "city": "Jelenia Góra",
+  "address": "ul. Sudecka 11",
+  "lat": 50.900578,
+  "lon": 15.738693
+},
+{
+  "id": "ID00609",
+  "shopName": "Żabka",
+  "city": "Stalowa Wola",
+  "address": "ul. Poniatowskiego 14",
+  "lat": 50.569691,
+  "lon": 22.07444
+},
+{
+  "id": "ID00608",
+  "shopName": "Żabka",
+  "city": "Wąbrzeźno",
+  "address": "ul. 1 Maja 14",
+  "lat": 53.27989,
+  "lon": 18.950526
+},
+{
+  "id": "ID00606",
+  "shopName": "Żabka",
+  "city": "Jelenia Góra",
+  "address": "ul. Wolności 47",
+  "lat": 50.895657,
+  "lon": 15.728793
+},
+{
+  "id": "ID00631",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Chłopickiego 11//13 lok. U8",
+  "lat": 52.245514,
+  "lon": 21.1042
+},
+{
+  "id": "ID00628",
+  "shopName": "Żabka",
+  "city": "Ostrowiec Świętokrzyski",
+  "address": "ul. Sienkiewicza 59",
+  "lat": 50.944271,
+  "lon": 21.377661
+},
+{
+  "id": "ID00619",
+  "shopName": "Żabka",
+  "city": "Kędzierzyn-koźle",
+  "address": "ul. Czerwińskiego 6",
+  "lat": 50.333252,
+  "lon": 18.146509
+},
+{
+  "id": "ID00644",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Rzgowska 45b",
+  "lat": 51.734276,
+  "lon": 19.471012
+},
+{
+  "id": "ID00629",
+  "shopName": "Żabka",
+  "city": "Stary Sącz",
+  "address": "ul. Rynek 19",
+  "lat": 49.564106,
+  "lon": 20.633434
+},
+{
+  "id": "ID00642",
+  "shopName": "Żabka",
+  "city": "Radom",
+  "address": "Traugutta 11",
+  "lat": 51.393506,
+  "lon": 21.154392
+},
+{
+  "id": "ID00694",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Kilińskiego 30",
+  "lat": 51.118717,
+  "lon": 17.040326
+},
+{
+  "id": "ID00657",
+  "shopName": "Żabka",
+  "city": "Koźmin Wielkopolski",
+  "address": "Staszica 1",
+  "lat": 51.825897,
+  "lon": 17.450222
+},
+{
+  "id": "ID00675",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "Konicza 14",
+  "lat": 51.939544,
+  "lon": 15.524708
+},
+{
+  "id": "ID00632",
+  "shopName": "Żabka",
+  "city": "Częstochowa",
+  "address": "Kościuszki 21a",
+  "lat": 50.814816,
+  "lon": 19.118317
+},
+{
+  "id": "ID00689",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Katowicka 14",
+  "lat": 50.269085,
+  "lon": 19.034878
+},
+{
+  "id": "ID00645",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Zakładowa 62",
+  "lat": 51.740871,
+  "lon": 19.567608
+},
+{
+  "id": "ID00692",
+  "shopName": "Żabka",
+  "city": "Dzierżoniów",
+  "address": "Piłsudskiego 10a",
+  "lat": 50.729954,
+  "lon": 16.653858
+},
+{
+  "id": "ID00659",
+  "shopName": "Żabka",
+  "city": "Brzeg",
+  "address": "Armii Krajowej 18//2",
+  "lat": 50.858304,
+  "lon": 17.464691
+},
+{
+  "id": "ID00654",
+  "shopName": "Żabka",
+  "city": "Pruszków",
+  "address": "ul. Helenowska 20",
+  "lat": 52.157791,
+  "lon": 20.790024
+},
+{
+  "id": "ID00610",
+  "shopName": "Żabka",
+  "city": "Zgorzelec",
+  "address": "ul. Daszyńskiego 72",
+  "lat": 51.150192,
+  "lon": 15.005677
+},
+{
+  "id": "ID00614",
+  "shopName": "Żabka",
+  "city": "Tuchola",
+  "address": "ul. Wolności 4",
+  "lat": 53.58828,
+  "lon": 17.858328
+},
+{
+  "id": "ID00676",
+  "shopName": "Żabka",
+  "city": "Koszalin",
+  "address": "Kalinowa 14a",
+  "lat": 54.183296,
+  "lon": 16.22908
+},
+{
+  "id": "ID00674",
+  "shopName": "Żabka",
+  "city": "Polanica-zdrój",
+  "address": "Wojska Polskiego 4",
+  "lat": 50.399384,
+  "lon": 16.505754
+},
+{
+  "id": "ID00679",
+  "shopName": "Żabka",
+  "city": "Gubin",
+  "address": "Szkolna 2",
+  "lat": 51.956654,
+  "lon": 14.723346
+},
+{
+  "id": "ID00613",
+  "shopName": "Żabka",
+  "city": "Rzepin",
+  "address": "ul. Dworcowa 21",
+  "lat": 52.34763,
+  "lon": 14.826016
+},
+{
+  "id": "ID00616",
+  "shopName": "Żabka",
+  "city": "Dąbrowa Górnicza",
+  "address": "ul. Wybickiego 4",
+  "lat": 50.338596,
+  "lon": 19.224005
+},
+{
+  "id": "ID00685",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Mickiewicza 19",
+  "lat": 52.411175,
+  "lon": 16.911169
+},
+{
+  "id": "ID00681",
+  "shopName": "Żabka",
+  "city": "Kluczbork",
+  "address": "Krakowska 18",
+  "lat": 50.972668,
+  "lon": 18.21678
+},
+{
+  "id": "ID00651",
+  "shopName": "Żabka",
+  "city": "Chorzów",
+  "address": "Chopina 14",
+  "lat": 50.293953,
+  "lon": 18.954639
+},
+{
+  "id": "ID00690",
+  "shopName": "Żabka",
+  "city": "Czeladź",
+  "address": "Szpitalna 51",
+  "lat": 50.324867,
+  "lon": 19.073184
+},
+{
+  "id": "ID00641",
+  "shopName": "Żabka",
+  "city": "Nowa Sól",
+  "address": "Parafialna 2",
+  "lat": 51.804409,
+  "lon": 15.718998
+},
+{
+  "id": "ID00652",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Hetmańska 18",
+  "lat": 50.231945,
+  "lon": 18.976597
+},
+{
+  "id": "ID00697",
+  "shopName": "Żabka",
+  "city": "Sosnowiec",
+  "address": "3 Maja 17",
+  "lat": 50.2776,
+  "lon": 19.126342
+},
+{
+  "id": "ID00682",
+  "shopName": "Żabka",
+  "city": "Świdnica",
+  "address": "Komunardów 5",
+  "lat": 50.844872,
+  "lon": 16.482923
+},
+{
+  "id": "ID00638",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "ul. Główna 50 lok. 1",
+  "lat": 52.421349,
+  "lon": 16.972107
+},
+{
+  "id": "ID00687",
+  "shopName": "Żabka",
+  "city": "Ostrów Wielkopolski",
+  "address": "Kaliska 22",
+  "lat": 51.649812,
+  "lon": 17.820994
+},
+{
+  "id": "ID00636",
+  "shopName": "Żabka",
+  "city": "Rawicz",
+  "address": "Rynek 7",
+  "lat": 51.60961,
+  "lon": 16.858192
+},
+{
+  "id": "ID00693",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Pl. Św. Macieja 1-1A",
+  "lat": 51.119064,
+  "lon": 17.036095
+},
+{
+  "id": "ID00643",
+  "shopName": "Żabka",
+  "city": "Złocieniec",
+  "address": "Bohaterów Warszawy 9",
+  "lat": 53.533919,
+  "lon": 16.009569
+},
+{
+  "id": "ID00658",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Legionów 40",
+  "lat": 51.775955,
+  "lon": 19.446548
+},
+{
+  "id": "ID00639",
+  "shopName": "Żabka",
+  "city": "Lębork",
+  "address": "Czołgistów 15b",
+  "lat": 54.541019,
+  "lon": 17.736115
+},
+{
+  "id": "ID00653",
+  "shopName": "Żabka",
+  "city": "Szamotuły",
+  "address": "ul. Poznańska 22",
+  "lat": 52.61314,
+  "lon": 16.583778
+},
+{
+  "id": "ID00646",
+  "shopName": "Żabka",
+  "city": "Lubin",
+  "address": "Wronia 2B",
+  "lat": 51.387024,
+  "lon": 16.202515
+},
+{
+  "id": "ID00655",
+  "shopName": "Żabka",
+  "city": "Gdańsk",
+  "address": "ul. Wajdeloty 10",
+  "lat": 54.381721,
+  "lon": 18.610416
+},
+{
+  "id": "ID00660",
+  "shopName": "Żabka",
+  "city": "Wałbrzych",
+  "address": "Konopnickiej 15",
+  "lat": 50.769753,
+  "lon": 16.276754
+},
+{
+  "id": "ID00661",
+  "shopName": "Żabka",
+  "city": "Radomsko",
+  "address": "Prymasa Wyszyńskiego 23",
+  "lat": 51.065224,
+  "lon": 19.451851
+},
+{
+  "id": "ID00662",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Gdańska 97",
+  "lat": 51.764729,
+  "lon": 19.44985
+},
+{
+  "id": "ID00665",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "28 Czerwca 1956r. 134",
+  "lat": 52.390105,
+  "lon": 16.918817
+},
+{
+  "id": "ID00672",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Głogowska 124A",
+  "lat": 52.3895,
+  "lon": 16.893345
+},
+{
+  "id": "ID00666",
+  "shopName": "Żabka",
+  "city": "Chorzów",
+  "address": "Armii Krajowej 69 lok. 3",
+  "lat": 50.278294,
+  "lon": 18.946041
+},
+{
+  "id": "ID00671",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Piotrkowska 65 lok. 1",
+  "lat": 51.768505,
+  "lon": 19.455242
+},
+{
+  "id": "ID00670",
+  "shopName": "Żabka",
+  "city": "Lębork",
+  "address": "Olimpijczyków 28",
+  "lat": 54.526558,
+  "lon": 17.745613
+},
+{
+  "id": "ID00686",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Więckowskiego 31",
+  "lat": 51.771965,
+  "lon": 19.446335
+},
+{
+  "id": "ID00684",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Kościelna 31",
+  "lat": 52.415808,
+  "lon": 16.905455
+},
+{
+  "id": "ID00678",
+  "shopName": "Żabka",
+  "city": "Szczecinek",
+  "address": "Bohaterów Warszawy 19",
+  "lat": 53.709656,
+  "lon": 16.690689
+},
+{
+  "id": "ID00691",
+  "shopName": "Żabka",
+  "city": "Lublin",
+  "address": "Króla Rogera 4A//U1",
+  "lat": 51.275135,
+  "lon": 22.546379
+},
+{
+  "id": "ID00698",
+  "shopName": "Żabka",
+  "city": "Inowrocław",
+  "address": "Broniewskiego 1",
+  "lat": 52.798667,
+  "lon": 18.244892
+},
+{
+  "id": "ID00696",
+  "shopName": "Żabka",
+  "city": "Głogów",
+  "address": "Głowackiego 37",
+  "lat": 51.665096,
+  "lon": 16.080375
+},
+{
+  "id": "ID00700",
+  "shopName": "Żabka",
+  "city": "Grudziądz",
+  "address": "Sienkiewicza 5",
+  "lat": 53.489751,
+  "lon": 18.751858
+},
+{
+  "id": "ID00702",
+  "shopName": "Żabka",
+  "city": "Świnoujście",
+  "address": "Markiewicza 2",
+  "lat": 53.901432,
+  "lon": 14.229286
+},
+{
+  "id": "ID00726",
+  "shopName": "Żabka",
+  "city": "Kraków",
+  "address": "Kazimierza Wielkiego 22",
+  "lat": 50.071789,
+  "lon": 19.92392
+},
+{
+  "id": "ID00729",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Kanałowa 15",
+  "lat": 52.397518,
+  "lon": 16.904409
+},
+{
+  "id": "ID00717",
+  "shopName": "Żabka",
+  "city": "Gorzów Wielkopolski",
+  "address": "Kosynierów Gdyńskich 32",
+  "lat": 52.73879,
+  "lon": 15.228305
+},
+{
+  "id": "ID00722",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Głogowska 173a",
+  "lat": 52.383347,
+  "lon": 16.885889
+},
+{
+  "id": "ID00718",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Wschodnia 74",
+  "lat": 51.77124,
+  "lon": 19.458883
+},
+{
+  "id": "ID00714",
+  "shopName": "Żabka",
+  "city": "Jelenia Góra",
+  "address": "Kiepury 49",
+  "lat": 50.921616,
+  "lon": 15.756937
+},
+{
+  "id": "ID00712",
+  "shopName": "Żabka",
+  "city": "Racibórz",
+  "address": "Odrzańska 2-4//6",
+  "lat": 50.093299,
+  "lon": 18.220381
+},
+{
+  "id": "ID00699",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Wschodnia 55",
+  "lat": 51.772793,
+  "lon": 19.458031
+},
+{
+  "id": "ID00707",
+  "shopName": "Żabka",
+  "city": "Inowrocław",
+  "address": "Mieszka I 7",
+  "lat": 52.795601,
+  "lon": 18.271143
+},
+{
+  "id": "ID00706",
+  "shopName": "Żabka",
+  "city": "Ostrów Wielkopolski",
+  "address": "Kościuszki 29",
+  "lat": 51.639942,
+  "lon": 17.809521
+},
+{
+  "id": "ID00730",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Pomorska 9",
+  "lat": 51.116634,
+  "lon": 17.03163
+},
+{
+  "id": "ID00708",
+  "shopName": "Żabka",
+  "city": "Inowrocław",
+  "address": "Lipowa 51",
+  "lat": 52.790734,
+  "lon": 18.2794
+},
+{
+  "id": "ID00719",
+  "shopName": "Żabka",
+  "city": "Szczecin",
+  "address": "Ks. Kard. Stefana Wyszyńskiego 18 l",
+  "lat": 53.424267,
+  "lon": 14.553904
+},
+{
+  "id": "ID00724",
+  "shopName": "Żabka",
+  "city": "Nowa Ruda",
+  "address": "Rynek 17//Kolejowa 1",
+  "lat": 50.578636,
+  "lon": 16.501232
+},
+{
+  "id": "ID00709",
+  "shopName": "Żabka",
+  "city": "Rydułtowy",
+  "address": "Orłowiec 20",
+  "lat": 50.074167,
+  "lon": 18.423734
+},
+{
+  "id": "ID00710",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Jackowskiego 9",
+  "lat": 52.409733,
+  "lon": 16.901402
+},
+{
+  "id": "ID00715",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Wierzbięcice 25",
+  "lat": 52.396694,
+  "lon": 16.921137
+},
+{
+  "id": "ID00731",
+  "shopName": "Żabka",
+  "city": "Toruń",
+  "address": "Szosa Chełmińska 74",
+  "lat": 53.021285,
+  "lon": 18.597033
+},
+{
+  "id": "ID00721",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Kościuszki 198",
+  "lat": 51.097303,
+  "lon": 17.05538
+},
+{
+  "id": "ID00728",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Rudnickiego 10//2",
+  "lat": 52.267773,
+  "lon": 20.947882
+},
+{
+  "id": "ID00731",
+  "shopName": "Żabka",
+  "city": "Toruń",
+  "address": "Szosa Chełmińska 74",
+  "lat": 53.021285,
+  "lon": 18.597033
+},
+{
+  "id": "ID00738",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "PONIATOWSKIEGO 21//1B",
+  "lat": 51.121185,
+  "lon": 17.043528
+},
+{
+  "id": "ID00734",
+  "shopName": "Żabka",
+  "city": "Ostrów Wielkopolski",
+  "address": "Kolejowa 30",
+  "lat": 51.648945,
+  "lon": 17.809526
+},
+{
+  "id": "ID00736",
+  "shopName": "Żabka",
+  "city": "Jelenia Góra",
+  "address": "Wojska Polskiego 10",
+  "lat": 50.902519,
+  "lon": 15.746264
+},
+{
+  "id": "ID00745",
+  "shopName": "Żabka",
+  "city": "Gliwice",
+  "address": "Stalmacha 8",
+  "lat": 50.289124,
+  "lon": 18.662538
+},
+{
+  "id": "ID00741",
+  "shopName": "Żabka",
+  "city": "Kłodzko",
+  "address": "Pl. B. Chrobrego 34//Niska",
+  "lat": 50.43888,
+  "lon": 16.654828
+},
+{
+  "id": "ID00742",
+  "shopName": "Żabka",
+  "city": "Kowary",
+  "address": "1 Maja 53",
+  "lat": 50.796268,
+  "lon": 15.831274
+},
+{
+  "id": "ID00733",
+  "shopName": "Żabka",
+  "city": "Będzin",
+  "address": "Kościuszki 4",
+  "lat": 50.31884,
+  "lon": 19.134459
+},
+{
+  "id": "ID00757",
+  "shopName": "Żabka",
+  "city": "Gliwice",
+  "address": "Andersa 12",
+  "lat": 50.2971,
+  "lon": 18.649418
+},
+{
+  "id": "ID00746",
+  "shopName": "Żabka",
+  "city": "Bytom",
+  "address": "Krakowska 32",
+  "lat": 50.345787,
+  "lon": 18.928377
+},
+{
+  "id": "ID00753",
+  "shopName": "Żabka",
+  "city": "Koszalin",
+  "address": "Sikorskiego 4c//2",
+  "lat": 54.204491,
+  "lon": 16.182861
+},
+{
+  "id": "ID00765",
+  "shopName": "Żabka",
+  "city": "Głuchołazy",
+  "address": "Rynek 22",
+  "lat": 50.317535,
+  "lon": 17.383303
+},
+{
+  "id": "ID00772",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Sokolska 78",
+  "lat": 50.270088,
+  "lon": 19.020613
+},
+{
+  "id": "ID00760",
+  "shopName": "Żabka",
+  "city": "Bełchatów",
+  "address": "Pl. G. Narutowicza 26",
+  "lat": 51.367378,
+  "lon": 19.371977
+},
+{
+  "id": "ID00774",
+  "shopName": "Żabka",
+  "city": "Gorzów Wielkopolski",
+  "address": "30-Stycznia 2a//1",
+  "lat": 52.73526,
+  "lon": 15.236504
+},
+{
+  "id": "ID00765",
+  "shopName": "Żabka",
+  "city": "Głuchołazy",
+  "address": "Rynek 22",
+  "lat": 50.317535,
+  "lon": 17.383303
+},
+{
+  "id": "ID00753",
+  "shopName": "Żabka",
+  "city": "Koszalin",
+  "address": "Sikorskiego 4c//2",
+  "lat": 54.204491,
+  "lon": 16.182861
+},
+{
+  "id": "ID00747",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Armii Krajowej 32 paw. 101",
+  "lat": 51.745518,
+  "lon": 19.397877
+},
+{
+  "id": "ID00775",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Kilińskiego 46 lok. 2_U",
+  "lat": 51.772352,
+  "lon": 19.463203
+},
+{
+  "id": "ID00748",
+  "shopName": "Żabka",
+  "city": "Legnica",
+  "address": "Jagiellońska 9//1a",
+  "lat": 51.208424,
+  "lon": 16.152033
+},
+{
+  "id": "ID00781",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "Dworcowa 37",
+  "lat": 51.946801,
+  "lon": 15.513005
+},
+{
+  "id": "ID00767",
+  "shopName": "Żabka",
+  "city": "Bielsko-biała",
+  "address": "Mickiewicza 31A lok. 1",
+  "lat": 49.827606,
+  "lon": 19.043413
+},
+{
+  "id": "ID00776",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Kacza 8",
+  "lat": 52.240913,
+  "lon": 20.980555
+},
+{
+  "id": "ID00776",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Kacza 8",
+  "lat": 52.240913,
+  "lon": 20.980555
+},
+{
+  "id": "ID00768",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Krynicka 50-52",
+  "lat": 51.080793,
+  "lon": 17.049226
+},
+{
+  "id": "ID00751",
+  "shopName": "Żabka",
+  "city": "Jelenia Góra",
+  "address": "1 Maja 16//18",
+  "lat": 50.903227,
+  "lon": 15.741276
+},
+{
+  "id": "ID00785",
+  "shopName": "Żabka",
+  "city": "Gostyń",
+  "address": "Powstańców Wielkopolskich 44",
+  "lat": 51.878929,
+  "lon": 17.009857
+},
+{
+  "id": "ID00752",
+  "shopName": "Żabka",
+  "city": "Choszczno",
+  "address": "Wolności 4",
+  "lat": 53.166962,
+  "lon": 15.412628
+},
+{
+  "id": "ID00774",
+  "shopName": "Żabka",
+  "city": "Gorzów Wielkopolski",
+  "address": "30-Stycznia 2a//1",
+  "lat": 52.73526,
+  "lon": 15.236504
+},
+{
+  "id": "ID00758",
+  "shopName": "Żabka",
+  "city": "Kielce",
+  "address": "Paderewskiego 8",
+  "lat": 50.870155,
+  "lon": 20.622331
+},
+{
+  "id": "ID00752",
+  "shopName": "Żabka",
+  "city": "Choszczno",
+  "address": "Wolności 4",
+  "lat": 53.166962,
+  "lon": 15.412628
+},
+{
+  "id": "ID00778",
+  "shopName": "Żabka",
+  "city": "Knurów",
+  "address": "Niepodległości 18",
+  "lat": 50.220195,
+  "lon": 18.665581
+},
+{
+  "id": "ID00756",
+  "shopName": "Żabka",
+  "city": "Sosnowiec",
+  "address": "Staropogońska 82",
+  "lat": 50.293736,
+  "lon": 19.12031
+},
+{
+  "id": "ID00779",
+  "shopName": "Żabka",
+  "city": "Szczecinek",
+  "address": "Wyszyńskiego 86",
+  "lat": 53.703194,
+  "lon": 16.698914
+},
+{
+  "id": "ID00755",
+  "shopName": "Żabka",
+  "city": "Ruda Śląska",
+  "address": "Joanny 2\"B\"",
+  "lat": 50.313989,
+  "lon": 18.884947
+},
+{
+  "id": "ID00761",
+  "shopName": "Żabka",
+  "city": "Złotów",
+  "address": "Bohaterów Westerplatte 7",
+  "lat": 53.361317,
+  "lon": 17.040119
+},
+{
+  "id": "ID00782",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Staszica 4",
+  "lat": 52.41309,
+  "lon": 16.899202
+},
+{
+  "id": "ID00757",
+  "shopName": "Żabka",
+  "city": "Gliwice",
+  "address": "Andersa 12",
+  "lat": 50.2971,
+  "lon": 18.649418
+},
+{
+  "id": "ID00758",
+  "shopName": "Żabka",
+  "city": "Kielce",
+  "address": "Paderewskiego 8",
+  "lat": 50.870155,
+  "lon": 20.622331
+},
+{
+  "id": "ID00760",
+  "shopName": "Żabka",
+  "city": "Bełchatów",
+  "address": "Pl. G. Narutowicza 26",
+  "lat": 51.367378,
+  "lon": 19.371977
+},
+{
+  "id": "ID00782",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Staszica 4",
+  "lat": 52.41309,
+  "lon": 16.899202
+},
+{
+  "id": "ID00761",
+  "shopName": "Żabka",
+  "city": "Złotów",
+  "address": "Bohaterów Westerplatte 7",
+  "lat": 53.361317,
+  "lon": 17.040119
+},
+{
+  "id": "ID00772",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Sokolska 78",
+  "lat": 50.270088,
+  "lon": 19.020613
+},
+{
+  "id": "ID00771",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Kamieńskiego 132-144 lok. 1 i 2",
+  "lat": 51.148363,
+  "lon": 17.042468
+},
+{
+  "id": "ID00768",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Krynicka 50-52",
+  "lat": 51.080793,
+  "lon": 17.049226
+},
+{
+  "id": "ID00769",
+  "shopName": "Żabka",
+  "city": "Gorzów Wielkopolski",
+  "address": "Kard. Stefana Wyszyńskiego 121a//B i",
+  "lat": 52.749119,
+  "lon": 15.23675
+},
+{
+  "id": "ID00767",
+  "shopName": "Żabka",
+  "city": "Bielsko-biała",
+  "address": "Mickiewicza 31A lok. 1",
+  "lat": 49.827606,
+  "lon": 19.043413
+},
+{
+  "id": "ID00779",
+  "shopName": "Żabka",
+  "city": "Szczecinek",
+  "address": "Wyszyńskiego 86",
+  "lat": 53.703194,
+  "lon": 16.698914
+},
+{
+  "id": "ID00778",
+  "shopName": "Żabka",
+  "city": "Knurów",
+  "address": "Niepodległości 18",
+  "lat": 50.220195,
+  "lon": 18.665581
+},
+{
+  "id": "ID00771",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Kamieńskiego 132-144 lok. 1 i 2",
+  "lat": 51.148363,
+  "lon": 17.042468
+},
+{
+  "id": "ID00756",
+  "shopName": "Żabka",
+  "city": "Sosnowiec",
+  "address": "Staropogońska 82",
+  "lat": 50.293736,
+  "lon": 19.12031
+},
+{
+  "id": "ID00755",
+  "shopName": "Żabka",
+  "city": "Ruda Śląska",
+  "address": "Joanny 2\"B\"",
+  "lat": 50.313989,
+  "lon": 18.884947
+},
+{
+  "id": "ID00751",
+  "shopName": "Żabka",
+  "city": "Jelenia Góra",
+  "address": "1 Maja 16//18",
+  "lat": 50.903227,
+  "lon": 15.741276
+},
+{
+  "id": "ID00769",
+  "shopName": "Żabka",
+  "city": "Gorzów Wielkopolski",
+  "address": "Kard. Stefana Wyszyńskiego 121a//B i",
+  "lat": 52.749119,
+  "lon": 15.23675
+},
+{
+  "id": "ID00801",
+  "shopName": "Żabka",
+  "city": "Toruń",
+  "address": "Kościuszki 34",
+  "lat": 53.023406,
+  "lon": 18.61851
+},
+{
+  "id": "ID00775",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Kilińskiego 46 lok. 2_U",
+  "lat": 51.772352,
+  "lon": 19.463203
+},
+{
+  "id": "ID00781",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "Dworcowa 37",
+  "lat": 51.946801,
+  "lon": 15.513005
+},
+{
+  "id": "ID00800",
+  "shopName": "Żabka",
+  "city": "Zabrze",
+  "address": "Wolności 321",
+  "lat": 50.302731,
+  "lon": 18.791743
+},
+{
+  "id": "ID00786",
+  "shopName": "Żabka",
+  "city": "Włocławek",
+  "address": "Ostrowska 23",
+  "lat": 52.641151,
+  "lon": 19.095318
+},
+{
+  "id": "ID00795",
+  "shopName": "Żabka",
+  "city": "Koło",
+  "address": "Niezłomnych 7",
+  "lat": 52.202044,
+  "lon": 18.638671
+},
+{
+  "id": "ID00774",
+  "shopName": "Żabka",
+  "city": "Gorzów Wielkopolski",
+  "address": "30-Stycznia 2a//1",
+  "lat": 52.73526,
+  "lon": 15.236504
+},
+{
+  "id": "ID00803",
+  "shopName": "Żabka",
+  "city": "Gorzów Wielkopolski",
+  "address": "Obotrycka 8",
+  "lat": 52.7311,
+  "lon": 15.242489
+},
+{
+  "id": "ID00772",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Sokolska 78",
+  "lat": 50.270088,
+  "lon": 19.020613
+},
+{
+  "id": "ID00792",
+  "shopName": "Żabka",
+  "city": "Bydgoszcz",
+  "address": "Świętojańska 14",
+  "lat": 53.132877,
+  "lon": 18.008348
+},
+{
+  "id": "ID00791",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Łukaszewicza 20a",
+  "lat": 52.392896,
+  "lon": 16.903017
+},
+{
+  "id": "ID00794",
+  "shopName": "Żabka",
+  "city": "Kościan",
+  "address": "Wielichowska 2",
+  "lat": 52.081146,
+  "lon": 16.633295
+},
+{
+  "id": "ID00796",
+  "shopName": "Żabka",
+  "city": "Bydgoszcz",
+  "address": "Dworcowa 64",
+  "lat": 53.1297,
+  "lon": 17.99691
+},
+{
+  "id": "ID00790",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Traugutta 98-100 I",
+  "lat": 51.101273,
+  "lon": 17.052997
+},
+{
+  "id": "ID00771",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Kamieńskiego 132-144 lok. 1 i 2",
+  "lat": 51.148363,
+  "lon": 17.042468
+},
+{
+  "id": "ID00793",
+  "shopName": "Żabka",
+  "city": "Rybnik",
+  "address": "Raciborska 13",
+  "lat": 50.09536,
+  "lon": 18.538424
+},
+{
+  "id": "ID00789",
+  "shopName": "Żabka",
+  "city": "Siemianowice Śląskie",
+  "address": "Kościelna 61",
+  "lat": 50.323593,
+  "lon": 19.003091
+},
+{
+  "id": "ID00804",
+  "shopName": "Żabka",
+  "city": "Malbork",
+  "address": "Sienkiewicza 37//6",
+  "lat": 54.032356,
+  "lon": 19.033997
+},
+{
+  "id": "ID00805",
+  "shopName": "Żabka",
+  "city": "Jarocin",
+  "address": "ul. Wrocławska 20",
+  "lat": 51.970078,
+  "lon": 17.500874
+},
+{
+  "id": "ID00798",
+  "shopName": "Żabka",
+  "city": "Goleniów",
+  "address": "Pocztowa 1",
+  "lat": 53.562061,
+  "lon": 14.832324
+},
+{
+  "id": "ID00785",
+  "shopName": "Żabka",
+  "city": "Gostyń",
+  "address": "Powstańców Wielkopolskich 44",
+  "lat": 51.878929,
+  "lon": 17.009857
+},
+{
+  "id": "ID00776",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Kacza 8",
+  "lat": 52.240913,
+  "lon": 20.980555
+},
+{
+  "id": "ID00778",
+  "shopName": "Żabka",
+  "city": "Knurów",
+  "address": "Niepodległości 18",
+  "lat": 50.220195,
+  "lon": 18.665581
+},
+{
+  "id": "ID00775",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Kilińskiego 46 lok. 2_U",
+  "lat": 51.772352,
+  "lon": 19.463203
+},
+{
+  "id": "ID00785",
+  "shopName": "Żabka",
+  "city": "Gostyń",
+  "address": "Powstańców Wielkopolskich 44",
+  "lat": 51.878929,
+  "lon": 17.009857
+},
+{
+  "id": "ID00786",
+  "shopName": "Żabka",
+  "city": "Włocławek",
+  "address": "Ostrowska 23",
+  "lat": 52.641151,
+  "lon": 19.095318
+},
+{
+  "id": "ID00782",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Staszica 4",
+  "lat": 52.41309,
+  "lon": 16.899202
+},
+{
+  "id": "ID00781",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "Dworcowa 37",
+  "lat": 51.946801,
+  "lon": 15.513005
+},
+{
+  "id": "ID00779",
+  "shopName": "Żabka",
+  "city": "Szczecinek",
+  "address": "Wyszyńskiego 86",
+  "lat": 53.703194,
+  "lon": 16.698914
+},
+{
+  "id": "ID00807",
+  "shopName": "Żabka",
+  "city": "Pyskowice",
+  "address": "Wyszyńskiego 7",
+  "lat": 50.398632,
+  "lon": 18.628813
+},
+{
+  "id": "ID00808",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Żwirki i Wigury 13",
+  "lat": 50.254116,
+  "lon": 19.014465
+},
+{
+  "id": "ID00853",
+  "shopName": "Żabka",
+  "city": "Dąbrowa Górnicza",
+  "address": "Legionów Polskich 131a",
+  "lat": 50.318932,
+  "lon": 19.174026
+},
+{
+  "id": "ID00828",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Pułaskiego 24",
+  "lat": 51.100922,
+  "lon": 17.046068
+},
+{
+  "id": "ID00857",
+  "shopName": "Żabka",
+  "city": "Dąbrowa Górnicza",
+  "address": "Piłsudskiego 34D//637A",
+  "lat": 50.330696,
+  "lon": 19.223343
+},
+{
+  "id": "ID00854",
+  "shopName": "Żabka",
+  "city": "Szczecin",
+  "address": "Felczaka 7",
+  "lat": 53.438591,
+  "lon": 14.545732
+},
+{
+  "id": "ID00876",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "ul. Mostowa 34//2",
+  "lat": 52.406803,
+  "lon": 16.938564
+},
+{
+  "id": "ID00856",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "ul. Tęczowa 20//1a",
+  "lat": 51.107023,
+  "lon": 17.019759
+},
+{
+  "id": "ID00817",
+  "shopName": "Żabka",
+  "city": "Niemodlin",
+  "address": "Rynek 12",
+  "lat": 50.641926,
+  "lon": 17.620062
+},
+{
+  "id": "ID00890",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Plebiscytowa 17",
+  "lat": 50.254639,
+  "lon": 19.020584
+},
+{
+  "id": "ID00874",
+  "shopName": "Żabka",
+  "city": "Bydgoszcz",
+  "address": "ul. Wojska Polskiego 23 lok. Y",
+  "lat": 53.107719,
+  "lon": 18.048758
+},
+{
+  "id": "ID00835",
+  "shopName": "Żabka",
+  "city": "Sosnowiec",
+  "address": "Wybickiego 21a",
+  "lat": 50.292477,
+  "lon": 19.158426
+},
+{
+  "id": "ID00816",
+  "shopName": "Żabka",
+  "city": "Włocławek",
+  "address": "Łanowa 29a",
+  "lat": 52.645595,
+  "lon": 19.096774
+},
+{
+  "id": "ID00810",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Strzelecka 13",
+  "lat": 52.404423,
+  "lon": 16.933411
+},
+{
+  "id": "ID00818",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Sienkiewicza 20",
+  "lat": 52.409355,
+  "lon": 16.908047
+},
+{
+  "id": "ID00813",
+  "shopName": "Żabka",
+  "city": "Kraków",
+  "address": "Śląska 4",
+  "lat": 50.07387,
+  "lon": 19.93346
+},
+{
+  "id": "ID00812",
+  "shopName": "Żabka",
+  "city": "Jastrzębie-zdrój",
+  "address": "Opolska (Pawilon 722)",
+  "lat": 49.954647,
+  "lon": 18.590322
+},
+{
+  "id": "ID00824",
+  "shopName": "Żabka",
+  "city": "Żory",
+  "address": "ul. Osińska 66",
+  "lat": 50.032505,
+  "lon": 18.694149
+},
+{
+  "id": "ID00821",
+  "shopName": "Żabka",
+  "city": "Wieluń",
+  "address": "ul. Śląska 30",
+  "lat": 51.220062,
+  "lon": 18.569639
+},
+{
+  "id": "ID00814",
+  "shopName": "Żabka",
+  "city": "Żywiec",
+  "address": "Kościuszki 9",
+  "lat": 49.688583,
+  "lon": 19.200953
+},
+{
+  "id": "ID00820",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "28 czerwca 1956 nr 319",
+  "lat": 52.370378,
+  "lon": 16.903708
+},
+{
+  "id": "ID00843",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "Kupiecka 2",
+  "lat": 51.938568,
+  "lon": 15.509451
+},
+{
+  "id": "ID00842",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Al. Włókniarzy 234",
+  "lat": 51.758709,
+  "lon": 19.433905
+},
+{
+  "id": "ID00811",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Trzebnicka 60",
+  "lat": 51.127617,
+  "lon": 17.036123
+},
+{
+  "id": "ID00819",
+  "shopName": "Żabka",
+  "city": "Gryfino",
+  "address": "Piastów 8A",
+  "lat": 53.25238,
+  "lon": 14.486596
+},
+{
+  "id": "ID00873",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "ul. Żeromskiego 43",
+  "lat": 51.768665,
+  "lon": 19.446036
+},
+{
+  "id": "ID00823",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "ul. Budziszyńska 68",
+  "lat": 51.113867,
+  "lon": 16.963013
+},
+{
+  "id": "ID00841",
+  "shopName": "Żabka",
+  "city": "Swarzędz",
+  "address": "os. Dąbrowszczaków 8//15",
+  "lat": 52.414585,
+  "lon": 17.079529
+},
+{
+  "id": "ID00869",
+  "shopName": "Żabka",
+  "city": "Trzcianka",
+  "address": "Pl. Pocztowy 1",
+  "lat": 53.041903,
+  "lon": 16.461241
+},
+{
+  "id": "ID00845",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "os. Lecha 42",
+  "lat": 52.394737,
+  "lon": 16.975969
+},
+{
+  "id": "ID00861",
+  "shopName": "Żabka",
+  "city": "Żywiec",
+  "address": "Komorowskich 114",
+  "lat": 49.683208,
+  "lon": 19.207067
+},
+{
+  "id": "ID00871",
+  "shopName": "Żabka",
+  "city": "Zabrze",
+  "address": "ul.3 Maja 30",
+  "lat": 50.298195,
+  "lon": 18.78709
+},
+{
+  "id": "ID00848",
+  "shopName": "Żabka",
+  "city": "Duszniki Zdrój",
+  "address": "Rynek 2",
+  "lat": 50.403151,
+  "lon": 16.390098
+},
+{
+  "id": "ID00822",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Nad Wierzbakiem 16//1",
+  "lat": 52.421474,
+  "lon": 16.908892
+},
+{
+  "id": "ID00846",
+  "shopName": "Żabka",
+  "city": "Koszalin",
+  "address": "1 Maja 2",
+  "lat": 54.18959,
+  "lon": 16.182421
+},
+{
+  "id": "ID00885",
+  "shopName": "Żabka",
+  "city": "Rybnik",
+  "address": "Łony 9//1",
+  "lat": 50.096199,
+  "lon": 18.544554
+},
+{
+  "id": "ID00833",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Traugutta 69//1B",
+  "lat": 51.103168,
+  "lon": 17.050442
+},
+{
+  "id": "ID00851",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Tuwima 48",
+  "lat": 51.766499,
+  "lon": 19.467773
+},
+{
+  "id": "ID00893",
+  "shopName": "Żabka",
+  "city": "Bogatynia",
+  "address": "Wyczółkowskiego 42F",
+  "lat": 50.901642,
+  "lon": 14.974434
+},
+{
+  "id": "ID00825",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Krasińskiego 13 lok. 1A",
+  "lat": 51.10659,
+  "lon": 17.043359
+},
+{
+  "id": "ID00827",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "Dr Pieniężnego 27, dz. 207//3",
+  "lat": 51.941073,
+  "lon": 15.508663
+},
+{
+  "id": "ID00832",
+  "shopName": "Żabka",
+  "city": "Świebodzice",
+  "address": "ul. Henryka Pobożnego 21",
+  "lat": 50.864845,
+  "lon": 16.311373
+},
+{
+  "id": "ID00850",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Marcelińska 54//4",
+  "lat": 52.404319,
+  "lon": 16.879973
+},
+{
+  "id": "ID00858",
+  "shopName": "Żabka",
+  "city": "Świętochłowice",
+  "address": "Łagiewnicka 45//Górna",
+  "lat": 50.31189,
+  "lon": 18.9146
+},
+{
+  "id": "ID00864",
+  "shopName": "Żabka",
+  "city": "Częstochowa",
+  "address": "Boh. Katynia 31",
+  "lat": 50.772982,
+  "lon": 19.153416
+},
+{
+  "id": "ID00872",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "ul. Zarzewska 9",
+  "lat": 51.741455,
+  "lon": 19.465378
+},
+{
+  "id": "ID00879",
+  "shopName": "Żabka",
+  "city": "Racibórz",
+  "address": "Opawska 95//1B",
+  "lat": 50.08128,
+  "lon": 18.208702
+},
+{
+  "id": "ID00891",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Mariacka 1",
+  "lat": 50.257431,
+  "lon": 19.024667
+},
+{
+  "id": "ID00836",
+  "shopName": "Żabka",
+  "city": "Bielsko-biała",
+  "address": "Spółdzielców 98",
+  "lat": 49.813152,
+  "lon": 19.003677
+},
+{
+  "id": "ID00849",
+  "shopName": "Żabka",
+  "city": "Toruń",
+  "address": "Konopnickiej 23a",
+  "lat": 53.011843,
+  "lon": 18.585658
+},
+{
+  "id": "ID00855",
+  "shopName": "Żabka",
+  "city": "Szczecin",
+  "address": "Wiosny Ludów 89//U1",
+  "lat": 53.459442,
+  "lon": 14.535434
+},
+{
+  "id": "ID00862",
+  "shopName": "Żabka",
+  "city": "Suwałki",
+  "address": "Utrata 2b",
+  "lat": 54.104262,
+  "lon": 22.936712
+},
+{
+  "id": "ID00877",
+  "shopName": "Żabka",
+  "city": "Lubin",
+  "address": "ul. Krucza 45",
+  "lat": 51.379677,
+  "lon": 16.215103
+},
+{
+  "id": "ID00887",
+  "shopName": "Żabka",
+  "city": "Kraków",
+  "address": "Kobierzyńska 73",
+  "lat": 50.028853,
+  "lon": 19.916337
+},
+{
+  "id": "ID00884",
+  "shopName": "Żabka",
+  "city": "Żory",
+  "address": "Pawlikowskiego 32a",
+  "lat": 50.031391,
+  "lon": 18.679752
+},
+{
+  "id": "ID00912",
+  "shopName": "Żabka",
+  "city": "Krzyż Wielkopolski",
+  "address": "Plac Zwycięstwa 9",
+  "lat": 52.879839,
+  "lon": 16.013787
+},
+{
+  "id": "ID00875",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "ul. Grunwaldzka 20b",
+  "lat": 52.40556,
+  "lon": 16.90082
+},
+{
+  "id": "ID00881",
+  "shopName": "Żabka",
+  "city": "Piła",
+  "address": "Buczka 28a",
+  "lat": 53.147015,
+  "lon": 16.730589
+},
+{
+  "id": "ID00892",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Limanowskiego 115",
+  "lat": 51.790215,
+  "lon": 19.431496
+},
+{
+  "id": "ID00926",
+  "shopName": "Żabka",
+  "city": "Bydgoszcz",
+  "address": "Chodkiewicza 22",
+  "lat": 53.133011,
+  "lon": 18.015997
+},
+{
+  "id": "ID00895",
+  "shopName": "Żabka",
+  "city": "Łowicz",
+  "address": "Nowy Rynek 31",
+  "lat": 52.106482,
+  "lon": 19.935998
+},
+{
+  "id": "ID00914",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Zaporoska 31a",
+  "lat": 51.098997,
+  "lon": 17.013741
+},
+{
+  "id": "ID00918",
+  "shopName": "Żabka",
+  "city": "Jelenia Góra",
+  "address": "Szkolna 12",
+  "lat": 50.902087,
+  "lon": 15.736493
+},
+{
+  "id": "ID00905",
+  "shopName": "Żabka",
+  "city": "Mińsk Mazowiecki",
+  "address": "Tartaczna 16",
+  "lat": 52.182526,
+  "lon": 21.550423
+},
+{
+  "id": "ID00898",
+  "shopName": "Żabka",
+  "city": "Łaziska Górne",
+  "address": "Osiedle Centrum 9",
+  "lat": 50.149174,
+  "lon": 18.840664
+},
+{
+  "id": "ID00931",
+  "shopName": "Żabka",
+  "city": "Leszno",
+  "address": "Zwycięstwa 1",
+  "lat": 51.841991,
+  "lon": 16.583553
+},
+{
+  "id": "ID00913",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Sanocka 14",
+  "lat": 51.733128,
+  "lon": 19.458483
+},
+{
+  "id": "ID00900",
+  "shopName": "Żabka",
+  "city": "Konin",
+  "address": "Kolejowa 6",
+  "lat": 52.230873,
+  "lon": 18.249983
+},
+{
+  "id": "ID00907",
+  "shopName": "Żabka",
+  "city": "Piaseczno",
+  "address": "Puławska 18//2",
+  "lat": 52.077149,
+  "lon": 21.025832
+},
+{
+  "id": "ID00903",
+  "shopName": "Żabka",
+  "city": "Włocławek",
+  "address": "Targowa 9",
+  "lat": 52.655632,
+  "lon": 19.072573
+},
+{
+  "id": "ID00906",
+  "shopName": "Żabka",
+  "city": "Świdnica",
+  "address": "Pułaskiego 2",
+  "lat": 50.842685,
+  "lon": 16.488262
+},
+{
+  "id": "ID00933",
+  "shopName": "Żabka",
+  "city": "Głogów",
+  "address": "Gomółki 12",
+  "lat": 51.655415,
+  "lon": 16.07501
+},
+{
+  "id": "ID00910",
+  "shopName": "Żabka",
+  "city": "Leszno",
+  "address": "Słowiańska 34",
+  "lat": 51.843025,
+  "lon": 16.569157
+},
+{
+  "id": "ID00924",
+  "shopName": "Żabka",
+  "city": "Pyskowice",
+  "address": "Wojska Polskiego 12",
+  "lat": 50.402447,
+  "lon": 18.626719
+},
+{
+  "id": "ID00902",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Gustawa Morcinka 5//2",
+  "lat": 52.259361,
+  "lon": 20.920527
+},
+{
+  "id": "ID00922",
+  "shopName": "Żabka",
+  "city": "Człuchów",
+  "address": "Oś. Wazów 1//7",
+  "lat": 53.665844,
+  "lon": 17.356623
+},
+{
+  "id": "ID00911",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Traugutta 9",
+  "lat": 51.768917,
+  "lon": 19.459846
+},
+{
+  "id": "ID00916",
+  "shopName": "Żabka",
+  "city": "Namysłów",
+  "address": "Reymonta 90",
+  "lat": 51.071101,
+  "lon": 17.717133
+},
+{
+  "id": "ID00923",
+  "shopName": "Żabka",
+  "city": "Poznań",
+  "address": "Głogowska 65",
+  "lat": 52.396259,
+  "lon": 16.901184
+},
+{
+  "id": "ID00917",
+  "shopName": "Żabka",
+  "city": "Legnica",
+  "address": "Chojnowska 44",
+  "lat": 51.206699,
+  "lon": 16.154514
+},
+{
+  "id": "ID00929",
+  "shopName": "Żabka",
+  "city": "Świętochłowice",
+  "address": "Katowicka 23",
+  "lat": 50.289802,
+  "lon": 18.920731
+},
+{
+  "id": "ID00943",
+  "shopName": "Żabka",
+  "city": "Gorzów Wielkopolski",
+  "address": "Sikorskiego 18//1 i 2",
+  "lat": 52.730064,
+  "lon": 15.235601
+},
+{
+  "id": "ID00945",
+  "shopName": "Żabka",
+  "city": "Bytom",
+  "address": "Zabrzańska 30",
+  "lat": 50.339176,
+  "lon": 18.903458
+},
+{
+  "id": "ID00937",
+  "shopName": "Żabka",
+  "city": "Kalisz",
+  "address": "Złota 11",
+  "lat": 51.763397,
+  "lon": 18.087065
+},
+{
+  "id": "ID00951",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Przybyszewskiego 47//49",
+  "lat": 51.744261,
+  "lon": 19.470352
+},
+{
+  "id": "ID00941",
+  "shopName": "Żabka",
+  "city": "Gryfów Śląski",
+  "address": "Felczerska 1",
+  "lat": 51.028442,
+  "lon": 15.415103
+},
+{
+  "id": "ID00953",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Szopienicka 13",
+  "lat": 50.235958,
+  "lon": 19.072772
+},
+{
+  "id": "ID00942",
+  "shopName": "Żabka",
+  "city": "Kielce",
+  "address": "Dewońska 19 lok. 9",
+  "lat": 50.886591,
+  "lon": 20.582455
+},
+{
+  "id": "ID00939",
+  "shopName": "Żabka",
+  "city": "Gdynia",
+  "address": "Chylońska 251B",
+  "lat": 54.547977,
+  "lon": 18.442623
+},
+{
+  "id": "ID00938",
+  "shopName": "Żabka",
+  "city": "Szklarska Poręba",
+  "address": "Jedności Narodowej 7",
+  "lat": 50.828314,
+  "lon": 15.518814
+},
+{
+  "id": "ID00936",
+  "shopName": "Żabka",
+  "city": "Lublin",
+  "address": "Gospodarcza 2",
+  "lat": 51.242793,
+  "lon": 22.596716
+},
+{
+  "id": "ID00946",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Tuszyńska 22",
+  "lat": 51.731096,
+  "lon": 19.467828
+},
+{
+  "id": "ID00948",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Igańska 11",
+  "lat": 52.241233,
+  "lon": 21.089779
+},
+{
+  "id": "ID00950",
+  "shopName": "Żabka",
+  "city": "Gdynia",
+  "address": "Kornela Ujejskiego 29-35 lok. UI//17",
+  "lat": 54.506113,
+  "lon": 18.540464
+},
+{
+  "id": "ID00956",
+  "shopName": "Żabka",
+  "city": "Częstochowa",
+  "address": "Michałowskiego 10",
+  "lat": 50.839073,
+  "lon": 19.120235
+},
+{
+  "id": "ID00957",
+  "shopName": "Żabka",
+  "city": "Tychy",
+  "address": "Biblioteczna 20",
+  "lat": 50.125797,
+  "lon": 18.984137
+},
+{
+  "id": "ID00959",
+  "shopName": "Żabka",
+  "city": "Częstochowa",
+  "address": "Fieldorfa \"Nila\" 12 lok. 2",
+  "lat": 50.842121,
+  "lon": 19.128923
+},
+{
+  "id": "ID00958",
+  "shopName": "Żabka",
+  "city": "Wolsztyn",
+  "address": "5-go Stycznia 53",
+  "lat": 52.11602,
+  "lon": 16.110035
+},
+{
+  "id": "ID00960",
+  "shopName": "Żabka",
+  "city": "Zabrze",
+  "address": "Damrota 20",
+  "lat": 50.301792,
+  "lon": 18.768688
+},
+{
+  "id": "ID00963",
+  "shopName": "Żabka",
+  "city": "Łódź",
+  "address": "Julianowska 7a",
+  "lat": 51.800081,
+  "lon": 19.453899
+},
+{
+  "id": "ID00968",
+  "shopName": "Żabka",
+  "city": "Racibórz",
+  "address": "Opawska 54//1",
+  "lat": 50.084282,
+  "lon": 18.21277
+},
+{
+  "id": "ID00966",
+  "shopName": "Żabka",
+  "city": "Zabrze",
+  "address": "Wolności 290",
+  "lat": 50.306343,
+  "lon": 18.787874
+},
+{
+  "id": "ID00969",
+  "shopName": "Żabka",
+  "city": "Jastrzębie-zdrój",
+  "address": "Łowicka 35",
+  "lat": 49.947212,
+  "lon": 18.600056
+},
+{
+  "id": "ID00973",
+  "shopName": "Żabka",
+  "city": "Katowice",
+  "address": "Mikołowska 15",
+  "lat": 50.256374,
+  "lon": 19.012157
+},
+{
+  "id": "ID00976",
+  "shopName": "Żabka",
+  "city": "Gdynia",
+  "address": "Chylońska 91A",
+  "lat": 54.54258,
+  "lon": 18.46962
+},
+{
+  "id": "ID00977",
+  "shopName": "Żabka",
+  "city": "Zielona Góra",
+  "address": "Jedności 11",
+  "lat": 51.937784,
+  "lon": 15.50251
+},
+{
+  "id": "ID00975",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Majdańska 7",
+  "lat": 52.239541,
+  "lon": 21.086026
+},
+{
+  "id": "ID00979",
+  "shopName": "Żabka",
+  "city": "Skawina",
+  "address": "Ogrody 6A",
+  "lat": 49.971571,
+  "lon": 19.830567
+},
+{
+  "id": "ID00981",
+  "shopName": "Żabka",
+  "city": "Tychy",
+  "address": "Al. Niepodległości 56-58",
+  "lat": 50.117286,
+  "lon": 18.989425
+},
+{
+  "id": "ID00982",
+  "shopName": "Żabka",
+  "city": "Międzychód",
+  "address": "17 Stycznia 49",
+  "lat": 52.604644,
+  "lon": 15.892876
+},
+{
+  "id": "ID00989",
+  "shopName": "Żabka",
+  "city": "Wrocław",
+  "address": "Żelazna 50A",
+  "lat": 51.098556,
+  "lon": 17.006079
+},
+{
+  "id": "ID00988",
+  "shopName": "Żabka",
+  "city": "Radom",
+  "address": "Królowej Jadwigi 1",
+  "lat": 51.428757,
+  "lon": 21.162341
+},
+{
+  "id": "ID00993",
+  "shopName": "Żabka",
+  "city": "Nowy Sącz",
+  "address": "Sikorskiego 33",
+  "lat": 49.627514,
+  "lon": 20.703957
+},
+{
+  "id": "ID00983",
+  "shopName": "Żabka",
+  "city": "Prudnik",
+  "address": "Ratuszowa 3",
+  "lat": 50.320927,
+  "lon": 17.579185
+},
+{
+  "id": "ID00991",
+  "shopName": "Żabka",
+  "city": "Czechowice-dziedzice",
+  "address": "Traugutta 20",
+  "lat": 49.920254,
+  "lon": 19.007719
+},
+{
+  "id": "ID00995",
+  "shopName": "Żabka",
+  "city": "Świnoujście",
+  "address": "Bohaterów Września 52",
+  "lat": 53.909116,
+  "lon": 14.253184
+},
+{
+  "id": "ID00986",
+  "shopName": "Żabka",
+  "city": "Jastrzębie-zdrój",
+  "address": "Śląska 25a",
+  "lat": 49.950275,
+  "lon": 18.600288
+},
+{
+  "id": "ID00994",
+  "shopName": "Żabka",
+  "city": "Nowa Sól",
+  "address": "1-go Maja 14",
+  "lat": 51.804503,
+  "lon": 15.704178
+},
+{
+  "id": "ID00999",
+  "shopName": "Żabka",
+  "city": "Bydgoszcz",
+  "address": "Pomorska 25",
+  "lat": 53.129917,
+  "lon": 18.003603
+},
+{
+  "id": "ID00998",
+  "shopName": "Żabka",
+  "city": "Dąbrowa Górnicza",
+  "address": "Wojska Polskiego 47",
+  "lat": 50.321186,
+  "lon": 19.204304
+},
+{
+  "id": "ID00985",
+  "shopName": "Żabka",
+  "city": "Warszawa",
+  "address": "Lanciego 13",
+  "lat": 52.143402,
+  "lon": 21.057975
+},
