@@ -16,7 +16,8 @@ export const filteredShops = (shops, homeGPSAndAddress) => {
   }
 
   const shopsInRadius = shops.filter(el => {
-    return distance(el.lat, el.lon, homeGPSAndAddress.lat, homeGPSAndAddress.lon) < homeGPSAndAddress.radius
+    el.distance = distance(el.lat, el.lon, homeGPSAndAddress.lat, homeGPSAndAddress.lon)
+    return el.distance < homeGPSAndAddress.radius
   })
 
   const shopsInRadiusWithJakD = shopsInRadius.map(el => {

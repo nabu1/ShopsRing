@@ -3,9 +3,11 @@
 import { stocksToBuy } from "../../data/data"
 export default {
   computed: {
+    /*
     show() {
       return this.$store.getters.getShowCheckboxes
     }
+    */
   },
   data() {
     return {
