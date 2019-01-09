@@ -11,6 +11,11 @@ export const initialColumns = [
     sortable: true
   },
   {
+    key: "distance",
+    label: "Odległość",
+    sortable: true
+  },
+  {
     key: "jakd",
     label: "JakD"
   },
