@@ -12,7 +12,6 @@ export default {
       streetNumber: '',
       radius: 500,
       cities: [
-        { text: "Miasto", value: null },
         { text: "Warszawa", value: "warszawa" },
         { text: "Kraków", value: "krakow" },
         { text: "Gdańsk", value: "gdansk" }
@@ -22,11 +21,6 @@ export default {
   },
   methods: {
     search() {
-      console.log("city = ", this.city)
-      console.log("street = ", this.street)
-      console.log("radius = ", this.radius)
-      console.log('___________________________________')
-
       if (!this.city) {
         this.$refs.modalCity.show()
         return
@@ -74,5 +68,5 @@ export default {
       //this.$store.dispatch('addAllShops')
     }
   }
-};
+}
 </script>
