@@ -48,7 +48,7 @@ export const store = new Vuex.Store({
       state.allShops = shopsInRadius
     },
     GET_STOCK(state, columns) {
-      if (columns.stocksSelected.length) {
+      if (columns.stocksSelected) {
         state.fields =  initialColumns.concat(totalColumn).concat(columns.stocksSelected)
       }
       else {
