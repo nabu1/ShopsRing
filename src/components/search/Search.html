@@ -2,11 +2,8 @@
   <b-container>
     <b-row class='my-3'>
       <b-col>
-        <b-form-select v-model="city"
-                       :options="cities"
-                       class="mb-3" />
+        <b-form-select v-model="city" :options="cities" class="mb-3" />
       </b-col>
-
 
       <b-modal ref="modalCity" hide-footer>
         <div class="d-block text-center">
@@ -15,6 +12,11 @@
         <b-btn class="mt-3" variant="danger" block @click="hideModalCity">Zamknij</b-btn>
       </b-modal>
 
+      <b-col>
+        <b-form-input id="street" v-model="street" placeholder="Ulica">
+        </b-form-input>
+      </b-col>
+
       <b-modal ref="modalStreet" hide-footer>
         <div class="d-block text-center">
           <h3>Brak ulicy</h3>
@@ -22,30 +24,22 @@
         <b-btn class="mt-3" variant="danger" block @click="hideModalStreet">Zamknij</b-btn>
       </b-modal>
 
-
-
       <b-col>
-        <b-form-input id="street"
-                      v-model="street"
-                      placeholder="Ulica">
+        <b-form-input v-model="streetNumber" placeholder="Numer domu">
         </b-form-input>
       </b-col>
 
       <b-col>
-        <b-form-input v-model="streetNumber"
-                      placeholder="Numer domu">
+        <b-form-input v-model.number="radius" placeholder="Promień (metry)" type="number" min="100" max="20000" step="100">
         </b-form-input>
       </b-col>
 
-      <b-col>
-        <b-form-input v-model.number="radius"
-                      placeholder="Promień (metry)"
-                      type="number"
-                      min="100"
-                      max="20000"
-                      step="100">
-        </b-form-input>
-      </b-col>
+      <b-modal ref="modalRadius" hide-footer>
+        <div class="d-block text-center">
+          <h3>Brak promienia</h3>
+        </div>
+        <b-btn class="mt-3" variant="danger" block @click="hideModalRadius">Zamknij</b-btn>
+      </b-modal>
 
       <b-col>
         <b-button @click="search" size="md">Search</b-button>
