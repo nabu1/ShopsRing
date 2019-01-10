@@ -29,8 +29,7 @@ export const initialColumns = [
   {
     key: "total",
     label: "Total",
-    sortable: true,
-    variant: 'warning'
+    sortable: true
   }
 ]
 
