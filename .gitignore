@@ -66,3 +66,5 @@ cypress/plugins/index.js
 cypress/screenshots/All Specs/my-image.png
 cypress/support/commands.js
 cypress/support/index.js
+server.js
+webpack.config.1.js
