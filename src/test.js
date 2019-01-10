@@ -57,11 +57,13 @@ function getZabka(from, to) {
   }
 }
 
-const a = 3466
+const a = 4340
 const b = a + 125
 
 
-getZabka(a, b )   // 70 > 90 > 110 > 125
+getZabka(a, b)   // 70 > 90 > 110 > 125
+
+
 
 // Alianz Kupsztal1
 // ZUS Kupasiku@1

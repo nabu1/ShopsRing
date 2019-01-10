@@ -68,3 +68,4 @@ cypress/support/commands.js
 cypress/support/index.js
 server.js
 webpack.config.1.js
+src/zabki.bak.json
