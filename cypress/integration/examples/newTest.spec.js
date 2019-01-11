@@ -53,9 +53,13 @@ Lista testów e2e:
 */
 
 describe('My First Test', () => {
+  beforeEach(() => {
+    cy.visit('/')
+  })
+  //cy.pause()
+
   it('Clicks an element', () => {
-    cy.visit('http://localhost:8080')
-      .get('#city')
+    cy.get('#city')
       .select("Warszawa")
       .get('#street')
       .type('Dolna')
@@ -63,9 +67,13 @@ describe('My First Test', () => {
       .type('5a')
       .get('#radius')
       .clear()
-      .type(600)
+      .type(500)
       .get('#search')
       .click()
+      .get('#stockTable')
+      .find('tbody')
+      .find('tr')
+      .should('have.length', 3)
   })
 })
 
