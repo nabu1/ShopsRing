@@ -15,7 +15,7 @@ export const store = new Vuex.Store({
     stocksSelected: [],
     showCheckboxes: true,
     showTable: false,
-    searchError: ''
+    loading: false
   },
   getters: {
     getAllShops(state) {
@@ -39,8 +39,8 @@ export const store = new Vuex.Store({
     getShowTable(state) {
       return state.showTable
     },
-    getSearchError(state) {
-      return state.searchError
+    getLoading(state) {
+      return state.loading
     }
   },
   mutations: {
@@ -75,6 +75,10 @@ export const store = new Vuex.Store({
     SHOW_TABLE(state, bool) {
       state.fields = initialColumns
       state.showTable = bool
+    },
+    SHOW_LOADER(state, bool) {
+      console.log('SHOW_LOADER = ', bool)
+      state.loading = bool
     }
   },
   actions: {
@@ -95,6 +99,9 @@ export const store = new Vuex.Store({
     },
     showTable(context, bool) {
       context.commit('SHOW_TABLE', bool)
+    },
+    showLoader(context, bool) {
+      context.commit('SHOW_LOADER', bool)
     }
   }
 })

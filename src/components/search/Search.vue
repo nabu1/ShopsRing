@@ -46,7 +46,8 @@ export default {
 
       this.$store.dispatch('findSelectedShops', homeData)
       this.$store.dispatch('getStock', this.$store.getters.getStocksSelected)
-      this.$store.dispatch('showTable', true)
+      //this.$store.dispatch('showTable', true)
+      this.$store.dispatch('showLoader', true)
 
     },
     hideModalCity() {
