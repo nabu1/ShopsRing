@@ -68,3 +68,10 @@ cypress/support/index.js
 server.js
 webpack.config.1.js
 src/zabki.bak.json
+zabki.json
+src/samezabki.js
+src/test.js
+src/zabki.json
+src/zabkiWwa.json
+src/assets/fruit-and-veg_1050x600.jpg
+src/assets/fruit-and-veg_1920x1080_blur_7.jpg
