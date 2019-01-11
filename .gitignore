@@ -83,3 +83,6 @@ src/data/shopsFromOverpass.json
 src/assets/fruit-and-veg_1920x1080_blur_7_dark_low_brightness.jpg
 src/assets/fruit-and-veg_1920x1080.jpg
 src/assets/fruit-and-veg_1920x1080_blur_7_dark.jpg
+zabki.json
+zabki.bak.json
+src/GPSandStockImport.js
