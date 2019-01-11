@@ -49,7 +49,7 @@ export const store = new Vuex.Store({
       state.allShopsCopy = allShops
     },
     FIND_SELECTED_SHOPS(state, shopsInRadius) {
-      console.log('shopsInRadius = ', shopsInRadius)
+      // console.log('shopsInRadius = ', shopsInRadius)
 
       if (!shopsInRadius.length) {
         state.stocksSelected = []
@@ -58,6 +58,8 @@ export const store = new Vuex.Store({
       state.allShops = shopsInRadius
     },
     GET_STOCK(state, columns) {
+      // console.log('columns = ', columns)
+
       if (columns.stocksSelected.length) {
         state.fields =  initialColumns.concat(totalColumn).concat(columns.stocksSelected)
       }
