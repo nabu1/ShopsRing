@@ -1,32 +1,29 @@
 <div v-cloak>
-
-
   <b-container fluid>
-
-      <b-row align-h="center" class="height" >
-        <b-col class="col" cols="2">
-          <div v-if="loading" class="mb-3">
-            <img src="../../assets/spinner4.gif"/>
-            Loading....
-          </div>
-        </b-col>
+    <b-row align-h="center" class="height" >
+      <b-col class="col" cols="2">
+        <!-- <div v-if="loading" class="mb-3">
+          <img src="../../assets/spinner4.gif"/>
+          Loading....
+        </div> -->
+      </b-col>
     </b-row>
 
-      <b-row v-cloak>
-        <b-table striped
-                 hover
-                 bordered
-                 :items="items"
-                 :fields="fields"
-                 v-if="showTable()">
+    <b-row v-cloak>
+      <b-table striped
+               hover
+               bordered
+               :items="items"
+               :fields="fields"
+               v-if="showTable()">
 
-          <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
+        <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
 
-          <span slot="google" slot-scope="data" v-html="data.value">{{ data.value }}</span>
-          <span slot="jakd" slot-scope="data" v-html="data.value">{{ data.value }}</span>
-          <span slot="gmaps" slot-scope="data" v-html="data.value">{{ data.value }}</span>
+        <span slot="google" slot-scope="data" v-html="data.value">{{ data.value }}</span>
+        <span slot="jakd" slot-scope="data" v-html="data.value">{{ data.value }}</span>
+        <span slot="gmaps" slot-scope="data" v-html="data.value">{{ data.value }}</span>
 
-        </b-table>
+      </b-table>
     </b-row>
   </b-container>
 </div>

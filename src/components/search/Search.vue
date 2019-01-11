@@ -5,6 +5,11 @@ import axios from 'axios'
 
 export default {
   template: 'Search',
+  computed: {
+    loading() {
+      return this.$store.getters.getLoading
+    }
+  },
   data() {
     return {
       city: '',

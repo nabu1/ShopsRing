@@ -20,12 +20,6 @@ export default {
       return this.$store.getters.getLoading
     }
   },
-  data() {
-    return {
-      // items: items()
-      // loading: this.$store.getters.getLoading
-    }
-  },
   methods: {
     showTable() {
       return this.$store.getters.getShowTable  // tu jest przełączenie wyświetlania tabeli
