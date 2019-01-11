@@ -16,8 +16,7 @@ export default {
         { text: 'Kraków', value: 'krakow' },
         { text: 'Gdańsk', value: 'gdansk' }
       ],
-      showAlert: false,
-      searchError: this.$store.getters.getSearchError
+      showAlert: false
     };
   },
   methods: {
@@ -34,8 +33,6 @@ export default {
         return this.$refs.modalRadius.show();
       }
 
-      //if (this.searchError) {
-
       const homeData = {
         city: this.city,
         street: this.street,
@@ -44,9 +41,12 @@ export default {
         shops: this.$store.getters.getAllShopsCopy
       };
 
-      this.$store.dispatch('findSelectedShops', homeData);
-      this.$store.dispatch('showTable', true);
-      this.$store.dispatch('getStock', this.$store.getters.getStocksSelected);
+      console.log('homeData = ', homeData)
+      console.log('this.$store.getters.getStocksSelected = ', this.$store.getters.getStocksSelected)
+
+      this.$store.dispatch('findSelectedShops', homeData)
+      this.$store.dispatch('getStock', this.$store.getters.getStocksSelected)
+      this.$store.dispatch('showTable', true)
 
     },
     hideModalCity() {

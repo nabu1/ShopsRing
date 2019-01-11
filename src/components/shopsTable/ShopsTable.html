@@ -1,20 +1,32 @@
 <div v-cloak>
+
+
   <b-container fluid>
-    <b-row v-cloak>
-      <b-table striped
-               hover
-               bordered
-               :items="items"
-               :fields="fields"
-               v-if="showTable()">
 
-        <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
+      <b-row align-h="center" class="height">
+        <b-col class="col" cols="2">
+          <div v-if="loading">
+            <img src="../../assets/spinner4.gif"/>
+            Loading....
+          </div>
+        </b-col>
+    </b-row>
 
-        <span slot="google" slot-scope="data" v-html="data.value">{{ data.value }}</span>
-        <span slot="jakd" slot-scope="data" v-html="data.value">{{ data.value }}</span>
-        <span slot="gmaps" slot-scope="data" v-html="data.value">{{ data.value }}</span>
+      <b-row v-cloak>
+        <b-table striped
+                 hover
+                 bordered
+                 :items="items"
+                 :fields="fields"
+                 v-if="showTable()">
 
-      </b-table>
+          <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
+
+          <span slot="google" slot-scope="data" v-html="data.value">{{ data.value }}</span>
+          <span slot="jakd" slot-scope="data" v-html="data.value">{{ data.value }}</span>
+          <span slot="gmaps" slot-scope="data" v-html="data.value">{{ data.value }}</span>
+
+        </b-table>
     </b-row>
   </b-container>
 </div>
