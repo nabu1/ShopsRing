@@ -25,7 +25,7 @@ export const initialColumns = [
   }
 ]
 
-  export const totalColumn = [
+export const totalColumn = [
   {
     key: "total",
     label: "Total",
@@ -87,14 +87,14 @@ export const stockColumns = [
 ]
 
 export const stocksToBuy = [
-  {text: 'Chleb', value: 'chleb'},
-  {text: 'Masło', value: 'maslo'},
-  {text: 'Ser', value: 'ser'},
-  {text: 'Śmietana', value: 'smietana'},
-  {text: 'Jajka', value: 'jajka'},
-  {text: 'Mleko', value: 'mleko'},
-  {text: 'Szynka', value: 'szynka'},
-  {text: 'Kiełbasa', value: 'kielbasa'},
-  {text: 'Cukier', value: 'cukier'},
-  {text: 'Mineralna', value: 'mineralna'}
+  { text: 'Chleb', value: 'chleb' },
+  { text: 'Masło', value: 'maslo' },
+  { text: 'Ser', value: 'ser' },
+  { text: 'Śmietana', value: 'smietana' },
+  { text: 'Jajka', value: 'jajka' },
+  { text: 'Mleko', value: 'mleko' },
+  { text: 'Szynka', value: 'szynka' },
+  { text: 'Kiełbasa', value: 'kielbasa' },
+  { text: 'Cukier', value: 'cukier' },
+  { text: 'Mineralna', value: 'mineralna' }
 ]

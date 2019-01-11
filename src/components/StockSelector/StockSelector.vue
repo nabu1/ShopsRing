@@ -2,13 +2,6 @@
 <script>
 import { stocksToBuy } from "../../data/data"
 export default {
-  computed: {
-    /*
-    show() {
-      return this.$store.getters.getShowCheckboxes
-    }
-    */
-  },
   data() {
     return {
       selected: [],
@@ -44,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-.klasa {
-  font-weight: 600
-}
+  div {
+    color: white
+  }
 </style>

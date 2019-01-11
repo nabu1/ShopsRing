@@ -14,7 +14,8 @@ export const store = new Vuex.Store({
     fields: [],
     stocksSelected: [],
     showCheckboxes: true,
-    showTable: false
+    showTable: false,
+    searchError: ''
   },
   getters: {
     getAllShops(state) {
@@ -37,6 +38,9 @@ export const store = new Vuex.Store({
     },
     getShowTable(state) {
       return state.showTable
+    },
+    getSearchError(state) {
+      return state.searchError
     }
   },
   mutations: {
@@ -45,6 +49,12 @@ export const store = new Vuex.Store({
       state.allShopsCopy = allShops
     },
     FIND_SELECTED_SHOPS(state, shopsInRadius) {
+      console.log('shopsInRadius = ', shopsInRadius)
+
+      if (!shopsInRadius.length) {
+        state.stocksSelected = []
+      }
+
       state.allShops = shopsInRadius
     },
     GET_STOCK(state, columns) {
