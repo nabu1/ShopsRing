@@ -6,7 +6,7 @@
 
     <b-row class='my-3'>
       <b-col class='px-0'>
-        <b-form-select v-model="city" :options="cities" class="mb-3"/>
+        <b-form-select id="city" v-model="city" :options="cities" class="mb-3"/>
       </b-col>
 
       <b-modal ref="modalCity" hide-footer>
@@ -29,11 +29,11 @@
 
       <!-- <b-col md="2"> -->
       <b-col md="2">
-        <b-form-input v-model="streetNumber" placeholder="Nr domu"></b-form-input>
+        <b-form-input id="streetNumber" v-model="streetNumber" placeholder="Nr domu"></b-form-input>
       </b-col>
 
       <b-col md="2">
-        <b-form-input v-model.number="radius" placeholder="Promień (metry)" type="number" min="100" start="600" step="100"></b-form-input>
+        <b-form-input id="radius" v-model.number="radius" placeholder="Promień (metry)" type="number" min="100" start="600" step="100"></b-form-input>
       </b-col>
 
       <b-modal ref="modalRadius" hide-footer>
@@ -44,8 +44,8 @@
       </b-modal>
 
       <b-col>
-        <b-button @click="search" size="md">Search</b-button>
-        <b-button @click="reset" size="md">Reset</b-button>
+        <b-button id="search" @click="search" size="md">Search</b-button>
+        <b-button id="reset" @click="reset" size="md">Reset</b-button>
         <!-- <b-button @click="reset" size="md">123</b-button> -->
       </b-col>
 
