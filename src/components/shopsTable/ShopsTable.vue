@@ -20,7 +20,7 @@ export default {
       return this.$store.getters.getLoading
     }
   },
-  methods: {
+   methods: {
     showTable() {
       return this.$store.getters.getShowTable  // tu jest przełączenie wyświetlania tabeli
     }
