@@ -1,9 +1,5 @@
 <div>
   <b-container class="mb-3">
-    <!-- <b-row class="my-2">
-      <router-link to="/about" active-class='active'><a>About</a></router-link>
-    </b-row> -->
-
     <b-row class="mb-2">
       <h5 >Wybierz produkty</h5>
       <b-button @click="resetStock"
@@ -14,11 +10,12 @@
       </b-button>
     </b-row>
 
-    <b-row class="klasa">
-      <b-form-group label="" v-if="show">
+    <b-row>
+      <b-form-group v-if="show">
         <b-form-checkbox-group v-model="selected"
                                @change="stockSelected"
-                               :options="options">
+                               :options="options"
+                               data-test="stocks">
         </b-form-checkbox-group>
       </b-form-group>
 

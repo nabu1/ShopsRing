@@ -237,17 +237,29 @@ describe('Searching shops', () => {
   it.only('4. Są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb wyświetla kolumnę Chleb i Total', () => {
     cy.get("[data-test='city']")
       .select("Warszawa")
-
-    cy.get("[data-test='street']")
+      .get("[data-test='street']")
       .type("Dolna 5a")
-
-    cy.get("[data-test='radius']")
+      .get("[data-test='radius']")
       .clear()
       .type(600)
-
-    cy.get("[data-test='buttonSearch']")
+      .get("[data-test='buttonSearch']")
       .click()
 
+    .wait(1000)
+
+      .get("[data-test='stocks']")
+      .get('#__BVID__19__BV_check_0_opt_')
+      .check( { force: true })
+      .get('#__BVID__19__BV_check_1_opt_')
+      .check( { force: true })
+
+      //.get('#stockTable tbody tr')
+      .get('#stockTable thead tr th:nth-child(7)')
+      .should('have.text', 'Total')
+      .get('#stockTable thead tr th:nth-child(8)')
+      .should('have.text', 'Chleb')
+      .get('#stockTable thead tr th:nth-child(9)')
+      .should('have.text', 'Maslo')
   })
 
 
