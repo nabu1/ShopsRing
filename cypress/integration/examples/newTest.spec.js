@@ -52,13 +52,15 @@ Lista testów e2e:
             })
 */
 
-describe('My First Test', () => {
+/// <reference types="Cypress" />
+
+describe('Searching shops', () => {
   beforeEach(() => {
     cy.visit('/')
   })
   //cy.pause()
 
-  it('Clicks an element', () => {
+  it('Enter home location and check number of shops returned', () => {
     cy.get('#city')
       .select("Warszawa")
       .get('#street')

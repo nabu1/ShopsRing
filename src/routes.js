@@ -1,8 +1,8 @@
-import Hub from './components/Hub/Hub.vue'
+import Base from './components/Base/Base.vue'
 import About from './components/About/About.vue'
 
 export const routes = [
-  { path: '', component: Hub },
+  { path: '', component: Base },
   { path: '/about', component: About },
-  { path: '*', component: Hub }
+  { path: '*', component: Base }
 ]

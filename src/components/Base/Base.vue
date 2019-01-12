@@ -1,4 +1,4 @@
-<template src="./Hub.html"></template>
+<template src="./Base.html"></template>
 
 <script>
   import Search from '../Search/Search.vue'
@@ -6,10 +6,10 @@
   import StockSelector from '../StockSelector/StockSelector.vue'
 
   export default {
-    template: 'Hub',
+    template: 'Base',
     components: {
       'stock-selector': StockSelector,
-      Search,
+      'search-bar': Search,
       'shops-table': ShopsTable
     }
   }
