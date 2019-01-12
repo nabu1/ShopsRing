@@ -6,10 +6,10 @@
 
     <b-row class='my-3'>
       <b-col class='px-0'>
-        <b-form-select id="city" v-model="city" :options="cities" class="mb-3"/>
+        <b-form-select id="city" data-test="city" v-model="city" :options="cities" class="mb-3"/>
       </b-col>
 
-      <b-modal ref="modalCity" hide-footer>
+      <b-modal ref="modalCity" data-test="modalCity" hide-footer>
         <div class="d-block text-center">
           <h3>Brak miasta</h3>
         </div>
@@ -17,23 +17,22 @@
       </b-modal>
 
       <b-col class='ml-2'>
-        <b-form-input id="street" v-model="street" placeholder="Ulica"></b-form-input>
+        <b-form-input id="street" data-test="street" v-model="street" placeholder="Ulica"></b-form-input>
       </b-col>
 
-      <b-modal ref="modalStreet" hide-footer>
+      <b-modal ref="modalStreet" data-test="modalStreet" hide-footer>
         <div class="d-block text-center">
           <h3>Brak ulicy</h3>
         </div>
         <b-btn class="mt-3" variant="success" block @click="hideModalStreet">Zamknij</b-btn>
       </b-modal>
 
-      <!-- <b-col md="2"> -->
       <b-col md="2">
-        <b-form-input id="streetNumber" v-model="streetNumber" placeholder="Nr domu"></b-form-input>
+        <b-form-input id="streetNumber" data-test="streetNumber" v-model="streetNumber" placeholder="Nr domu"></b-form-input>
       </b-col>
 
       <b-col md="2">
-        <b-form-input id="radius" v-model.number="radius" placeholder="Promień (metry)" type="number" min="100" start="600" step="100"></b-form-input>
+        <b-form-input id="radius" data-test="radius" v-model.number="radius" placeholder="Promień (metry)" type="number" min="100" start="600" step="100"></b-form-input>
       </b-col>
 
       <b-modal ref="modalRadius" hide-footer>
@@ -44,9 +43,8 @@
       </b-modal>
 
       <b-col>
-        <b-button id="search" @click="search" size="md">Search</b-button>
-        <b-button id="reset" @click="reset" size="md">Reset</b-button>
-        <!-- <b-button @click="reset" size="md">123</b-button> -->
+        <b-button id="search" data-test="buttonSearch" @click="search" size="md">Search</b-button>
+        <b-button id="reset" data-test="buttonReset" @click="reset" size="md">Reset</b-button>
       </b-col>
 
       <b-col md="1" class='px-0'>

@@ -1,18 +1,14 @@
 /*
 Lista testów e2e:
 
-1) Start > Search > ma wyskoczyć szmatka walidacji 'Brak miasta'
 
-2) Start > Miasto: 'Wwa' > Search > ma wyskoczyć szmatka walidacji 'Brak ulicy'
 
-3) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Search > mają wyskoczyć sklepy w tabeli
-
-4) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Search > mają wyskoczyć sklepy
-
-5) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > Search > mają wyskoczyć sklepy
-
-6) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' > Search >
+6) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' >
+         > Radius: 1000 > czek 'Chleb' > Search >
          > mają wyskoczyć sklepy w tabeli, kolumna Chleb i Total
+
+
+
 
 7) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
          > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
@@ -39,36 +35,45 @@ Lista testów e2e:
 11)Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
          > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
          > kliknąć w ikonę sortowania:
-            sklepiszcze
-            adres
-            odległość
-            total
-            chleb masło
+              sklepiszcze
+              adres
+              odległość
+              total
+              chleb masło
 
-            describe('My First Test', () => {
-              it('Does not do much', () => {
-                expect(true).to.equal(true)
-              })
-            })
-*/
+///////////////////////////////////////////////////////////////////////////////
 
-/// <reference types="Cypress" />
+1) Start > Search > ma wyskoczyć szmatka walidacji 'Brak miasta'
 
-describe('Searching shops', () => {
-  beforeEach(() => {
-    cy.visit('/')
-    .get('#city')
-    .select("Warszawa")
-    .get('#street')
-    .type('Dolna')
-    .get('#streetNumber')
-    .type('5a')
+2) Start > Miasto: 'Wwa' > Search > ma wyskoczyć szmatka walidacji 'Brak ulicy'
+
+3) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Search > mają wyskoczyć sklepy w tabeli
+
+4) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Search > mają wyskoczyć sklepy
+
+5) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > Search > mają wyskoczyć sklepy
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+/*
+  describe('Searching shops', () => {
+    beforeEach(() => {
+      cy.visit('/')
+      .get('#city')
+      .select("Warszawa")
+      .get('#street')
+      .type('Dolna')
+      .get('#streetNumber')
+      .type('5a')
   })
-  //cy.pause()
 
   it('1. Enter Dolna 5a, radius = 100 and test if 1 shop were returned', () => {
     cy.get('#radius')
-      .clear()
+    .clear()
       .type(100)
       .get('#search')
       .click()
@@ -76,11 +81,11 @@ describe('Searching shops', () => {
       .find('tbody')
       .find('tr')
       .should('have.length', 1)
-  })
+    })
 
   it('2. Enter Dolna 5a, radius = 500 and test if 3 shops were returned', () => {
     cy.get('#radius')
-      .clear()
+    .clear()
       .type(500)
       .get('#search')
       .click()
@@ -180,15 +185,75 @@ describe('Searching shops', () => {
       .type(2000)
       .get('#search')
       .click()
-      .get('#stockTable')
+      .get('#stockTable').screenshot()
       .find('tbody')
       .find('tr')
-      .should('have.length', 35)
+      .should('have.length', 36)
+    })
+})
+*/
+
+describe('Searching shops', () => {
+  beforeEach(() => {
+    cy.visit('/')
+    /*
+    .get('#city')
+    .select("Warszawa")
+    .get('#street')
+    .type('Dolna')
+    .get('#streetNumber')
+    .type('5a')
+    */
+  })
+  //cy.pause()
+
+  it('1. Brak miasta i ulicy, klik w Searcha i ma się wyświetlić modal "Brak miasta"', () => {
+    cy.get("[data-test='buttonSearch']")
+      .click()
+      .get("[data-test='modalCity']")
+
   })
 
+  it('2. Jest miasto, ale brak ulicy, klik w Searcha i ma wyświetlić się modal "Brak ulicy"', () => {
+    cy.get("[data-test='city']")
+      .select("Warszawa")
+
+    cy.get("[data-test='buttonSearch']")
+      .click()
+      .get("[data-test='modalStreet']")
+
+  })
+
+  it('3. Jest ulica ale brak miasta, klik w Searcha i ma wyświetlić się modal "Brak miasta"', () => {
+    cy.get("[data-test='street']")
+      .type("Dolna 5a")
+
+    cy.contains('Search')
+      .click()
+      .get("[data-test='modalCity']")
+
+  })
+
+  it.only('4. Są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb wyświetla kolumnę Chleb i Total', () => {
+    cy.get("[data-test='city']")
+      .select("Warszawa")
+
+    cy.get("[data-test='street']")
+      .type("Dolna 5a")
+
+    cy.get("[data-test='radius']")
+      .clear()
+      .type(600)
+
+    cy.get("[data-test='buttonSearch']")
+      .click()
+
+  })
+
+
+
+
 })
-
-
 
 
 

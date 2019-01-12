@@ -1,4 +1,5 @@
 {
   "baseUrl": "http://localhost:8080",
-  "videoCompression": false
+  "videoCompression": false,
+  "screenshotOnRunFailure":	true
 }
