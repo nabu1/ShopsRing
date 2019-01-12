@@ -86,3 +86,4 @@ src/assets/fruit-and-veg_1920x1080_blur_7_dark.jpg
 zabki.json
 zabki.bak.json
 src/GPSandStockImport.js
+cypress/videos/examples/newTest.spec.js.mp4
