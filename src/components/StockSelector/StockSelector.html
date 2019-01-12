@@ -2,7 +2,8 @@
   <b-container class="mb-3">
     <b-row class="mb-2">
       <h5 >Wybierz produkty</h5>
-      <b-button @click="resetStock"
+      <b-button data-test='buttonResetStock'
+                @click="resetStock"
                 size="sm"
                 class="ml-3"
                 variant="secondary">
@@ -12,10 +13,10 @@
 
     <b-row>
       <b-form-group v-if="show">
-        <b-form-checkbox-group v-model="selected"
+        <b-form-checkbox-group data-test="stocks"
+                               v-model="selected"
                                @change="stockSelected"
-                               :options="options"
-                               data-test="stocks">
+                               :options="options">
         </b-form-checkbox-group>
       </b-form-group>
 

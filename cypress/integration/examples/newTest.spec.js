@@ -2,34 +2,21 @@
 Lista testów e2e:
 
 
-7) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 >
-         > czek 'Chleb' i 'Masło' > Search >
-         > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
-
-
-
-
-8) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
-         > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
-         > unczek Chleb > ma zniknąć kolumna Chleb i zmienić się total
-
-9) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
-> mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
-> klik w Produkty/Reset:
-              mają się odczeknąć wszystkie produkty
-              mają zniknąć kolumny Masło i Total
-
-              10)Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
-              > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
-              > unczek Chleb > ma zniknąć kolumna Chleb i zmienić się total
-              > klik w Search/Reset:
+10) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 >
+          > czek 'Chleb' i 'Masło' > Search >
+          > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
+          > unczek Chleb > ma zniknąć kolumna Chleb i zmienić się total
+          > klik w Search/Reset:
               mają wyczyścić się wszystkie input boksy kumpa Search
               mają zniknąć wszystkie sklepy z tabeli
               czeknięte czekboksy mają zostać czeknięte
 
-              11)Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
-              > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
-         > kliknąć w ikonę sortowania:
+
+
+11) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 >
+          > czek 'Chleb' i 'Masło' > Search >
+          > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
+          > kliknąć w ikonę sortowania:
               sklepiszcze
               adres
               odległość
@@ -51,9 +38,15 @@ Lista testów e2e:
 6) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' >
          > Radius: 1000 > czek 'Chleb' > Search >
          > mają wyskoczyć sklepy w tabeli, kolumna Chleb i Total
-         > unczek Chleb > ma zniknąć kolumna Chleb i zmienić się total
+         > unczek Chleb > ma zniknąć kolumna Chleb
+         > unczek Maslo > ma zniknąć kolumna Maslo i Total
 
-
+9) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 >
+         > czek 'Chleb' i 'Masło' > Search >
+         > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
+         > klik w Produkty/Reset:
+             mają się odczeknąć wszystkie produkty
+             mają zniknąć kolumny Masło i Total
 
 
 
@@ -74,7 +67,7 @@ Lista testów e2e:
 
   it('1. Enter Dolna 5a, radius = 100 and test if 1 shop were returned', () => {
     cy.get('#radius')
-    .clear()
+      .clear()
       .type(100)
       .get('#search')
       .click()
@@ -206,7 +199,6 @@ describe('Searching shops', () => {
     .type('5a')
     */
   })
-  //cy.pause()
 
   it('1. Brak miasta i ulicy, klik w Searcha i ma się wyświetlić modal "Brak miasta"', () => {
     cy.get("[data-test='buttonSearch']")
@@ -234,9 +226,13 @@ describe('Searching shops', () => {
       .get("[data-test='modalCity']")
 
   })
+})
 
-  it.only('4. Są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb wyświetla kolumnę Chleb i Total', () => {
-    cy.get("[data-test='city']")
+
+describe('Reset buttons', () => {
+  beforeEach(() => {
+    cy.visit('/')
+      .get("[data-test='city']")
       .select("Warszawa")
       .get("[data-test='street']")
       .type("Dolna 5a")
@@ -248,50 +244,64 @@ describe('Searching shops', () => {
 
     .wait(1000)
 
+      // czeknięcie boksów 'Chleb' i 'Masło'
       .get("[data-test='stocks']")
       .get('#__BVID__19__BV_check_0_opt_')
       .check( { force: true })
       .get('#__BVID__19__BV_check_1_opt_')
       .check( { force: true })
+  })
 
-      //.get('#stockTable tbody tr')
-      .get('#stockTable thead tr th:nth-child(7)')
+  it('1. Są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło wyświetla kolumny Chleb, Maslo i Total.\
+         Unczek je zdejmuje', () => {
+
+    // czy nagłówek tabela zawiera słowa 'Total', 'Chleb' lub 'Masło'
+    cy.get('#stockTable thead tr th:nth-child(7)')
       .should('have.text', 'Total')
       .get('#stockTable thead tr th:nth-child(8)')
       .should('have.text', 'Chleb')
       .get('#stockTable thead tr th:nth-child(9)')
       .should('have.text', 'Maslo')
 
-      // uncheck boksa Chleb
+      // uncheck boksa Chleb. Znika kolumna 'Chleb' ?
       .get("[data-test='stocks']")
       .get('#__BVID__19__BV_check_0_opt_')
       .uncheck( { force: true })
-      .get('#stockTable thead tr th:nth-child(7)')
-      .should('have.text', 'Total')
-      .get('#stockTable thead tr th:nth-child(8)')
-      .should('not.have.text', 'Chleb')
+      .get('#stockTable thead tr th')
+      .should('not.exist', 'Total')
+      .get('#stockTable thead tr th')
+      .should('not.exist', 'Chleb')
 
-      // uncheck boksa Maslo
+      // uncheck boksa Maslo. Znika kolumna 'Maslo' i 'Total' ?
       .get("[data-test='stocks']")
       .get('#__BVID__19__BV_check_1_opt_')
       .uncheck( { force: true })
-      .get('#stockTable thead tr th:nth-child(7)')
-      .should('not.have.text', 'Total')
-      .get('#stockTable thead tr th:nth-child(8)')
-      .should('not.have.text', 'Maslo')
-
-
-
+      .get('#stockTable thead tr th')
+      .should('not.exist', 'Total')
+      .get('#stockTable thead tr th')
+      .should('not.exist', 'Maslo')
+      /*
+      */
 
   })
 
+  it.only('2. Są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło wyświetla kolumny Chleb, Maslo i Total.\
+              Czy klik Reset towarów odczekowuje towary i znika ich kolumny i kolumnę Total ?', () => {
 
+    cy.get("[data-test='buttonResetStock']")
+      .wait(2000)
+      .click()
+      .get('#stockTable thead tr th:nth-child(7)')
+      //.get('#stockTable thead tr th')
+      .should('not.exist', 'Total')
+      .get('#stockTable thead tr th')
+      .should('not.exist', 'Chleb')
+      .get('#stockTable thead tr th')
+      .should('not.exist', 'Maslo')
+  })
 
 
 })
-
-
-
 
 
 
