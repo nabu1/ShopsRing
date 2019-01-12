@@ -2,38 +2,33 @@
 Lista testów e2e:
 
 
-
-6) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' >
-         > Radius: 1000 > czek 'Chleb' > Search >
-         > mają wyskoczyć sklepy w tabeli, kolumna Chleb i Total
-
-
-
-
-7) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
+7) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 >
+         > czek 'Chleb' i 'Masło' > Search >
          > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
+
+
+
 
 8) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
          > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
          > unczek Chleb > ma zniknąć kolumna Chleb i zmienić się total
 
 9) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
-         > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
-         > unczek Chleb > ma zniknąć kolumna Chleb i zmienić się total
-         > klik w Produkty/Reset:
+> mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
+> klik w Produkty/Reset:
               mają się odczeknąć wszystkie produkty
               mają zniknąć kolumny Masło i Total
 
-10)Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
-         > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
-         > unczek Chleb > ma zniknąć kolumna Chleb i zmienić się total
-         > klik w Search/Reset:
+              10)Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
+              > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
+              > unczek Chleb > ma zniknąć kolumna Chleb i zmienić się total
+              > klik w Search/Reset:
               mają wyczyścić się wszystkie input boksy kumpa Search
               mają zniknąć wszystkie sklepy z tabeli
               czeknięte czekboksy mają zostać czeknięte
 
-11)Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
-         > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
+              11)Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > czek 'Chleb' i 'Masło' > Search >
+              > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
          > kliknąć w ikonę sortowania:
               sklepiszcze
               adres
@@ -52,6 +47,12 @@ Lista testów e2e:
 4) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Search > mają wyskoczyć sklepy
 
 5) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > Search > mają wyskoczyć sklepy
+
+6) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' >
+         > Radius: 1000 > czek 'Chleb' > Search >
+         > mają wyskoczyć sklepy w tabeli, kolumna Chleb i Total
+         > unczek Chleb > ma zniknąć kolumna Chleb i zmienić się total
+
 
 
 
@@ -260,6 +261,28 @@ describe('Searching shops', () => {
       .should('have.text', 'Chleb')
       .get('#stockTable thead tr th:nth-child(9)')
       .should('have.text', 'Maslo')
+
+      // uncheck boksa Chleb
+      .get("[data-test='stocks']")
+      .get('#__BVID__19__BV_check_0_opt_')
+      .uncheck( { force: true })
+      .get('#stockTable thead tr th:nth-child(7)')
+      .should('have.text', 'Total')
+      .get('#stockTable thead tr th:nth-child(8)')
+      .should('not.have.text', 'Chleb')
+
+      // uncheck boksa Maslo
+      .get("[data-test='stocks']")
+      .get('#__BVID__19__BV_check_1_opt_')
+      .uncheck( { force: true })
+      .get('#stockTable thead tr th:nth-child(7)')
+      .should('not.have.text', 'Total')
+      .get('#stockTable thead tr th:nth-child(8)')
+      .should('not.have.text', 'Maslo')
+
+
+
+
   })
 
 
