@@ -260,7 +260,7 @@ describe('3. Reset buttons (są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Mas
     cy.get("[data-test='buttonResetLocation']")
     .click()
 
-    //Znika kolumna tabela towarów ?
+    //Znika tabela towarów ?
     .get('#stockTable')
     .should('not.exist')
 

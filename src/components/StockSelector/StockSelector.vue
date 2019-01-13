@@ -6,14 +6,12 @@ export default {
     return {
       selected: [],
       options: stocksToBuy,
-      show: true,
-      selected: []
+      show: true
     }
   },
   methods: {
     resetStock() {
       this.selected = []
-      this.$store.dispatch('toggleCheckboxes')
       this.$store.dispatch("getStock", [])
     },
 

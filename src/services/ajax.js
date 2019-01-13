@@ -16,8 +16,6 @@ export const ajaxFindSelectedShops = (context, homeData) => {
   const encodedAddress = encodeURI(homeData.street + ' ' + homeData.streetNumber + ', ' + homeData.city)
   const url = constants.GEOCODER_SERVICE + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
 
-
-
   axios.get(url)
     .then(res => {
       if (res.data.results[0].confidence < 9) {
@@ -37,15 +35,9 @@ export const ajaxFindSelectedShops = (context, homeData) => {
 
       const shopsInRadius = filteredShops(homeData.shops, homeGPSAndAddress)
 
-      console.log('shopsInRadius = ', shopsInRadius)
-
       context.commit('FIND_SELECTED_SHOPS', shopsInRadius)
       context.commit('SHOW_LOADER', false)
       context.commit('SHOW_TABLE', true)
-
-      //this.$store.dispatch('showTable', true);
-      //this.$store.dispatch('getStock', this.$store.getters.getStocksSelected);
-
     })
     .catch(err => console.log('My error: ', err))
 

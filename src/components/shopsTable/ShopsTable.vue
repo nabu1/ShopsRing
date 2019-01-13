@@ -7,7 +7,6 @@ import _ from 'lodash'
 export default {
   created() {
     this.$store.dispatch('addAllShops')
-    this.$store.dispatch('getStock')
   },
   computed: {
     items() {
@@ -22,7 +21,7 @@ export default {
   },
    methods: {
     showTable() {
-      return this.$store.getters.getShowTable  // tu jest przełączenie wyświetlania tabeli
+      return this.$store.getters.getShowTable  
     }
   }
 }

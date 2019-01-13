@@ -25,7 +25,7 @@ export const store = new Vuex.Store({
       return state.allShopsCopy
     },
     getItems(state) {
-      return state.items
+      // return state.items
     },
     getStock(state) {
       return state.fields
@@ -49,17 +49,17 @@ export const store = new Vuex.Store({
       state.allShopsCopy = allShops
     },
     FIND_SELECTED_SHOPS(state, shopsInRadius) {
-      // console.log('shopsInRadius = ', shopsInRadius)
+      console.log('shopsInRadius = ', shopsInRadius)
 
       if (!shopsInRadius.length) {
         state.stocksSelected = []
       }
 
+      // Tu ma sprawdzać jakie boksy są czeknięte
+
       state.allShops = shopsInRadius
     },
     GET_STOCK(state, columns) {
-      // console.log('columns = ', columns)
-
       if (columns.stocksSelected.length) {
         state.fields =  initialColumns.concat(totalColumn).concat(columns.stocksSelected)
       }
@@ -70,14 +70,13 @@ export const store = new Vuex.Store({
       state.stocksSelected = columns.stocksSelected
     },
     TOGGLE_CHECKBOXES(state) {
-      state.showCheckboxes = !state.showCheckboxes
+      state.stocksSelected = []
     },
     SHOW_TABLE(state, bool) {
       state.fields = initialColumns
       state.showTable = bool
     },
     SHOW_LOADER(state, bool) {
-      console.log('SHOW_LOADER = ', bool)
       state.loading = bool
     }
   },

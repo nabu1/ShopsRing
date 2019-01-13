@@ -46,12 +46,9 @@ export default {
         shops: this.$store.getters.getAllShopsCopy
       };
 
-      console.log('homeData = ', homeData)
-      console.log('this.$store.getters.getStocksSelected = ', this.$store.getters.getStocksSelected)
+      console.log('getStocksSelected = ', this.$store.getters.getStocksSelected)
 
       this.$store.dispatch('findSelectedShops', homeData)
-      this.$store.dispatch('getStock', this.$store.getters.getStocksSelected)
-      //this.$store.dispatch('showTable', true)
       this.$store.dispatch('showLoader', true)
 
     },
@@ -73,6 +70,7 @@ export default {
       this.$store.dispatch('toggleCheckboxes');
       this.$store.dispatch('showTable', false);
       //this.$store.dispatch('addAllShops')
+
     }
   }
 };
