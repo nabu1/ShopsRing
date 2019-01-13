@@ -1,5 +1,5 @@
-/*
-  describe('Searching shops', () => {
+
+describe('1. Wyszukiwanie sklepów', () => {
     beforeEach(() => {
       cy.visit('/')
       .get('#city')
@@ -34,7 +34,7 @@
       .should('have.length', 3)
   })
 
-  it('3. Enter Dolna 5a, radius = 600 and test if 5 shops were returned', () => {
+  it('3. Enter Dolna 5a, radius = 600 and test if 7 shops were returned', () => {
     cy.get('#radius')
       .clear()
       .type(600)
@@ -43,10 +43,10 @@
       .get('#stockTable')
       .find('tbody')
       .find('tr')
-      .should('have.length', 5)
+      .should('have.length', 7)
   })
 
-  it('4. Enter Dolna 5a, radius = 800 and test if 9 shops were returned', () => {
+  it('4. Enter Dolna 5a, radius = 800 and test if 15 shops were returned', () => {
     cy.get('#radius')
       .clear()
       .type(800)
@@ -55,10 +55,10 @@
       .get('#stockTable')
       .find('tbody')
       .find('tr')
-      .should('have.length', 9)
+      .should('have.length', 15)
   })
 
-  it('5. Enter Dolna 5a, radius = 1000 and test if 14 shops were returned', () => {
+  it('5. Enter Dolna 5a, radius = 1000 and test if 22 shops were returned', () => {
     cy.get('#radius')
       .clear()
       .type(1000)
@@ -67,10 +67,10 @@
       .get('#stockTable')
       .find('tbody')
       .find('tr')
-      .should('have.length', 14)
+      .should('have.length', 22)
   })
 
-  it('6. Enter Dolna 5a, radius = 1100 and test if 17 shops were returned', () => {
+  it('6. Enter Dolna 5a, radius = 1100 and test if 27 shops were returned', () => {
     cy.get('#radius')
       .clear()
       .type(1100)
@@ -79,10 +79,10 @@
       .get('#stockTable')
       .find('tbody')
       .find('tr')
-      .should('have.length', 17)
+      .should('have.length', 27)
   })
 
-  it('7. Enter Dolna 5a, radius = 1300 and test if 20 shops were returned', () => {
+  it('7. Enter Dolna 5a, radius = 1300 and test if 31 shops were returned', () => {
     cy.get('#radius')
       .clear()
       .type(1300)
@@ -91,10 +91,10 @@
       .get('#stockTable')
       .find('tbody')
       .find('tr')
-      .should('have.length', 20)
+      .should('have.length', 31)
   })
 
-  it('8. Enter Dolna 5a, radius = 1400 and test if 20 shops were returned', () => {
+  it('8. Enter Dolna 5a, radius = 1400 and test if 31 shops were returned', () => {
     cy.get('#radius')
       .clear()
       .type(1400)
@@ -103,10 +103,10 @@
       .get('#stockTable')
       .find('tbody')
       .find('tr')
-      .should('have.length', 20)
+      .should('have.length', 31)
   })
 
-  it('9. Enter Dolna 5a, radius = 1500 and test if 23 shops were returned', () => {
+  it('9. Enter Dolna 5a, radius = 1500 and test if 37 shops were returned', () => {
     cy.get('#radius')
       .clear()
       .type(1500)
@@ -115,34 +115,26 @@
       .get('#stockTable')
       .find('tbody')
       .find('tr')
-      .should('have.length', 23)
+      .should('have.length', 37)
   })
 
-  it('10. Enter Dolna 5a, radius = 2000 and test if 35 shops were returned', () => {
+  it('10. Enter Dolna 5a, radius = 2000 and test if 58 shops were returned', () => {
     cy.get('#radius')
       .clear()
       .type(2000)
       .get('#search')
       .click()
-      .get('#stockTable').screenshot()
+      .get('#stockTable')
       .find('tbody')
       .find('tr')
-      .should('have.length', 36)
+      .should('have.length', 58)
     })
 })
-*/
 
-describe('Searching shops', () => {
+
+describe('2. Wyszukiwanie sklepów - brak miasta lub ulicy', () => {
   beforeEach(() => {
     cy.visit('/')
-    /*
-    .get('#city')
-    .select("Warszawa")
-    .get('#street')
-    .type('Dolna')
-    .get('#streetNumber')
-    .type('5a')
-    */
   })
 
   it('1. Brak miasta i ulicy, klik w Searcha i ma się wyświetlić modal "Brak miasta"', () => {
@@ -173,7 +165,7 @@ describe('Searching shops', () => {
   })
 })
 
-describe('Reset buttons (są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło wyświetla kolumny Chleb, Maslo i Total', () => {
+describe('3. Reset buttons (są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło wyświetla kolumny Chleb, Maslo i Total', () => {
   // wybranie sklepów w promieniu 600m od Dolnej 5a, Wwa
   beforeEach(() => {
     cy.visit('/')
@@ -237,7 +229,7 @@ describe('Reset buttons (są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło
 
   })
 
-  it.only('2. Czy klik Reset towarów odczekowuje towary i znika ich kolumny i kolumnę Total ?', () => {
+  it('2. Czy klik Reset towarów odczekowuje towary i znika ich kolumny i kolumnę Total ?', () => {
 
     // Klik w Reset powinien znikać kolumny Total, Chleb i Maslo
     cy.get("[data-test='buttonResetStock']")
@@ -260,11 +252,7 @@ describe('Reset buttons (są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło
     .contains(/Maslo/)
     .should('not.exist')
 
-    //cy.pause()
   })
-
-
-
 })
 
 
