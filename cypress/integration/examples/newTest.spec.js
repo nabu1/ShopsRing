@@ -1,59 +1,4 @@
 /*
-Lista testów e2e:
-
-
-10) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 >
-          > czek 'Chleb' i 'Masło' > Search >
-          > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
-          > unczek Chleb > ma zniknąć kolumna Chleb i zmienić się total
-          > klik w Search/Reset:
-              mają wyczyścić się wszystkie input boksy kumpa Search
-              mają zniknąć wszystkie sklepy z tabeli
-              czeknięte czekboksy mają zostać czeknięte
-
-
-
-11) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 >
-          > czek 'Chleb' i 'Masło' > Search >
-          > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
-          > kliknąć w ikonę sortowania:
-              sklepiszcze
-              adres
-              odległość
-              total
-              chleb masło
-
-///////////////////////////////////////////////////////////////////////////////
-
-1) Start > Search > ma wyskoczyć szmatka walidacji 'Brak miasta'
-
-2) Start > Miasto: 'Wwa' > Search > ma wyskoczyć szmatka walidacji 'Brak ulicy'
-
-3) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Search > mają wyskoczyć sklepy w tabeli
-
-4) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Search > mają wyskoczyć sklepy
-
-5) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 > Search > mają wyskoczyć sklepy
-
-6) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' >
-         > Radius: 1000 > czek 'Chleb' > Search >
-         > mają wyskoczyć sklepy w tabeli, kolumna Chleb i Total
-         > unczek Chleb > ma zniknąć kolumna Chleb
-         > unczek Maslo > ma zniknąć kolumna Maslo i Total
-
-9) Start > Miasto: 'Wwa' > Ulica: 'Dolna' > Numer domu: '5a' > Radius: 1000 >
-         > czek 'Chleb' i 'Masło' > Search >
-         > mają wyskoczyć sklepy w tabeli, kolumna Chleb, Masło i Total
-         > klik w Produkty/Reset:
-             mają się odczeknąć wszystkie produkty
-             mają zniknąć kolumny Masło i Total
-
-
-
-///////////////////////////////////////////////////////////////////////////////
-
-
-/*
   describe('Searching shops', () => {
     beforeEach(() => {
       cy.visit('/')
@@ -228,8 +173,8 @@ describe('Searching shops', () => {
   })
 })
 
-
-describe('Reset buttons', () => {
+describe('Reset buttons (są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło wyświetla kolumny Chleb, Maslo i Total', () => {
+  // wybranie sklepów w promieniu 600m od Dolnej 5a, Wwa
   beforeEach(() => {
     cy.visit('/')
       .get("[data-test='city']")
@@ -252,53 +197,69 @@ describe('Reset buttons', () => {
       .check( { force: true })
   })
 
-  it('1. Są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło wyświetla kolumny Chleb, Maslo i Total.\
-         Unczek je zdejmuje', () => {
+  it('1. Unczek je zdejmuje', () => {
 
     // czy nagłówek tabela zawiera słowa 'Total', 'Chleb' lub 'Masło'
-    cy.get('#stockTable thead tr th:nth-child(7)')
-      .should('have.text', 'Total')
-      .get('#stockTable thead tr th:nth-child(8)')
-      .should('have.text', 'Chleb')
-      .get('#stockTable thead tr th:nth-child(9)')
-      .should('have.text', 'Maslo')
+    cy.get('#stockTable thead tr th')
+      .contains(/Total/)
+      .get('#stockTable thead tr th')
+      .contains(/Chleb/)
+      .get('#stockTable thead tr th')
+      .contains(/Chleb/)
 
-      // uncheck boksa Chleb. Znika kolumna 'Chleb' ?
+      // uncheck boksa Chleb
       .get("[data-test='stocks']")
       .get('#__BVID__19__BV_check_0_opt_')
       .uncheck( { force: true })
-      .get('#stockTable thead tr th')
-      .should('not.exist', 'Total')
-      .get('#stockTable thead tr th')
-      .should('not.exist', 'Chleb')
 
-      // uncheck boksa Maslo. Znika kolumna 'Maslo' i 'Total' ?
+  .wait(500)
+
+      // znika kolumna 'Chleb' ?
+    cy.get('#stockTable thead tr th')
+      .contains(/Chleb/)
+      .should('not.exist')
+
+
+      // uncheck boksa Maslo
       .get("[data-test='stocks']")
       .get('#__BVID__19__BV_check_1_opt_')
       .uncheck( { force: true })
+
+      //Znika kolumna 'Maslo' ?
       .get('#stockTable thead tr th')
-      .should('not.exist', 'Total')
+      .contains(/Maslo/)
+      .should('not.exist')
+
+      // i 'Total' ?
       .get('#stockTable thead tr th')
-      .should('not.exist', 'Maslo')
-      /*
-      */
+      .contains(/Total/)
+      .should('not.exist')
 
   })
 
   it.only('2. Są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło wyświetla kolumny Chleb, Maslo i Total.\
               Czy klik Reset towarów odczekowuje towary i znika ich kolumny i kolumnę Total ?', () => {
 
+    // Klik w Reset powinien znikać kolumny Total, Chleb i Maslo
     cy.get("[data-test='buttonResetStock']")
-      .wait(2000)
       .click()
-      .get('#stockTable thead tr th:nth-child(7)')
-      //.get('#stockTable thead tr th')
-      .should('not.exist', 'Total')
+
+      //Znika kolumna 'Total' ?
       .get('#stockTable thead tr th')
-      .should('not.exist', 'Chleb')
+      .contains(/Total/)
+      .should('not.exist')
+
+      //Znika kolumna 'Chleb' ?
       .get('#stockTable thead tr th')
-      .should('not.exist', 'Maslo')
+      .contains(/Chleb/)
+      .should('not.exist')
+
+      //Znika kolumna 'Maslo' ?
+      .get('#stockTable thead tr th')
+      .contains(/Maslo/)
+      .should('not.exist')
   })
+
 
 
 })
