@@ -229,7 +229,7 @@ describe('3. Reset buttons (są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Mas
 
   })
 
-  it('2. Czy klik Reset towarów odczekowuje towary i znika ich kolumny i kolumnę Total ?', () => {
+  it('2. Klik Reset towarów odczekowuje towary i znika ich kolumny i kolumnę Total ?', () => {
 
     // Klik w Reset powinien znikać kolumny Total, Chleb i Maslo
     cy.get("[data-test='buttonResetStock']")
@@ -251,6 +251,19 @@ describe('3. Reset buttons (są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Mas
     .get('#stockTable thead tr th')
     .contains(/Maslo/)
     .should('not.exist')
+
+  })
+
+  it('3. Klik Reset lokalizacji odczekowuje towary i znika ich kolumny i kolumnę Total ?', () => {
+
+    // Klik w Reset powinien znikać kolumny Total, Chleb i Maslo
+    cy.get("[data-test='buttonResetLocation']")
+    .click()
+
+    //Znika kolumna tabela towarów ?
+    .get('#stockTable')
+    .should('not.exist')
+
 
   })
 })
