@@ -197,7 +197,7 @@ describe('Reset buttons (są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło
       .check( { force: true })
   })
 
-  it('1. Unczek je zdejmuje', () => {
+  it('1. Unczek zdejmuje czekboksy towarów i znika ich kolumny i Total', () => {
 
     // czy nagłówek tabela zawiera słowa 'Total', 'Chleb' lub 'Masło'
     cy.get('#stockTable thead tr th')
@@ -237,27 +237,30 @@ describe('Reset buttons (są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło
 
   })
 
-  it.only('2. Są sklepy (Wwa, Dolna 5a, 600m). Czek w Chleb i Masło wyświetla kolumny Chleb, Maslo i Total.\
-              Czy klik Reset towarów odczekowuje towary i znika ich kolumny i kolumnę Total ?', () => {
+  it.only('2. Czy klik Reset towarów odczekowuje towary i znika ich kolumny i kolumnę Total ?', () => {
 
     // Klik w Reset powinien znikać kolumny Total, Chleb i Maslo
     cy.get("[data-test='buttonResetStock']")
-      .click()
+    .click()
 
-      //Znika kolumna 'Total' ?
-      .get('#stockTable thead tr th')
-      .contains(/Total/)
-      .should('not.exist')
 
-      //Znika kolumna 'Chleb' ?
-      .get('#stockTable thead tr th')
-      .contains(/Chleb/)
-      .should('not.exist')
+    //Znika kolumna 'Total' ?
+    .get('#stockTable thead tr th')
+    .contains(/Total/)
+    .should('not.exist')
 
-      //Znika kolumna 'Maslo' ?
-      .get('#stockTable thead tr th')
-      .contains(/Maslo/)
-      .should('not.exist')
+    //Znika kolumna 'Chleb' ?
+    .get('#stockTable thead tr th')
+    .contains(/Chleb/)
+    .should('not.exist')
+
+
+    //Znika kolumna 'Maslo' ?
+    .get('#stockTable thead tr th')
+    .contains(/Maslo/)
+    .should('not.exist')
+
+    //cy.pause()
   })
 
 
