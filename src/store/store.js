@@ -48,8 +48,6 @@ export const store = new Vuex.Store({
       state.allShopsCopy = allShops
     },
     FIND_SELECTED_SHOPS(state, shopsInRadius) {
-      console.log('shopsInRadius = ', shopsInRadius)
-
       if (!shopsInRadius.length) {
         state.stocksSelected = []
       }
@@ -84,10 +82,6 @@ export const store = new Vuex.Store({
       ajaxAddAllShops(context)
     },
     findSelectedShops(context, { homeData, radius, allShops }) {
-      console.log('0. homeData = ', homeData)
-      console.log('0. radius = ', radius)
-      console.log('0. allShops = ', allShops)
-
       ajaxFindSelectedShops(context, { homeData, radius, allShops })
     },
     getStock(context, stocksSelected) {
