@@ -1,6 +1,11 @@
 import { constants } from '../data/constants'
 
-export const filteredShops = (shops, homeGPSAndAddress) => {
+export const filteredShops = (homeGPSAndAddress, radius, allShops) => {
+  console.log('8. homeGPSAndAddress = ', homeGPSAndAddress)
+  console.log('9. homeGPSAndAddress.radius = ', homeGPSAndAddress.radius)
+  console.log('10. radius = ', radius)
+  console.log('11. allShops = ', allShops)
+
   function toRad(x) {
     return x * Math.PI / 180
   }
@@ -13,16 +18,30 @@ export const filteredShops = (shops, homeGPSAndAddress) => {
     const dLon = toRad(x2)
 
     const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-      Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
-      Math.sin(dLon / 2) * Math.sin(dLon / 2)
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+    Math.sin(dLon / 2) * Math.sin(dLon / 2)
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
     return Math.round(R * c * 1000)
   }
 
-  const shopsInRadius = shops.filter(el => {
+  const shopsInRadius = allShops.filter(el => {
+    //console.log('12. el.lat = ', el.lat)
+    //console.log('13. el.lon = ', el.lon)
+    //console.log('14. homeGPSAndAddress.lon = ', homeGPSAndAddress.lon)
+    //console.log('15. homeGPSAndAddress.lat = ', homeGPSAndAddress.lat)
+    console.log('16. radius = ', radius)
+
     el.distance = distance(el.lat, el.lon, homeGPSAndAddress.lat, homeGPSAndAddress.lon)
-    return el.distance < homeGPSAndAddress.radius
+
+    //console.log('17. el.distance = ', el.distance)
+    //console.log('18. el = ', el)
+    //console.log('19. radius = ', homeGPSAndAddress.radius)
+
+    //return el.distance < homeGPSAndAddress.radius
+    return el.distance < radius
   })
+
+  console.log('10. shopsInRadius = ', shopsInRadius)
 
   const shopsInRadiusWithJakD = shopsInRadius.map(el => {
     let link = constants.JAKDOJADE
@@ -43,6 +62,8 @@ export const filteredShops = (shops, homeGPSAndAddress) => {
     return el
   })
 
+  console.log('7. shopsInRadiusWithJakD = ', shopsInRadiusWithJakD)
+
   const shopsInRadiusWithJakDAndGmaps = shopsInRadiusWithJakD.map(el => {
     let link = constants.GOOGLE_MAPS
     link += encodeURI(homeGPSAndAddress.street + '+' + homeGPSAndAddress.streetNumber) // from
@@ -52,6 +73,8 @@ export const filteredShops = (shops, homeGPSAndAddress) => {
     el.gmaps = `<a href=${link} target="_blank">GMaps</a>`
     return el
   })
+
+  //console.log('8. shopsInRadiusWithJakDAndGmaps = ', shopsInRadiusWithJakDAndGmaps)
 
   return shopsInRadiusWithJakDAndGmaps
 }

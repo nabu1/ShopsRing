@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { ajaxAddAllShops, ajaxFindSelectedShops } from '../services/ajax'
-import { initialColumns, totalColumn, stockColumns } from '../data/data'
-
+import { initialColumns, totalColumn } from '../data/data'
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
@@ -34,7 +33,7 @@ export const store = new Vuex.Store({
       return state.stocksSelected
     },
     getShowCheckboxes(state) {
-      return state.showCheckboxes
+      // return state.showCheckboxes
     },
     getShowTable(state) {
       return state.showTable
@@ -61,10 +60,10 @@ export const store = new Vuex.Store({
     },
     GET_STOCK(state, columns) {
       if (columns.stocksSelected.length) {
-        state.fields =  initialColumns.concat(totalColumn).concat(columns.stocksSelected)
+        state.fields = initialColumns.concat(totalColumn).concat(columns.stocksSelected)
       }
       else {
-        state.fields =  initialColumns.concat(columns.stocksSelected)
+        state.fields = initialColumns.concat(columns.stocksSelected)
       }
 
       state.stocksSelected = columns.stocksSelected
@@ -84,8 +83,12 @@ export const store = new Vuex.Store({
     addAllShops(context) {
       ajaxAddAllShops(context)
     },
-    findSelectedShops(context, homeData) {
-      ajaxFindSelectedShops(context, homeData)
+    findSelectedShops(context, { homeData, radius, allShops }) {
+      console.log('0. homeData = ', homeData)
+      console.log('0. radius = ', radius)
+      console.log('0. allShops = ', allShops)
+
+      ajaxFindSelectedShops(context, { homeData, radius, allShops })
     },
     getStock(context, stocksSelected) {
       context.commit('GET_STOCK', { initialColumns, stocksSelected })
@@ -103,4 +106,5 @@ export const store = new Vuex.Store({
       context.commit('SHOW_LOADER', bool)
     }
   }
+
 })

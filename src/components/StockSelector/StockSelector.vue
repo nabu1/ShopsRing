@@ -27,6 +27,9 @@ export default {
           shops[index].total = pricesTotal.pop()
         })
 
+        console.log('stocks = ', stocks)
+        console.log('shops = ', shops)
+
         this.$store.dispatch('addTotal', shops)
       }, 0)
     }
