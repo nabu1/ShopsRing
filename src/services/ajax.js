@@ -24,51 +24,46 @@ export const ajaxFindSelectedShops = (context, { homeData, radius, allShops }) =
   const encodedAddress = encodeURI(homeData.street + ' ' + homeData.streetNumber + ', ' + homeData.city)
   const url = constants.GEOCODER_SERVICE + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
 
-
   if (sessionStorage.getItem('homeGPSAndAddress')) {
     const sessionHomeGPSAndAddress = JSON.parse(sessionStorage.getItem('homeGPSAndAddress'))
-
-    console.log('homeData.street = ', homeData.street)
-    console.log('homeData.streetNumber = ', homeData.streetNumber)
-    console.log('homeData.city = ', homeData.city)
-
-    console.log('sessionHomeGPSAndAddress.street = ', sessionHomeGPSAndAddress.street)
-    console.log('sessionHomeGPSAndAddress.streetNumber = ', sessionHomeGPSAndAddress.streetNumber)
-    console.log('sessionHomeGPSAndAddress.city = ', sessionHomeGPSAndAddress.city)
 
     if (sessionHomeGPSAndAddress.city === homeData.city &&
       sessionHomeGPSAndAddress.street === homeData.street &&
       sessionHomeGPSAndAddress.streetNumber === homeData.streetNumber) {
-      console.log('Ten adres już jest !')
+
+      setTimeout(() => {
+        context.commit('SHOW_LOADER', false)
+      }, 0);
+
       return shopsFiltering(JSON.parse(sessionStorage.getItem('homeGPSAndAddress')), radius, allShops)
+
     }
   }
 
+  axios.get(url)
+  .then(res => {
 
-  //else {
-    console.log('Goto axios ..')
+    console.log('confidence = ', res.data.results[0].confidence)
 
-    axios.get(url)
-      .then(res => {
-        if (res.data.results[0].confidence < 9) {
-          alert('Nie ma takiej ulicy. Spróbuj jeszcze raz')
-          context.commit('FIND_SELECTED_SHOPS', [])
-          return
-        }
+    if (res.data.results[0].confidence < 9) {
+        context.commit('SHOW_LOADER', false)
+        alert('Nie ma takiej ulicy. Spróbuj jeszcze raz')
+        return context.commit('FIND_SELECTED_SHOPS', [])
+      }
 
-        const homeGPSAndAddress = {
-          lat: res.data.results[0].geometry.lat,
-          lon: res.data.results[0].geometry.lng,
-          city: homeData.city,
-          street: homeData.street,
-          streetNumber: homeData.streetNumber
-        }
+      const homeGPSAndAddress = {
+        lat: res.data.results[0].geometry.lat,
+        lon: res.data.results[0].geometry.lng,
+        city: homeData.city,
+        street: homeData.street,
+        streetNumber: homeData.streetNumber
+      }
 
-        sessionStorage.setItem('homeGPSAndAddress', JSON.stringify(homeGPSAndAddress))
-        shopsFiltering(homeGPSAndAddress, radius, allShops)
+      sessionStorage.setItem('homeGPSAndAddress', JSON.stringify(homeGPSAndAddress))
+      shopsFiltering(homeGPSAndAddress, radius, allShops)
 
-      })
-      .catch(err => console.log('My error: ', err))
+    })
+    .catch(err => console.log('My error: ', err))
   //}
 
   function shopsFiltering(homeGPSAndAddress, radius, allShops) {
