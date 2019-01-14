@@ -10,12 +10,12 @@ export const ajaxAddAllShops = context => {
   }
   else {
     axios
-    .get(constants.SHOPS_LIST)
-    .then(res => {
-      context.commit('ADD_ALL_SHOPS', res.data)
-      sessionStorage.setItem('allShops', JSON.stringify(res.data))
-    })
-    .catch(err => console.log(err))
+      .get(constants.SHOPS_LIST)
+      .then(res => {
+        context.commit('ADD_ALL_SHOPS', res.data)
+        sessionStorage.setItem('allShops', JSON.stringify(res.data))
+      })
+      .catch(err => console.log(err))
   }
 }
 
@@ -24,10 +24,30 @@ export const ajaxFindSelectedShops = (context, { homeData, radius, allShops }) =
   const encodedAddress = encodeURI(homeData.street + ' ' + homeData.streetNumber + ', ' + homeData.city)
   const url = constants.GEOCODER_SERVICE + encodedAddress + '&key=' + key + '&language=pl&pretty=1'
 
+
   if (sessionStorage.getItem('homeGPSAndAddress')) {
-    shopsFiltering(JSON.parse(sessionStorage.getItem('homeGPSAndAddress')), radius, allShops)
+    const sessionHomeGPSAndAddress = JSON.parse(sessionStorage.getItem('homeGPSAndAddress'))
+
+    console.log('homeData.street = ', homeData.street)
+    console.log('homeData.streetNumber = ', homeData.streetNumber)
+    console.log('homeData.city = ', homeData.city)
+
+    console.log('sessionHomeGPSAndAddress.street = ', sessionHomeGPSAndAddress.street)
+    console.log('sessionHomeGPSAndAddress.streetNumber = ', sessionHomeGPSAndAddress.streetNumber)
+    console.log('sessionHomeGPSAndAddress.city = ', sessionHomeGPSAndAddress.city)
+
+    if (sessionHomeGPSAndAddress.city === homeData.city &&
+      sessionHomeGPSAndAddress.street === homeData.street &&
+      sessionHomeGPSAndAddress.streetNumber === homeData.streetNumber) {
+      console.log('Ten adres już jest !')
+      return shopsFiltering(JSON.parse(sessionStorage.getItem('homeGPSAndAddress')), radius, allShops)
+    }
   }
-  else {
+
+
+  //else {
+    console.log('Goto axios ..')
+
     axios.get(url)
       .then(res => {
         if (res.data.results[0].confidence < 9) {
@@ -49,7 +69,7 @@ export const ajaxFindSelectedShops = (context, { homeData, radius, allShops }) =
 
       })
       .catch(err => console.log('My error: ', err))
-  }
+  //}
 
   function shopsFiltering(homeGPSAndAddress, radius, allShops) {
     const shopsInRadius = filteredShops(homeGPSAndAddress, radius, allShops)

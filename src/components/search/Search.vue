@@ -84,8 +84,3 @@ export default {
 };
 </script>
 
-
-      sessionStorage.setItem('homeGPSAndAddress', JSON.stringify(homeGPSAndAddress))
-  const sessionHomeGPSAndAddress = sessionStorage.getItem('homeGPSAndAddress');
-
-
