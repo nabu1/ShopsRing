@@ -6,7 +6,6 @@ export const ajaxAddAllShops = context => {
 
   if (sessionStorage.getItem('allShops')) {
     context.commit('ADD_ALL_SHOPS', JSON.parse(sessionStorage.getItem('allShops')))
-    //return
   }
   else {
     axios
@@ -36,16 +35,12 @@ export const ajaxFindSelectedShops = (context, { homeData, radius, allShops }) =
       }, 0);
 
       return shopsFiltering(JSON.parse(sessionStorage.getItem('homeGPSAndAddress')), radius, allShops)
-
     }
   }
 
   axios.get(url)
-  .then(res => {
-
-    console.log('confidence = ', res.data.results[0].confidence)
-
-    if (res.data.results[0].confidence < 9) {
+    .then(res => {
+      if (res.data.results[0].confidence < 9) {
         context.commit('SHOW_LOADER', false)
         alert('Nie ma takiej ulicy. Spróbuj jeszcze raz')
         return context.commit('FIND_SELECTED_SHOPS', [])
@@ -64,7 +59,6 @@ export const ajaxFindSelectedShops = (context, { homeData, radius, allShops }) =
 
     })
     .catch(err => console.log('My error: ', err))
-  //}
 
   function shopsFiltering(homeGPSAndAddress, radius, allShops) {
     const shopsInRadius = filteredShops(homeGPSAndAddress, radius, allShops)
