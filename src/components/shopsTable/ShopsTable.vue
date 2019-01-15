@@ -10,7 +10,8 @@ export default {
   },
   computed: {
     items() {
-      return this.$store.getters.getAllShops
+      //return this.$store.getters.getAllShops
+      return this.$store.getters.getSelectedShops
     },
     fields() {
       return this.$store.getters.getStock

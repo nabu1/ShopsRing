@@ -23,6 +23,9 @@ export const store = new Vuex.Store({
     getAllShopsCopy(state) {
       return state.allShopsCopy
     },
+    getSelectedShops(state) {
+      return state.selectedShops
+    },
     getItems(state) {
       // return state.items
     },
@@ -52,9 +55,8 @@ export const store = new Vuex.Store({
         state.stocksSelected = []
       }
 
-      // Tu ma sprawdzać jakie boksy są czeknięte
-
-      state.allShops = shopsInRadius
+      //state.allShops = shopsInRadius
+      state.selectedShops = shopsInRadius
     },
     GET_STOCK(state, columns) {
       if (columns.stocksSelected.length) {
