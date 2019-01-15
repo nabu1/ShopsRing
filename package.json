@@ -13,9 +13,6 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "vue-cli-service build",
-    "cy": "cypress open",
-    "cydev": "vue-cli-service serve",
-    "c": "cypress run",
     "serve": "vue-cli-service serve",
     "postinstall": "npm run build",
     "start": "node server.js"
