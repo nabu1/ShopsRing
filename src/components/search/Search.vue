@@ -38,22 +38,49 @@ export default {
 
       this.$store.dispatch("addAllShops");
 
-        const homeData = {
-          city: this.city,
-          street: this.street,
-          streetNumber: this.streetNumber,
-        };
+      const homeData = {
+        city: this.city,
+        street: this.street,
+        streetNumber: this.streetNumber
+      };
 
-        const radius = this.radius
-        //const allShops = this.$store.getters.getAllShopsCopy
-        const allShops = this.$store.getters.getAllShops
-        const selectedStocks = this.$store.getters.getStocksSelected
+      const radius = this.radius;
+      const allShops = this.$store.getters.getAllShops;
+      const selectedStocks = this.$store.getters.getStocksSelected;
 
-        this.$store.dispatch("findSelectedShops", { homeData, radius, allShops })
-        this.$store.dispatch("showLoader", true);
-        this.$store.dispatch("getStock", selectedStocks)
+      this.$store.dispatch("findSelectedShops", { homeData, radius, allShops });
+      this.$store.dispatch("showLoader", true);
+      this.$store.dispatch("getStock", selectedStocks);
 
-        const getSelectedShops = this.$store.getters.getSelectedShops
+
+      //////
+      const selectedShops = this.$store.getters.getSelectedShops;
+
+      let suma = 0;
+
+      selectedShops.map((shop, index) => {
+        let pricesTotal = selectedStocks.map(stock => (suma += shop[stock]));
+        shop.total = suma;
+        suma = 0;
+      });
+
+      this.$store.dispatch("addTotal", selectedShops);
+      //////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      const getSelectedShops = this.$store.getters.getSelectedShops;
     },
     hideModalCity() {
       this.$refs.modalCity.hide();

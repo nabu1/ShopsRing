@@ -22,10 +22,9 @@ export default {
         const selectedStocks = this.$store.getters.getStocksSelected;
 
         let suma = 0;
-        let pricesTotal = [];
 
         selectedShops.map((shop, index) => {
-          pricesTotal = selectedStocks.map(stock => (suma += shop[stock]));
+          let pricesTotal = selectedStocks.map(stock => (suma += shop[stock]));
           shop.total = suma;
           suma = 0;
         });
