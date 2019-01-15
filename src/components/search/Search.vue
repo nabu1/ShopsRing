@@ -45,18 +45,15 @@ export default {
         };
 
         const radius = this.radius
-        const allShops = this.$store.getters.getAllShopsCopy
-        const stocks = this.$store.getters.getStocksSelected
-
-        console.log('2. stocks = ', stocks)
-        console.log('2. allShops = ', allShops)  // todo:
+        //const allShops = this.$store.getters.getAllShopsCopy
+        const allShops = this.$store.getters.getAllShops
+        const selectedStocks = this.$store.getters.getStocksSelected
 
         this.$store.dispatch("findSelectedShops", { homeData, radius, allShops })
         this.$store.dispatch("showLoader", true);
-        this.$store.dispatch("getStock", stocks)
+        this.$store.dispatch("getStock", selectedStocks)
 
         const getSelectedShops = this.$store.getters.getSelectedShops
-
     },
     hideModalCity() {
       this.$refs.modalCity.hide();

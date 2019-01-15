@@ -55,7 +55,6 @@ export const store = new Vuex.Store({
         state.stocksSelected = []
       }
 
-      //state.allShops = shopsInRadius
       state.selectedShops = shopsInRadius
     },
     GET_STOCK(state, columns) {
