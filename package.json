@@ -10,7 +10,10 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "cy": "cypress open",
     "cydev": "vue-cli-service serve",
-    "c": "cypress run"
+    "c": "cypress run",
+    "serve": "vue-cli-service serve",
+    "postinstall": "npm run build",
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "0.18.0",
@@ -35,7 +38,9 @@
     "babel-preset-env": "^1.6.0",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
+    "express": "4.16.4",
     "file-loader": "^1.1.4",
+    "serve-static": "1.13.2",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
