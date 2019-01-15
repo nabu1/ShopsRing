@@ -1,5 +1,6 @@
 /*
   Uzupełnianie listy sklepów o współrzędne GPS i listę towarów z cenami
+  Można też uzupełnić je o same ceny, odpalając samą funkcję addPrices()
 
   1) Ściągnij ze strony www listę adresów sklepów
 
@@ -27,8 +28,8 @@
 const fs = require('fs')
 const _ = require('lodash')
 const axios = require('axios')
-const shops = './zabka.json'
-const shopsWithStockAndGPS = './zabkaWithStockAndGPS.json'
+const shops = '../zabkiWwa.json'
+const shopsWithStockAndGPS = '../zabkiWithStockAndGPS.json'
 const key = '224e8e01cf8f43a0aabb1b68341904a1'
 
 
@@ -56,7 +57,7 @@ const prices = () => {
 function addGPSAndPrices() {
   console.log('shops = ', shops)
 
-  const shopsy = fs.readFileSync(shops,'utf8')
+  const shopsy = fs.readFileSync(shops, 'utf8')
   const shopsObj = JSON.parse(shopsy)
 
   shopsObj.map(el => {
@@ -64,23 +65,41 @@ function addGPSAndPrices() {
     const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAdres + '&key=' + key + '&language=pl&pretty=1'
 
     axios.get(url)
-    .then(res => {
-      let obj = {
-        shopName: el.shopName,
-        city: el.city,
-        address: el.address,
-        lat: res.data.results[0].geometry.lat,
-        lon: res.data.results[0].geometry.lng,
-      }
+      .then(res => {
+        let obj = {
+          shopName: el.shopName,
+          city: el.city,
+          address: el.address,
+          lat: res.data.results[0].geometry.lat,
+          lon: res.data.results[0].geometry.lng,
+        }
 
-      let fullObj = Object.assign({}, obj, prices())
-      console.log('fullObj', fullObj)
+        let fullObj = Object.assign({}, obj, prices())
+        console.log('fullObj', fullObj)
 
-      fs.appendFileSync (shopsWithStockAndGPS, JSON.stringify(fullObj) + ',')
-    })
-    .catch(err => console.log('Buont getGPS: ', err))
+        fs.appendFileSync(shopsWithStockAndGPS, JSON.stringify(fullObj) + ',')
+      })
+      .catch(err => console.log('Buont getGPS: ', err))
 
   })
 }
 
-addGPSAndPrices()
+function addPrices() {
+  console.log('shops = ', shops)
+
+  const shopsy = fs.readFileSync(shops, 'utf8')
+  const shopsObj = JSON.parse(shopsy)
+
+  shopsObj.map(el => {
+    let fullObj = Object.assign({}, el, prices())
+    // console.log('fullObj', fullObj)
+    fs.appendFileSync (shopsWithStockAndGPS, JSON.stringify(fullObj) + ',')
+  })
+
+
+}
+
+
+// addGPSAndPrices()
+
+addPrices()
