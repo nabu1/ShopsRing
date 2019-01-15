@@ -52,10 +52,7 @@ export default {
       this.$store.dispatch("showLoader", true);
       this.$store.dispatch("getStock", selectedStocks);
 
-
-      //////
       const selectedShops = this.$store.getters.getSelectedShops;
-
       let suma = 0;
 
       selectedShops.map((shop, index) => {
@@ -65,22 +62,6 @@ export default {
       });
 
       this.$store.dispatch("addTotal", selectedShops);
-      //////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      const getSelectedShops = this.$store.getters.getSelectedShops;
     },
     hideModalCity() {
       this.$refs.modalCity.hide();
