@@ -17,23 +17,34 @@ export default {
 
     stockSelected() {
       setTimeout(() => {
-        console.log('this.selected = ', this.selected)
-
         this.$store.dispatch("getStock", this.selected)
-        const shops = this.$store.getters.getAllShops // todo: powinien brać z getSelectedShops
-        const stocks = this.$store.getters.getStocksSelected
+        const selectedShops = this.$store.getters.getSelectedShops
+        const selectedStocks = this.$store.getters.getStocksSelected
 
-        console.log('1. stocks = ', stocks)
-        console.log('1. shops = ', shops)
+        console.log('1. selectedShops = ', selectedShops)
+        console.log('2. selectedStocks = ', selectedStocks)
 
         let suma = 0
+        let pricesTotal = []
 
-        shops.map((shop, index) => {
-          let pricesTotal = stocks.map(stock => suma += shop[stock])
-          shops[index].total = pricesTotal.pop()
+        selectedShops.map((shop, index) => {
+
+          pricesTotal = selectedStocks.map(stock => {
+            console.log('shop[stock] = ', shop[stock])
+            suma += shop[stock]
+            console.log('suma = ', suma)
+          })
+
+          //console.log('pricesTotal = ', pricesTotal)
+          //shop.total = pricesTotal.pop()
+          shop.total = suma
+          suma = 0
+          //pricesTotal = []
         })
 
-        this.$store.dispatch('addTotal', shops)
+        //console.log('selectedShops = ', selectedShops)
+        this.$store.dispatch('addTotal', selectedShops)
+
       }, 0)
     }
   }

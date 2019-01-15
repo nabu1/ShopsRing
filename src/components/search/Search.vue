@@ -57,11 +57,6 @@ export default {
 
         const getSelectedShops = this.$store.getters.getSelectedShops
 
-        setTimeout(() => {
-          console.log('getSelectedShops = ', getSelectedShops)
-        }, 500);
-
-      //}, 0)
     },
     hideModalCity() {
       this.$refs.modalCity.hide();
