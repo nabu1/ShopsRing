@@ -12,11 +12,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "cy": "cypress open",
-    "cydev": "vue-cli-service serve",
-    "c": "cypress run",
-    "serve": "vue-cli-service serve",
+    "build": "NODE_ENV=production webpack --progress --hide-modules",
     "postinstall": "npm run build",
     "start": "node server.js"
   },
