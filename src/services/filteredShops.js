@@ -25,7 +25,11 @@ export const filteredShops = (homeGPSAndAddress, radius, allShops) => {
   })
 
   const shopsInRadiusWithJakD = shopsInRadius.map(el => {
+
+    console.log('city = ', homeGPSAndAddress.city)
+
     let link = constants.JAKDOJADE
+    link += homeGPSAndAddress.city + '/trasa/?fn='
     link += encodeURI(homeGPSAndAddress.street + ' ' + homeGPSAndAddress.streetNumber)
     link += '&tn='
     link += encodeURI(el.address)

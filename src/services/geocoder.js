@@ -7,19 +7,10 @@ Prócz tego linka do jakdojade i gugiel mapy z markerami
 Lista sklepów ściągana jest juz po wybraniu nazwy miasta
 Dalsze filtrowanie więc odbywa się we frontendzie
 
-Niniejszy plik obrabia plik z danymi adresowymi sklepów
-przeklejonymi ręcznie z overpass-turno.eu
-
-Tamtejszą mapę ustaw na Wwę, wciśnij batona Kreator: 'biedronka'
-i skopiuj zawartość taba 'Dane' do pliku sklepyZOverpass.json
-Problem: niektórym obiektom brakuje ulicy lub nr domu
-Poniższa pik - geocoder.js ten brak uzupełnia
-
 Instrukcja obsługi niniejszego pliku:
-1. Skopiowane z overpass-turbo jsony wklej do shopsFromOverpass.json
-2. Wypełnij pola const city i const shopName
-3. Odpal tylko filteredShops() i sprawdź shopsFiltered.json
-4. Odpal tylko fillGaps() i sprawdź shopsFinal.json
+1. Wypełnij pola const city i const shopName
+2. Odpal tylko filteredShops() i sprawdź shopsFiltered.json
+3. Odpal tylko fillGaps() i sprawdź shopsFinal.json
 
 Formatowanie JSONów: ctrl + shift + f
 */
@@ -37,9 +28,10 @@ const fs = require('fs')
 const _ = require('lodash')
 const axios = require('axios')
 
-const fileBiedryZOverpass = './biedryZOverpass.json'
-const city = 'Warszawa'
-const shopName = 'Biedronka'
+const fileFrom = '../data/zabki_gdabsk.json'
+const fileTo = '../data/zabki_gdansk_final.json'
+const city = ''
+const shopName = 'Żabka'
 
 const key = '224e8e01cf8f43a0aabb1b68341904a1'
 const fileShopsFromOverpass = './shopsFromOverpass.json'
@@ -202,9 +194,26 @@ function addId() {
 
 }
 
+function filtrujMiasto(miasto) {
+  const shops = fs.readFileSync(fileFrom,'utf8')
+  const shopsObj = JSON.parse(shops)
+
+  // console.log('shopsObj = ', shopsObj)
+
+  const shopsFinal = shopsObj.filter((el, index) => {
+    return el.city === miasto
+  })
+
+  console.log('187. shopsFinal', shopsFinal)
+
+  fs.appendFileSync (fileTo, JSON.stringify(shopsFinal))
+
+}
+
 //console.log(filteredShops())  // odpal najpierw ten, komentując kolejny
 //filteredShops()  // odpal najpierw ten, komentując kolejny
 //fillGaps()
 //getAddress()
 
-addId()
+//addId()
+filtrujMiasto('Gdańsk')

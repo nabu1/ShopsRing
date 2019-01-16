@@ -28,8 +28,8 @@
 const fs = require('fs')
 const _ = require('lodash')
 const axios = require('axios')
-const shops = '../zabkiWwa.json'
-const shopsWithStockAndGPS = '../zabkiWithStockAndGPS.json'
+const fileFrom = '../data/zabki_krakow.json'
+const fileTo = '../data/zabki_krakow_final.json'
 const key = '224e8e01cf8f43a0aabb1b68341904a1'
 
 
@@ -55,10 +55,10 @@ const prices = () => {
 }
 
 function addGPSAndPrices() {
-  console.log('shops = ', shops)
+  //console.log('shops = ', shops)
 
-  const shopsy = fs.readFileSync(shops, 'utf8')
-  const shopsObj = JSON.parse(shopsy)
+  const shops = fs.readFileSync(fileFrom, 'utf8')
+  const shopsObj = JSON.parse(shops)
 
   shopsObj.map(el => {
     const encodedAdres = encodeURI(el.address + ', ' + el.city)
@@ -77,7 +77,7 @@ function addGPSAndPrices() {
         let fullObj = Object.assign({}, obj, prices())
         console.log('fullObj', fullObj)
 
-        fs.appendFileSync(shopsWithStockAndGPS, JSON.stringify(fullObj) + ',')
+        fs.appendFileSync(fileTo, JSON.stringify(fullObj) + ',')
       })
       .catch(err => console.log('Buont getGPS: ', err))
 
@@ -85,15 +85,15 @@ function addGPSAndPrices() {
 }
 
 function addPrices() {
-  console.log('shops = ', shops)
+  //console.log('shops = ', shops)
 
-  const shopsy = fs.readFileSync(shops, 'utf8')
-  const shopsObj = JSON.parse(shopsy)
+  const shops = fs.readFileSync(fileFrom, 'utf8')
+  const shopsObj = JSON.parse(shops)
 
   shopsObj.map(el => {
     let fullObj = Object.assign({}, el, prices())
     // console.log('fullObj', fullObj)
-    fs.appendFileSync (shopsWithStockAndGPS, JSON.stringify(fullObj) + ',')
+    fs.appendFileSync (fileTo, JSON.stringify(fullObj) + ',')
   })
 
 

@@ -1,4 +1,4 @@
-[
+const shops = [
     {
       "shopName": "Biedronka",
       "city": "Warszawa",
