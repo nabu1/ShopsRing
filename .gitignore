@@ -85,3 +85,5 @@ zabki.json
 zabki.bak.json
 src/GPSandStockImport.js
 cypress/videos/examples/newTest.spec.js.mp4
+src/assets/favicon-16x16.png
+src/assets/favicon-96x96.png
