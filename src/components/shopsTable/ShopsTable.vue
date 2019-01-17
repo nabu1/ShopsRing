@@ -1,12 +1,7 @@
-<template src='./ShopsTable.html'></template>
+<template src="./ShopsTable.html"></template>
 
 <script>
-import axios from 'axios'
-
 export default {
-  created() {
-    this.$store.dispatch('addAllShops')
-  },
   computed: {
     items() {
       //return this.$store.getters.getAllShops
@@ -18,6 +13,9 @@ export default {
     loading() {
       return this.$store.getters.getLoading
     }
+  },
+  created() {
+    this.$store.dispatch('addAllShops')
   },
   methods: {
     showTable() {

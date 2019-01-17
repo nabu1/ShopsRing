@@ -1,14 +1,8 @@
-<template src='./Search.html'></template>
+<template src="./Search.html"></template>
 
 <script>
 
 export default {
-  template: 'Search',
-  computed: {
-    loading() {
-      return this.$store.getters.getLoading
-    }
-  },
   data() {
     return {
       city: '',
@@ -21,6 +15,11 @@ export default {
         { text: 'Gdańsk', value: 'gdansk' },
       ],
       showAlert: false
+    }
+  },
+  computed: {
+    loading() {
+      return this.$store.getters.getLoading
     }
   },
   methods: {
@@ -54,6 +53,7 @@ export default {
       const selectedShops = this.$store.getters.getSelectedShops
       this.$store.dispatch('addTotal', selectedShops)
     },
+    template: 'Search',
     hideModalCity() {
       this.$refs.modalCity.hide()
     },

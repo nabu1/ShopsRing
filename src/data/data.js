@@ -1,87 +1,87 @@
 export const initialColumns = [
   'index',
   {
-    key: "shopName",
-    label: "Sklepiszcze",
+    key: 'shopName',
+    label: 'Sklepiszcze',
     sortable: true
   },
   {
-    key: "address",
-    label: "Adres",
+    key: 'address',
+    label: 'Adres',
     sortable: true
   },
   {
-    key: "distance",
-    label: "Odległość",
+    key: 'distance',
+    label: 'Odległość',
     sortable: true
   },
   {
-    key: "jakd",
-    label: "JakD"
+    key: 'jakd',
+    label: 'JakD'
   },
   {
-    key: "gmaps",
-    label: "Gmaps"
+    key: 'gmaps',
+    label: 'Gmaps'
   }
 ]
 
 export const totalColumn = [
   {
-    key: "total",
-    label: "Total",
+    key: 'total',
+    label: 'Total',
     sortable: true
   }
 ]
 
 export const stockColumns = [
   {
-    key: "chleb",
-    label: "Chleb",
+    key: 'chleb',
+    label: 'Chleb',
     sortable: true
   },
   {
-    key: "maslo",
-    label: "Masło",
+    key: 'maslo',
+    label: 'Masło',
     sortable: true
   },
   {
-    key: "ser",
-    label: "Ser",
+    key: 'ser',
+    label: 'Ser',
     sortable: true
   },
   {
-    key: "jajka",
-    label: "Jjajo",
+    key: 'jajka',
+    label: 'Jjajo',
     sortable: true
   },
   {
-    key: "szynka",
-    label: "Szynka",
+    key: 'szynka',
+    label: 'Szynka',
     sortable: true
   },
   {
-    key: "kielbasa",
-    label: "Kufasa",
+    key: 'kielbasa',
+    label: 'Kufasa',
     sortable: true
   },
   {
-    key: "cukier",
-    label: "Cukier",
+    key: 'cukier',
+    label: 'Cukier',
     sortable: true
   },
   {
-    key: "mleko",
-    label: "Mleko",
+    key: 'mleko',
+    label: 'Mleko',
     sortable: true
   },
   {
-    key: "smietana",
-    label: "Śmietana",
+    key: 'smietana',
+    label: 'Śmietana',
     sortable: true
   },
   {
-    key: "mineralna",
-    label: "Mineralna",
+    key: 'mineralna',
+    label: 'Mineralna',
     sortable: true
   }
 ]

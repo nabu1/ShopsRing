@@ -1,6 +1,7 @@
 <template src="./StockSelector.html"></template>
 <script>
-import { stocksToBuy } from "../../data/data"
+import { stocksToBuy } from '../../data/data'
+
 export default {
   data() {
     return {
@@ -12,24 +13,24 @@ export default {
   methods: {
     resetStock() {
       this.selected = []
-      this.$store.dispatch("getStock", [])
+      this.$store.dispatch('getStock', [])
     },
 
     stockSelected() {
       setTimeout(() => {
-        this.$store.dispatch("getStock", this.selected)
+        this.$store.dispatch('getStock', this.selected)
         const selectedShops = this.$store.getters.getSelectedShops
         const selectedStocks = this.$store.getters.getStocksSelected
 
         let suma = 0
 
-        selectedShops.map((shop, index) => {
-          let pricesTotal = selectedStocks.map(stock => (suma += shop[stock]))
+        selectedShops.map(shop => {
+          const pricesTotal = selectedStocks.map(stock => (suma += shop[stock]))
           shop.total = suma
           suma = 0
         })
 
-        this.$store.dispatch("addTotal", selectedShops)
+        this.$store.dispatch('addTotal', selectedShops)
       }, 0)
     }
   }

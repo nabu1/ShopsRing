@@ -13,10 +13,12 @@
   ],
   "rules": {
     "array-bracket-spacing": 0,
+    "array-callback-return":"warn",
     "arrow-parens": 0,
     "brace-style": ["error", "stroustrup"],
     "computed-property-spacing": 0,
     "comma-dangle": ["error", "only-multiline"],
+    "consistent-return":"off",
     "func-call-spacing": 0,
     "indent": ["error", 2],
     "linebreak-style": 0,
@@ -31,6 +33,7 @@
     "space-in-parens": 0,
     "space-before-function-paren": 0,
     "spaced-comment": 0,
-    "no-trailing-spaces": 2
+    "no-trailing-spaces": 2,
+    "vue/html-self-closing": "never"
   }
 }
