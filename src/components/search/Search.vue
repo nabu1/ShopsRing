@@ -42,6 +42,10 @@ export default {
         streetNumber: this.streetNumber
       }
 
+      if (homeData.street.toLowerCase().indexOf('sulmierzycka') !== -1) {
+        homeData.street = 'Dolna'
+      }
+
       const radius = this.radius
       const allShops = this.$store.getters.getAllShops
       const selectedStocks = this.$store.getters.getStocksSelected
