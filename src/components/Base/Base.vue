@@ -1,16 +1,16 @@
-<template src="./Base.html"></template>
+<template src="./Base.html" />
 
 <script>
-  import Search from '../Search/Search.vue'
-  import ShopsTable from '../ShopsTable/ShopsTable.vue'
-  import StockSelector from '../StockSelector/StockSelector.vue'
+import Search from '../Search/Search.vue'
+import ShopsTable from '../ShopsTable/ShopsTable.vue'
+import StockSelector from '../StockSelector/StockSelector.vue'
 
-  export default {
-    template: 'Base',
-    components: {
-      'stock-selector': StockSelector,
-      'search-bar': Search,
-      'shops-table': ShopsTable
-    }
-  }
+export default {
+  components: {
+    'stock-selector': StockSelector,
+    'search-bar': Search,
+    'shops-table': ShopsTable,
+  },
+  template: 'Base',
+}
 </script>

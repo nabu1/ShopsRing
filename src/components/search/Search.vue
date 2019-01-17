@@ -1,88 +1,78 @@
 <template src='./Search.html'></template>
 
 <script>
-import axios from "axios";
 
 export default {
-  template: "Search",
+  template: 'Search',
   computed: {
     loading() {
-      return this.$store.getters.getLoading;
+      return this.$store.getters.getLoading
     }
   },
   data() {
     return {
-      city: "",
-      street: "",
-      streetNumber: "",
+      city: '',
+      street: '',
+      streetNumber: '',
       radius: 500,
       cities: [
-        { text: "Warszawa", value: "warszawa" },
-        { text: "Kraków", value: "krakow" },
-        { text: "Gdańsk", value: "gdansk" }
+        { text: 'Warszawa', value: 'warszawa' },
+        { text: 'Kraków', value: 'krakow' },
+        { text: 'Gdańsk', value: 'gdansk' },
       ],
       showAlert: false
-    };
+    }
   },
   methods: {
     search() {
       if (!this.city) {
-        return this.$refs.modalCity.show();
+        return this.$refs.modalCity.show()
       }
       if (!this.street) {
-        return this.$refs.modalStreet.show();
+        return this.$refs.modalStreet.show()
       }
       if (!this.radius) {
-        return this.$refs.modalRadius.show();
+        return this.$refs.modalRadius.show()
       }
 
-      this.$store.dispatch("addAllShops");
+      this.$store.dispatch('addAllShops')
 
       const homeData = {
         city: this.city,
         street: this.street,
         streetNumber: this.streetNumber
-      };
+      }
 
-      const radius = this.radius;
-      const allShops = this.$store.getters.getAllShops;
-      const selectedStocks = this.$store.getters.getStocksSelected;
+      const radius = this.radius
+      const allShops = this.$store.getters.getAllShops
+      const selectedStocks = this.$store.getters.getStocksSelected
 
-      this.$store.dispatch("findSelectedShops", { homeData, radius, allShops });
-      this.$store.dispatch("showLoader", true);
-      this.$store.dispatch("getStock", selectedStocks);
+      this.$store.dispatch('findSelectedShops', { homeData, radius, allShops })
+      this.$store.dispatch('showLoader', true)
+      this.$store.dispatch('getStock', selectedStocks)
 
-      const selectedShops = this.$store.getters.getSelectedShops;
-      let suma = 0;
-
-      selectedShops.map((shop, index) => {
-        let pricesTotal = selectedStocks.map(stock => (suma += shop[stock]));
-        shop.total = suma;
-        suma = 0;
-      });
-
-      this.$store.dispatch("addTotal", selectedShops);
+      const selectedShops = this.$store.getters.getSelectedShops
+      this.$store.dispatch('addTotal', selectedShops)
     },
     hideModalCity() {
-      this.$refs.modalCity.hide();
+      this.$refs.modalCity.hide()
     },
     hideModalStreet() {
-      this.$refs.modalStreet.hide();
+      this.$refs.modalStreet.hide()
     },
     hideModalRadius() {
-      this.$refs.modalRadius.hide();
+      this.$refs.modalRadius.hide()
     },
     reset() {
-      this.city = "";
-      this.street = "";
-      this.streetNumber = "";
-      this.radius = 500;
+      this.city = ''
+      this.street = ''
+      this.streetNumber = ''
+      this.radius = 500
 
-      this.$store.dispatch("toggleCheckboxes");
-      this.$store.dispatch("showTable", false);
-      //this.$store.dispatch('addAllShops')
+      this.$store.dispatch('toggleCheckboxes')
+      this.$store.dispatch('showTable', false)
     }
   }
-};
+}
 </script>
 
