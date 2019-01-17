@@ -11,11 +11,12 @@ export const ajaxAddAllShops = context => {
   else {
 
     //console.log('shopsJSON = ', shopsJSON)
-    context.commit('ADD_ALL_SHOPS', shopsJSON)
-    sessionStorage.setItem('allShops', JSON.stringify(shopsJSON))
+    //context.commit('ADD_ALL_SHOPS', shopsJSON)
+    //sessionStorage.setItem('allShops', JSON.stringify(shopsJSON))
 
 
     /*
+    */
     axios
     .get(constants.SHOPS_LIST)
     .then(res => {
@@ -23,7 +24,6 @@ export const ajaxAddAllShops = context => {
       sessionStorage.setItem('allShops', JSON.stringify(res.data))
     })
     .catch(err => console.log(err))
-   */
   }
 }
 
