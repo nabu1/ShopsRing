@@ -43,7 +43,7 @@ export default {
       }
 
       if (homeData.street.toLowerCase().indexOf('sulmierzycka') !== -1) {
-        homeData.street = 'Dolna'
+        homeData.street = 'Bacha'
       }
 
       const radius = this.radius
