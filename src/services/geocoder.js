@@ -65,15 +65,14 @@ const prices = () => {
 
 // Na podstawie lat i lon, znajdowany jest adres i całość zapisywana w gotoweSklepyBezAdresu.json
 function getAddress(lat = 52.2472828, lon = 21.0568093) {
-  const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + lat + '+' + lon + '&key='+ key
+  const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + lat + '+' + lon + '&key=' + key
 
   //console.log('url', url)
   //debugger;
 
-
   axios.get(url)
     .then(res => {
-      let obj = {
+      const obj = {
         shopName,
         city,
         address: res.data.results[0].formatted,
@@ -81,52 +80,50 @@ function getAddress(lat = 52.2472828, lon = 21.0568093) {
         lon,
       }
 
-      let fullObj = Object.assign({}, obj, prices())
+      const fullObj = Object.assign({}, obj, prices())
       //console.log('obj', obj)
       //console.log('fullObj', fullObj)
 
-      fs.appendFileSync (fileShopsFinal, JSON.stringify(fullObj) + ',')
+      fs.appendFileSync(fileShopsFinal, JSON.stringify(fullObj) + ',')
     })
     .catch(err => console.log('Buont getAddress: ', err))
-
 }
 
+// Na podstawie adresu, znajdowany jest lat i lon, a całość zapisywana jest w gotoweSklepyZGPS.json
+function getGPS(address, city) {
+  const encodedAdres = encodeURI(address + ', ' + city)
+  const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAdres + '&key=' + key + '&language=pl&pretty=1'
 
-  // Na podstawie adresu, znajdowany jest lat i lon, a całość zapisywana jest w gotoweSklepyZGPS.json
-  function getGPS(address, city) {
-    const encodedAdres = encodeURI(address + ', ' + city)
-    const url = 'https://api.opencagedata.com/geocode/v1/json?q=' + encodedAdres + '&key=' + key + '&language=pl&pretty=1'
+  axios.get(url)
+    .then(res => {
+      const obj = {
+        shopName,
+        city,
+        address,
+        lat: res.data.results[0].geometry.lat,
+        lon: res.data.results[0].geometry.lng,
+      }
 
-    axios.get(url)
-      .then(res => {
-        let obj = {
-          shopName,
-          city,
-          address,
-          lat: res.data.results[0].geometry.lat,
-          lon: res.data.results[0].geometry.lng,
-        }
+      const fullObj = Object.assign({}, obj, prices())
+      //console.log('fullObj', fullObj)
 
-        let fullObj = Object.assign({}, obj, prices())
-        //console.log('fullObj', fullObj)
-
-        fs.appendFileSync (fileShopsFinal, JSON.stringify(fullObj) + ',')
+      fs.appendFileSync(fileShopsFinal, JSON.stringify(fullObj) + ',')
     })
     .catch(err => console.log('Buont getGPS: ', err))
-  }
+}
 
 // Obiekt jest okrajany do zawartości: lat, lon, street, housenumber
 function filteredShops() {
   let obj = {}
-  let arr = []
-  const shopsFromOverpass = fs.readFileSync(fileShopsFromOverpass,'utf8')
+  const arr = []
+  const shopsFromOverpass = fs.readFileSync(fileShopsFromOverpass, 'utf8')
   const shopsFromOverpassObj = JSON.parse(shopsFromOverpass)
 
   shopsFromOverpassObj.map((el) => {
     el.lat ? obj.lat = el.lat : null
     el.lon ? obj.lon = el.lon : null
 
-    if(el.tags && el.tags['addr:street'] && el.tags['addr:housenumber']) {
+    if (el.tags && el.tags['addr:street'] && el.tags['addr:housenumber']) {
       obj.address = el.tags['addr:street'] + ' ' + el.tags['addr:housenumber']
     }
 
@@ -140,28 +137,28 @@ function filteredShops() {
   })
 
   const shopsList = JSON.stringify(arr)
-  fs.writeFileSync (fileShopsFiltered, shopsList)
+  fs.writeFileSync(fileShopsFiltered, shopsList)
   //return shopsList
 }
 
 // Uzupełaniane jest brak adresu lub gps'ów
 function fillGaps() {
-  const shopsFiltered = fs.readFileSync(fileShopsFiltered,'utf8')
+  const shopsFiltered = fs.readFileSync(fileShopsFiltered, 'utf8')
   const shopsFilteredObj = JSON.parse(shopsFiltered)
 
   shopsFilteredObj.map(el => {
-    if(Object.keys(el).length === 0) { } // jeśli pusty obiekt, biorę nastepny
+    if (Object.keys(el).length === 0) { }
 
-    else if(!el.lat || !el.lon) {   // ide do getGPS
+    else if (!el.lat || !el.lon) {
       getGPS(el.address, el.city)
     }
 
-    else if(!el.address) {   // ide do getAddress
+    else if (!el.address) {
       getAddress(el.lat, el.lon)
     }
 
     else {
-      let obj = {
+      const obj = {
         shopName,
         city,
         address: el.address,
@@ -169,16 +166,16 @@ function fillGaps() {
         lon: el.lon
       }
 
-      let fullObj = Object.assign({}, obj, prices())
+      const fullObj = Object.assign({}, obj, prices())
       console.log('fullObj', fullObj)
 
-      fs.appendFileSync (fileShopsFinal, JSON.stringify(fullObj) + ',')
+      fs.appendFileSync(fileShopsFinal, JSON.stringify(fullObj) + ',')
     }
   })
 }
 
 function addId() {
-  const shopsFinal = fs.readFileSync(fileShopsFinal,'utf8')
+  const shopsFinal = fs.readFileSync(fileShopsFinal, 'utf8')
   const shopsFinalObj = JSON.parse(shopsFinal)
 
   console.log('183. shopsFinalObj = ', shopsFinalObj)
@@ -190,24 +187,20 @@ function addId() {
 
   console.log('187. shopsFinalId', shopsFinalId)
 
-  fs.appendFileSync (fileShopsFinalId, JSON.stringify(shopsFinalId))
-
+  fs.appendFileSync(fileShopsFinalId, JSON.stringify(shopsFinalId))
 }
 
 function filtrujMiasto(miasto) {
-  const shops = fs.readFileSync(fileFrom,'utf8')
+  const shops = fs.readFileSync(fileFrom, 'utf8')
   const shopsObj = JSON.parse(shops)
 
   // console.log('shopsObj = ', shopsObj)
 
-  const shopsFinal = shopsObj.filter((el, index) => {
-    return el.city === miasto
-  })
+  const shopsFinal = shopsObj.filter(el => el.city === miasto )
 
   console.log('187. shopsFinal', shopsFinal)
 
-  fs.appendFileSync (fileTo, JSON.stringify(shopsFinal))
-
+  fs.appendFileSync(fileTo, JSON.stringify(shopsFinal))
 }
 
 //console.log(filteredShops())  // odpal najpierw ten, komentując kolejny

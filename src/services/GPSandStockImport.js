@@ -28,10 +28,10 @@
 const fs = require('fs')
 const _ = require('lodash')
 const axios = require('axios')
+
 const fileFrom = '../data/zabki_krakow.json'
 const fileTo = '../data/zabki_krakow_final.json'
 const key = '224e8e01cf8f43a0aabb1b68341904a1'
-
 
 // Losowe ceny produktów dopisywane do każdego sklepu
 const prices = () => {
@@ -46,10 +46,6 @@ const prices = () => {
   obj.mleko = _.random(2, 5)
   obj.smietana = _.random(4, 8)
   obj.mineralna = _.random(1, 2)
-
-  const total = Object.values(obj).reduce((previous, item) => {
-    return previous + item
-  }, 0)
 
   return obj
 }
@@ -66,7 +62,7 @@ function addGPSAndPrices() {
 
     axios.get(url)
       .then(res => {
-        let obj = {
+        const obj = {
           shopName: el.shopName,
           city: el.city,
           address: el.address,
@@ -74,32 +70,24 @@ function addGPSAndPrices() {
           lon: res.data.results[0].geometry.lng,
         }
 
-        let fullObj = Object.assign({}, obj, prices())
+        const fullObj = Object.assign({}, obj, prices())
         console.log('fullObj', fullObj)
 
         fs.appendFileSync(fileTo, JSON.stringify(fullObj) + ',')
       })
       .catch(err => console.log('Buont getGPS: ', err))
-
   })
 }
 
 function addPrices() {
-  //console.log('shops = ', shops)
-
   const shops = fs.readFileSync(fileFrom, 'utf8')
   const shopsObj = JSON.parse(shops)
 
   shopsObj.map(el => {
-    let fullObj = Object.assign({}, el, prices())
-    // console.log('fullObj', fullObj)
+    const fullObj = Object.assign({}, el, prices())
     fs.appendFileSync (fileTo, JSON.stringify(fullObj) + ',')
   })
-
-
 }
 
-
 // addGPSAndPrices()
-
 addPrices()

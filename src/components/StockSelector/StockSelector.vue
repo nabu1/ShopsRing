@@ -25,7 +25,8 @@ export default {
         let suma = 0
 
         selectedShops.map(shop => {
-          const pricesTotal = selectedStocks.map(stock => (suma += shop[stock]))
+          // eslint-disable-next-line no-return-assign
+          selectedStocks.map(stock => (suma += shop[stock]))
           shop.total = suma
           suma = 0
         })

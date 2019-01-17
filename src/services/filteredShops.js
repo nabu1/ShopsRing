@@ -25,21 +25,19 @@ export const filteredShops = (homeGPSAndAddress, radius, allShops) => {
   })
 
   const shopsInRadiusWithJakD = shopsInRadius.map(el => {
-    console.log('city = ', homeGPSAndAddress.city)
-
     let link = constants.JAKDOJADE
-    link += `${homeGPSAndAddress.city  }/trasa/?fn=`
-    link += encodeURI(`${homeGPSAndAddress.street  } ${  homeGPSAndAddress.streetNumber}`)
+    link += `${homeGPSAndAddress.city}/trasa/?fn=`
+    link += encodeURI(`${homeGPSAndAddress.street} ${homeGPSAndAddress.streetNumber}`)
     link += '&tn='
     link += encodeURI(el.address)
     link += '&tc='
-    link += `${el.lat  }:${  el.lon}`
+    link += `${el.lat}:${el.lon}`
     link += '&fc='
-    link += `${homeGPSAndAddress.lat  }:${  homeGPSAndAddress.lon}`
+    link += `${homeGPSAndAddress.lat}:${homeGPSAndAddress.lon}`
     link += '&ft=LOCATION_TYPE_ADDRESS&tt=LOCATION_TYPE_ADDRESS&d='
-    link += `${new Date().getDate()  }.${  new Date().getMonth() + 1  }.${  new Date().getFullYear() - 2000}`
+    link += `${new Date().getDate()}.${new Date().getMonth() + 1}.${new Date().getFullYear() - 2000}`
     link += '&h='
-    link += `${new Date().getHours()  }:${  new Date().getMinutes()}`
+    link += `${new Date().getHours()}:${new Date().getMinutes()}`
     link += '&aro=1&t=1&rc=3&ri=1&r=0&stopsLayer=true'
 
     el.jakd = `<a href=${link} target="_blank">jakDojade</a>`
@@ -48,9 +46,9 @@ export const filteredShops = (homeGPSAndAddress, radius, allShops) => {
 
   const shopsInRadiusWithJakDAndGmaps = shopsInRadiusWithJakD.map(el => {
     let link = constants.GOOGLE_MAPS
-    link += encodeURI(`${homeGPSAndAddress.street  }+${  homeGPSAndAddress.streetNumber}`) // from
+    link += encodeURI(`${homeGPSAndAddress.street}+${homeGPSAndAddress.streetNumber}`) // from
     link += '/'
-    link += encodeURI(`${el.address  } ${  el.city}`) // to
+    link += encodeURI(`${el.address} ${el.city}`) // to
 
     el.gmaps = `<a href=${link} target="_blank">GMaps</a>`
     return el
