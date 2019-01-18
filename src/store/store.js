@@ -13,7 +13,6 @@ export default new Vuex.Store({
     items: [],
     fields: [],
     stocksSelected: [],
-    showCheckboxes: true,
     showTable: false,
     loading: false
   },

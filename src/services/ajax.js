@@ -9,14 +9,6 @@ export const ajaxAddAllShops = context => {
     context.commit('ADD_ALL_SHOPS', JSON.parse(sessionStorage.getItem('allShops')))
   }
   else {
-
-    //console.log('shopsJSON = ', shopsJSON)
-    //context.commit('ADD_ALL_SHOPS', shopsJSON)
-    //sessionStorage.setItem('allShops', JSON.stringify(shopsJSON))
-
-
-    /*
-    */
     axios
     .get(constants.SHOPS_LIST)
     .then(res => {

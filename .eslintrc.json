@@ -29,6 +29,7 @@
     "no-param-reassign":"off",
     "no-plusplus": 0,
     "no-spaced-func": 0,
+    "no-warning-comments":"warn",
     "no-whitespace-before-property": 0,
     "prefer-destructuring": "warn",
     "prefer-template":"warn",

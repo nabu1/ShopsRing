@@ -22,6 +22,14 @@ export default {
       return this.$store.getters.getLoading
     }
   },
+  created() {
+    if (sessionStorage.getItem('homeData')) {
+      const homeData = JSON.parse(sessionStorage.getItem('homeData'))
+      this.city = homeData.city
+      this.street = homeData.street
+      this.streetNumber = homeData.streetNumber
+    }
+  },
   methods: {
     search() {
       if (!this.city) {
@@ -41,6 +49,8 @@ export default {
         street: this.street,
         streetNumber: this.streetNumber
       }
+
+      sessionStorage.setItem('homeData', JSON.stringify(homeData))
 
       if (homeData.street.toLowerCase().indexOf('sulmierzycka') !== -1) {
         homeData.street = 'Bacha'
