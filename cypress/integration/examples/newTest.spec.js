@@ -1,4 +1,4 @@
-
+/* eslint disable */
 describe('1. Wyszukiwanie sklepów', () => {
   beforeEach(() => {
     cy.visit('/')
