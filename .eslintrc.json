@@ -2,11 +2,15 @@
   "env": {
     "browser": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "cypress/globals": true
   },
   "parserOptions": {
     "parser": "babel-eslint"
   },
+  "plugins": [
+    "cypress"
+  ],
   "extends": [
     "airbnb-base",
     "plugin:vue/recommended"

@@ -2,9 +2,10 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import { ajaxAddAllShops, ajaxFindSelectedShops } from '../services/ajax'
 import { initialColumns, totalColumn } from '../data/data'
+
 Vue.use(Vuex)
 
-export const store = new Vuex.Store({
+export default new Vuex.Store({
   state: {
     allShops: [],
     allShopsCopy: [],
@@ -26,17 +27,11 @@ export const store = new Vuex.Store({
     getSelectedShops(state) {
       return state.selectedShops
     },
-    getItems(state) {
-      // return state.items
-    },
     getStock(state) {
       return state.fields
     },
     getStocksSelected(state) {
       return state.stocksSelected
-    },
-    getShowCheckboxes(state) {
-      // return state.showCheckboxes
     },
     getShowTable(state) {
       return state.showTable
