@@ -2,7 +2,6 @@
 const mountVue = require('cypress-vue-unit-test')
 
 describe('Declarative rendering', () => {
-  // Vue code from https://vuejs.org/v2/guide/#Declarative-Rendering
   const template = `
     <div id="app">
       {{ message }}
