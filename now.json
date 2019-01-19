@@ -1,14 +1,6 @@
 {
   "name": "ShopsRing",
-  "static": {
-    "public": "dist",
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  },
+  "version": 2,
   "alias": "shopsring",
   "files": [
     "dist"
