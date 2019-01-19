@@ -1,6 +1,5 @@
 {
   "name": "ShopsRing",
-  "type": "static",
   "static": {
     "public": "dist",
     "rewrites": [
