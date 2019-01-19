@@ -1,4 +1,4 @@
-import { constants } from '../data/constants'
+import constants from '../data/constants'
 
 export const filteredShops = (homeGPSAndAddress, radius, allShops) => {
   function toRad(x) {
