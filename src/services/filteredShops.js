@@ -1,6 +1,6 @@
 import constants from '../data/constants'
 
-export const filteredShops = (homeGPSAndAddress, radius, allShops) => {
+export default (homeGPSAndAddress, radius, allShops) => {
   function toRad(x) {
     return x * Math.PI / 180
   }

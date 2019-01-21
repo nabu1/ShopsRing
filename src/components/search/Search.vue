@@ -8,8 +8,9 @@ export default {
       city: '',
       street: '',
       streetNumber: '',
-      radius: 500,
+      radius: '',
       cities: [
+        { value: null, text: 'Miasto'  },
         { text: 'Warszawa', value: 'warszawa' },
         { text: 'Kraków', value: 'krakow' },
         { text: 'Gdańsk', value: 'gdansk' },
