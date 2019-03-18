@@ -11,6 +11,5 @@ export default {
     'search-bar': Search,
     'shops-table': ShopsTable,
   },
-  template: 'Base',
 }
 </script>

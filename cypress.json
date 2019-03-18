@@ -1,5 +1,5 @@
 {
   "baseUrl": "http://localhost:8080",
-  "videoCompression": false,
-  "screenshotOnRunFailure":	true
+  "viewportWidth": 1000,
+  "viewportHeight": 1000
 }

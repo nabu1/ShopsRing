@@ -68,7 +68,6 @@ export default {
       const selectedShops = this.$store.getters.getSelectedShops
       this.$store.dispatch('addTotal', selectedShops)
     },
-    template: 'Search',
     hideModalCity() {
       this.$refs.modalCity.hide()
     },
