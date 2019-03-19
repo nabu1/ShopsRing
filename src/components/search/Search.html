@@ -46,8 +46,22 @@
       </b-modal>
 
       <b-col>
-        <b-button id="search" data-test="buttonSearch" @click="search" size="md" class='ml-0 px-1'>Search</b-button>
-        <b-button id="reset" data-test="buttonResetLocation" @click="reset" size="md" class='ml-1 px-1'>Reset</b-button>
+        <b-button id="search"
+                  data-test="buttonSearch"
+                  @click="search"
+                  size="md"
+                  class='ml-2 px-3'>
+          Szukaj
+        </b-button>
+
+        <b-button id="reset"
+                  data-test="buttonResetLocation"
+                  @click="reset"
+                  size="md"
+                  class='ml-3 px-3'>
+          Wyczyść
+        </b-button>
+
       </b-col>
 
       <b-col md="1" class='px-0'>

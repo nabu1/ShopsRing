@@ -41,7 +41,7 @@ export default {
     text-decoration: none;
   }
 
-  #linkabout {
+  #link_about {
     color: #80D8FF;
   }
 </style>
