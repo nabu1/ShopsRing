@@ -4,7 +4,6 @@
 export default {
   computed: {
     items() {
-      //return this.$store.getters.getAllShops
       return this.$store.getters.getSelectedShops
     },
     fields() {
@@ -37,7 +36,6 @@ export default {
   }
 
   a {
-    /* color: #80D8FF; */
     color: #abe5ff;
     text-decoration: none;
   }

@@ -45,7 +45,7 @@ const prices = () => {
   obj.cukier = _.random(3, 6)
   obj.mleko = _.random(2, 5)
   obj.smietana = _.random(4, 8)
-  obj.mineralna = _.random(1, 2)
+  obj.mineralna = _.random(1, 2)   // zmień na 'woda'
 
   return obj
 }
