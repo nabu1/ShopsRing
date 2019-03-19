@@ -25,9 +25,24 @@ export default {
 }
 </script>
 
-<style scoped>
-  div {
+<style>
+  #stockTable {
+    background: url('../../assets/blur_7_dark_low_brightness_70procent.jpg') center center fixed;
     color: white
+  }
+
+  .table-hover tbody tr:hover {
+    background-color: #616161;
+    color: white
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  #linkabout {
+    color: #80D8FF;
   }
 </style>
 
