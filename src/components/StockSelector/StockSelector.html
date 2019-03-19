@@ -1,7 +1,7 @@
 <div>
   <b-container >
     <b-row class="mb-2" >
-      <b-form-row v-if="show" >
+      <b-form-row v-if="show" class="mt-2">
         <b-form-checkbox-group data-test="stocks"
                                v-model="selected"
                                @change="stockSelected"
@@ -13,7 +13,7 @@
       <b-button data-test='buttonResetStock'
                 @click="resetStock"
                 size="md"
-                class="px-3 py-0">
+                class="px-3 py-2">
         Kasuj
       </b-button>
 
