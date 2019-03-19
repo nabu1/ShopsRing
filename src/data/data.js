@@ -2,7 +2,7 @@ export const initialColumns = [
   'index',
   {
     key: 'shopName',
-    label: 'Sklepiszcze',
+    label: 'Sklep',
     sortable: true
   },
   {
@@ -28,7 +28,7 @@ export const initialColumns = [
 export const totalColumn = [
   {
     key: 'total',
-    label: 'Total',
+    label: 'Razem',
     sortable: true
   }
 ]
@@ -51,7 +51,7 @@ export const stockColumns = [
   },
   {
     key: 'jajka',
-    label: 'Jjajo',
+    label: 'Jajka',
     sortable: true
   },
   {
@@ -61,7 +61,7 @@ export const stockColumns = [
   },
   {
     key: 'kielbasa',
-    label: 'Kufasa',
+    label: 'Kiełbasa',
     sortable: true
   },
   {
@@ -81,7 +81,7 @@ export const stockColumns = [
   },
   {
     key: 'mineralna',
-    label: 'Mineralna',
+    label: 'Woda',
     sortable: true
   }
 ]

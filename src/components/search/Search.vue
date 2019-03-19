@@ -53,10 +53,6 @@ export default {
 
       sessionStorage.setItem('homeData', JSON.stringify(homeData))
 
-      if (homeData.street.toLowerCase().indexOf('sulmierzycka') !== -1) {
-        homeData.street = 'Bacha'
-      }
-
       const radius = this.radius
       const allShops = this.$store.getters.getAllShops
       const selectedStocks = this.$store.getters.getStocksSelected
