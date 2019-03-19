@@ -96,5 +96,5 @@ export const stocksToBuy = [
   { text: 'Szynka', value: 'szynka' },
   { text: 'Kiełbasa', value: 'kielbasa' },
   { text: 'Cukier', value: 'cukier' },
-  { text: 'Woda', value: 'mineralna' }
+  { text: 'Woda', value: 'woda' }
 ]
