@@ -37,12 +37,10 @@ export default {
   }
 
   a {
-    color: #007bff;
+    /* color: #80D8FF; */
+    color: #abe5ff;
     text-decoration: none;
   }
 
-  #link_about {
-    color: #80D8FF;
-  }
 </style>
 

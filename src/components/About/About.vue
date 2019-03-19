@@ -6,6 +6,6 @@
   }
 
   #link_home {
-    color: #80D8FF;
+    color: #abe5ff;
   }
 </style>

@@ -1,11 +1,11 @@
 import constants from '../data/constants'
 
 export default (homeGPSAndAddress, radius, allShops) => {
-  function toRad(x) {
-    return x * Math.PI / 180
-  }
+console.log('%c homeGPSAndAddress = ' + JSON.stringify(homeGPSAndAddress), 'color: yellow')
 
-  function distance(lat1, lon1, lat2, lon2) {
+  const toRad = x => x * Math.PI / 180
+
+  const distance = (lat1, lon1, lat2, lon2) => {
     const R = 6371 // km
     const x1 = lat2 - lat1
     const dLat = toRad(x1)
@@ -13,9 +13,11 @@ export default (homeGPSAndAddress, radius, allShops) => {
     const dLon = toRad(x2)
 
     const a = Math.sin(dLat / 2) * Math.sin(dLat / 2)
-    + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2))
-    * Math.sin(dLon / 2) * Math.sin(dLon / 2)
+      + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2))
+      * Math.sin(dLon / 2) * Math.sin(dLon / 2)
+
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+
     return Math.round(R * c * 1000)
   }
 
@@ -46,9 +48,11 @@ export default (homeGPSAndAddress, radius, allShops) => {
 
   const shopsInRadiusWithJakDAndGmaps = shopsInRadiusWithJakD.map(el => {
     let link = constants.GOOGLE_MAPS
-    link += encodeURI(`${homeGPSAndAddress.street}+${homeGPSAndAddress.streetNumber}`) // from
+    link += encodeURI(`${homeGPSAndAddress.street}+${homeGPSAndAddress.streetNumber}${homeGPSAndAddress.city}`) // from
     link += '/'
     link += encodeURI(`${el.address} ${el.city}`) // to
+
+console.log('%c link = ' + link, 'color: yellow')
 
     el.gmaps = `<a href=${link} target="_blank">GMaps</a>`
     return el
