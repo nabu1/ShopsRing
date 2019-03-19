@@ -10,7 +10,7 @@ export default {
       streetNumber: '',
       radius: '',
       cities: [
-        { value: null, text: 'Miasto'  },
+        { value: null, text: 'Miasto' },
         { text: 'Warszawa', value: 'warszawa' },
         { text: 'Kraków', value: 'krakow' },
         { text: 'Gdańsk', value: 'gdansk' },

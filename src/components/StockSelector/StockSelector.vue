@@ -23,8 +23,8 @@ export default {
         const selectedShops = this.$store.getters.getSelectedShops
         const selectedStocks = this.$store.getters.getStocksSelected
 
-        selectedShops.map(shop => {
-          selectedStocks.map(stock => (suma += shop[stock]))
+        selectedShops.forEach(shop => {
+          selectedStocks.forEach(stock => (suma += shop[stock]))
           shop.total = suma
           suma = 0
         })
